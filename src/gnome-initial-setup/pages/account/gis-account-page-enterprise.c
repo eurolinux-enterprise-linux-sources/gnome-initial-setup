@@ -79,6 +79,7 @@ G_DEFINE_TYPE_WITH_PRIVATE (GisAccountPageEnterprise, gis_account_page_enterpris
 
 enum {
   VALIDATION_CHANGED,
+  USER_CACHED,
   LAST_SIGNAL,
 };
 
@@ -173,6 +174,7 @@ on_permit_user_login (GObject *source,
     g_debug ("Caching remote user: %s", login);
 
     priv->act_user = act_user_manager_cache_user (priv->act_client, login, NULL);
+    g_signal_emit (page, signals[USER_CACHED], 0, priv->act_user, gtk_entry_get_text (GTK_ENTRY (priv->password)));
     apply_complete (page, TRUE);
 
     g_free (login);
@@ -738,16 +740,18 @@ on_entry_changed (GtkEditable *editable,
 }
 
 static void
-gis_account_page_enterprise_hierarchy_changed (GtkWidget *widget,
-                                               GtkWidget *previous_toplevel)
+gis_account_page_enterprise_realize (GtkWidget *widget)
 {
   GisAccountPageEnterprise *page = GIS_ACCOUNT_PAGE_ENTERPRISE (widget);
   GisAccountPageEnterprisePrivate *priv = gis_account_page_enterprise_get_instance_private (page);
   GtkWidget *gis_page;
 
   gis_page = gtk_widget_get_ancestor (widget, GIS_TYPE_PAGE);
-  if (gis_driver_is_small_screen (GIS_PAGE (gis_page)->driver))
-    gtk_widget_hide (priv->image);
+  g_object_bind_property (gis_page, "small-screen",
+                          priv->image, "visible",
+                          G_BINDING_SYNC_CREATE | G_BINDING_INVERT_BOOLEAN);
+
+  GTK_WIDGET_CLASS (gis_account_page_enterprise_parent_class)->realize (widget);
 }
 
 static void
@@ -797,9 +801,12 @@ static void
 gis_account_page_enterprise_class_init (GisAccountPageEnterpriseClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
+  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
   object_class->constructed = gis_account_page_enterprise_constructed;
   object_class->dispose = gis_account_page_enterprise_dispose;
+
+  widget_class->realize = gis_account_page_enterprise_realize;
 
   gtk_widget_class_set_template_from_resource (GTK_WIDGET_CLASS (klass), "/org/gnome/initial-setup/gis-account-page-enterprise.ui");
 
@@ -816,11 +823,12 @@ gis_account_page_enterprise_class_init (GisAccountPageEnterpriseClass *klass)
   gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisAccountPageEnterprise, join_domain);
   gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisAccountPageEnterprise, join_computer);
 
-  gtk_widget_class_bind_template_callback (GTK_WIDGET_CLASS (klass), gis_account_page_enterprise_hierarchy_changed);
-
   signals[VALIDATION_CHANGED] = g_signal_new ("validation-changed", GIS_TYPE_ACCOUNT_PAGE_ENTERPRISE,
                                               G_SIGNAL_RUN_LAST, 0, NULL, NULL, NULL,
                                               G_TYPE_NONE, 0);
+  signals[USER_CACHED] = g_signal_new ("user-cached", GIS_TYPE_ACCOUNT_PAGE_ENTERPRISE,
+                                        G_SIGNAL_RUN_LAST, 0, NULL, NULL, NULL,
+                                        G_TYPE_NONE, 2, ACT_TYPE_USER, G_TYPE_STRING);
 }
 
 static void

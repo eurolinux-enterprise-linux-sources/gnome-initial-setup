@@ -4,74 +4,74 @@
 #
 #
 # Asier Sarasua Garmendia <asiersar@yahoo.com>, 2013.
-# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014.
-#
+# Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2013, 2014, 2015, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-initial-setup master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"initial-setup&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-08-05 14:38+0200\n"
-"PO-Revision-Date: 2014-07-29 19:31+0200\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@zundan.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-in"
+"itial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-09-01 15:51+0000\n"
+"PO-Revision-Date: 2016-09-20 12:45+0100\n"
+"Last-Translator: dooteo <dooteo@zundan.com>\n"
 "Language-Team: Basque <librezale@librezale.org>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 2.0\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
+#: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
 msgid "Initial Setup"
 msgstr "Hasierako konfigurazioa"
 
-#: ../gnome-initial-setup/gis-assistant.c:377
+#: ../gnome-initial-setup/gis-assistant.c:396
 msgid "_Next"
 msgstr "_Hurrengoa"
 
-#: ../gnome-initial-setup/gis-assistant.c:378
+#: ../gnome-initial-setup/gis-assistant.c:397
 msgid "_Accept"
 msgstr "_Onartu"
 
-#: ../gnome-initial-setup/gis-assistant.c:379
+#: ../gnome-initial-setup/gis-assistant.c:398
 msgid "_Skip"
 msgstr "_Saltatu"
 
-#: ../gnome-initial-setup/gis-assistant.c:380
+#: ../gnome-initial-setup/gis-assistant.c:399
 msgid "_Previous"
 msgstr "_Aurrekoa"
 
-#: ../gnome-initial-setup/gis-assistant.c:381
+#: ../gnome-initial-setup/gis-assistant.c:400
 msgid "_Cancel"
 msgstr "_Utzi"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:194
+#: ../gnome-initial-setup/gnome-initial-setup.c:199
 msgid "Force existing user mode"
 msgstr "Behartu dagoen erabiltzaile-modura"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:200
+#: ../gnome-initial-setup/gnome-initial-setup.c:205
 msgid "- GNOME initial setup"
 msgstr "- GNOMEren hasierako konfigurazioa"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page.c:202
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:242
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
 msgid "About You"
 msgstr "Zuri buruz"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:182
 msgid "Failed to register account"
 msgstr "Huts egin du kontua erregistratzean"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:376
 msgid "No supported way to authenticate with this domain"
 msgstr "Ez dago onartutako modurik domeinu honekin autentifikatzeko"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:416
 msgid "Failed to join domain"
 msgstr "Huts egin du domeinuarekin elkartzean"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:484
 msgid "Failed to log into domain"
 msgstr "Huts egin du domeinuan saioa hastean"
 
@@ -137,17 +137,21 @@ msgid "Administrator Password"
 msgstr "Administratzailearen pasahitza"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.c:202
-msgid "Are these the right details? You can change them if you want."
-msgstr "Xehetasun egokiak dira? Nahi duzunean alda ditzakezu."
+msgid "Please check the name and username. You can choose a picture too."
+msgstr ""
+"Egiaztatu izena eta erabiltzaile-izena. Argazki bat ere aukera dezakezu."
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:394
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:403
 msgid "We need a few details to complete setup."
 msgstr "Xehetasun gutxi batzuk behar dira konfigurazioa amaitzeko."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
 msgid "Avatar image"
 msgstr "Avatar irudia"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "Please provide a name and username. You can choose a picture too."
+msgstr "Eman izena eta erabiltzaile-izena. Argazki bat ere aukera dezakezu."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
 msgid "_Full Name"
@@ -174,17 +178,17 @@ msgstr "Ezin da automatikoki elkartu honelako domeinuarekin"
 msgid "No such domain or realm found"
 msgstr "Ez da halako domeinurik aurkitu"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:780
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:794
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
 msgstr "Ezin da %s gisa saioa-hasi %s domeinuan"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:786
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
 msgid "Invalid password, please try again"
 msgstr "Baliogabeko pasahitza, saiatu berriro"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:799
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
 #, c-format
 msgid "Couldn't connect to the %s domain: %s"
 msgstr "Ezin izan da %s domeinuarekin konektatu: %s"
@@ -232,11 +236,7 @@ msgstr ""
 msgid "Add Account"
 msgstr "Gehitu kontua"
 
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
-msgid "Cancel"
-msgstr "Utzi"
-
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:336
 msgid "Online Accounts"
 msgstr "Lineako kontuak"
 
@@ -246,36 +246,35 @@ msgstr "Konektatu zure lineako kontuak"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
 msgid ""
-"Connecting your accounts will allow you to easily access your email, online "
-"calendar, contacts, documents and photos."
+"Connect your accounts to easily access your email, online calendar, "
+"contacts, documents and photos."
 msgstr ""
-"Zure kontuak konektatzean dituzun posta elektroniko, lineako egutegia, "
-"kontaktuak, dokumentuak eta argazkiak modu errazean atzi ditzakezu."
+"Konektatu zure kontuak posta elektroniko, lineako egutegia, kontaktuak, "
+"dokumentuak eta argazkiak modu errazean atzitzeko."
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
-msgid "You can review your online accounts (and add others) after setup."
-msgstr ""
-"Zure lineako kontuak (eta beste batzuk gehitu) gainbegira ditzakezu "
-"konfigurazioaren ondoren."
+msgid ""
+"Accounts can be added and removed at any time from the Settings application."
+msgstr "Kontuak edozer unetan gehi eta ken daitezke Ezarpenenetatik."
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:235
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
 msgid "Preview"
 msgstr "Aurrebista"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:290
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:184
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:203
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:300
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:219
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
 msgid "More…"
 msgstr "Gehiago..."
 
 #. Translators: a search for input methods or keyboard layouts
 #. * did not yield any results
 #.
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:311
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:322
 msgid "No inputs found"
 msgstr "Ez da sarrerarik aurkitu"
 
-#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:209
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:363
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
 msgid "Typing"
 msgstr "Idazketa"
@@ -284,28 +283,36 @@ msgstr "Idazketa"
 msgid "Select your keyboard layout or an input method."
 msgstr "Hautatu teklatuaren diseinua edo sarrerako metodoa."
 
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:201
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:235
 msgid "No languages found"
 msgstr "Ez da hizkuntzarik aurkitu"
 
-#: ../gnome-initial-setup/pages/language/gis-language-page.c:272
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:292
 msgid "Welcome"
 msgstr "Ongi etorri"
 
-#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+#. Translators: This is meant to be a warm, engaging welcome message,
+#. * like greeting somebody at the door. If the exclamation mark is not
+#. * suitable for this in your language you may replace it.
+#.
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:123
 msgid "Welcome!"
 msgstr "Ongi etorri!"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:309
 msgctxt "Wireless access point"
 msgid "Other…"
 msgstr "Bestelakoa…"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:368
+msgid "Wireless networking is disabled"
+msgstr "Haririk gabeko sarea desgaituta dago"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:375
 msgid "Checking for available wireless networks"
 msgstr "Haririk gabeko sarerik erabilgarri dagoen begiratzen"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:641
 msgid "Network"
 msgstr "Sarea"
 
@@ -328,11 +335,19 @@ msgstr ""
 msgid "No wireless available"
 msgstr "Ez dago haririk gabekorik eskuragarri"
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:135
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:4
+msgid "Turn On"
+msgstr "Piztu"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:134
+msgid "This is a weak password."
+msgstr "Pasahitza ahula da."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:148
 msgid "The passwords do not match."
 msgstr "Pasahitzak ez datoz bat."
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:252
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:270
 msgid "Password"
 msgstr "Pasahitza"
 
@@ -355,90 +370,111 @@ msgstr "Pasahitz berriak zaharrarengandik desberdina izan behar du."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:83
 msgctxt "Password hint"
-msgid "Try changing some letters and numbers."
-msgstr "Saiatu hizki eta zenbaki batzuk aldatzen."
+msgid ""
+"This password is very similar to your last one. Try changing some letters "
+"and numbers."
+msgstr ""
+"Pasahitz hau azkenekoaren oso antzekoa da. Alda itzazu hizki eta zenbaki "
+"batzuk."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:85
 #: ../gnome-initial-setup/pages/password/pw-utils.c:93
 msgctxt "Password hint"
-msgid "Try changing the password a bit more."
-msgstr "Saiatu pasahitza piska bat gehiago aldatzen."
+msgid ""
+"This password is very similar to your last one. Try changing the password a "
+"bit more."
+msgstr ""
+"Pasahitz hau azkenekoaren oso antzekoa da. Alda ezazu pasahitza piska bat "
+"gehiago."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:87
 msgctxt "Password hint"
-msgid "A password without your user name would be stronger."
+msgid ""
+"This is a weak password. A password without your user name would be stronger."
 msgstr ""
-"Zure erabiltzaile-izenik gabeko pasahitz bat askoz ere sendoagoa litzateke."
+"Pasahitza ahula da. Erabiltzaile-izenik gabeko pasahitza sendoagoa izan "
+"beharko luke."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:89
 msgctxt "Password hint"
-msgid "Try to avoid using your name in the password."
-msgstr "Saiatu zure izena pasahitzean erabiltzea saihestea."
+msgid "This is a weak password. Try to avoid using your name in the password."
+msgstr "Pasahitza ahula da. Ez ezazu zure izena pasahitzean erabili."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:91
 msgctxt "Password hint"
-msgid "Try to avoid some of the words included in the password."
-msgstr "Saiatu pasahitzean sartutako hitz batzuk saihestea."
+msgid ""
+"This is a weak password. Try to avoid some of the words included in the "
+"password."
+msgstr ""
+"Pasahitza ahula da. Saihestu pasahitzean dauden hitz batzuk erabiltzea.."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:95
 msgctxt "Password hint"
-msgid "Try to avoid common words."
-msgstr "Saiatu hitz arruntak saihestea."
+msgid "This is a weak password. Try to avoid common words."
+msgstr "Pasahitza ahula da. Saihestu hitz arruntak erabiltzea."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:97
 msgctxt "Password hint"
-msgid "Try to avoid reordering existing words."
-msgstr "Saiatu dauden hitzen berrantolaketa saihestea."
+msgid "This is a weak password. Try to avoid reordering existing words."
+msgstr "Pasahitza ahula da. Saihestu dauden hitzak ordenaz aldatzea."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:99
 msgctxt "Password hint"
-msgid "Try to use more numbers."
-msgstr "Saiatu zenbaki gehiago erabiltzea."
+msgid "This is a weak password. Try to use more numbers."
+msgstr "Pasahitza ahula da. Erabili zenbaki gehiago."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:101
 msgctxt "Password hint"
-msgid "Try to use more uppercase letters."
-msgstr "Saiatu hizki maiuskulak gehiago erabiltzea."
+msgid "This is a weak password. Try to use more uppercase letters."
+msgstr "Pasahitza ahula da. Erabili hizki maiuskula gehiago."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:103
 msgctxt "Password hint"
-msgid "Try to use more lowercase letters."
-msgstr "Saiatu hizki minuskulak gehiago erabiltzea."
+msgid "This is a weak password. Try to use more lowercase letters."
+msgstr "Pasahitza ahula da. Erabili hizki minuskula gehiago."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:105
 msgctxt "Password hint"
-msgid "Try to use more special characters, like punctuation."
+msgid ""
+"This is a weak password. Try to use more special characters, like "
+"punctuation."
 msgstr ""
-"Saiatu karaktere berezi gehiago erabiltzea, harridura ikurra bezalakoak."
+"Pasahitza ahula da. Erabili karaktere berezi gehiago, adibidez puntuazio "
+"ikurrak."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:107
 msgctxt "Password hint"
-msgid "Try to use a mixture of letters, numbers and punctuation."
-msgstr "Saiatu hizki, zenbaki eta ikurren arteko nahasketa batekin."
+msgid ""
+"This is a weak password. Try to use a mixture of letters, numbers and "
+"punctuation."
+msgstr ""
+"Pasahitza ahula da. Erabili hizki, zenbaki eta puntuazio ikurren nahasketa "
+"bat."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:109
 msgctxt "Password hint"
-msgid "Try to avoid repeating the same character."
-msgstr "Saiatu karaktere berdina errepikatzea saihestea."
+msgid "This is a weak password. Try to avoid repeating the same character."
+msgstr "Pasahitza ahula da. Saiatu karaktere berdina ez errepikatzea."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:111
 msgctxt "Password hint"
 msgid ""
-"Try to avoid repeating the same type of character: you need to mix up "
-"letters, numbers and punctuation."
+"This is a weak password. Try to avoid repeating the same type of character: "
+"you need to mix up letters, numbers and punctuation."
 msgstr ""
-"Saiatu karaktere mota berdina errepikatzea saihestea: hizki, zenbaki eta "
-"ikurrak nahastu behar dituzu."
+"Pasahitza ahula da. Saiatu karaktere mota berdina ez errepikatzea:  erabili "
+"hizki, zenbaki eta puntuazio ikurren nahasketa bat."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:113
 msgctxt "Password hint"
-msgid "Try to avoid sequences like 1234 or abcd."
-msgstr "Saiatu 1234 edo abc bezalako sekuentziak saihestea."
+msgid "This is a weak password. Try to avoid sequences like 1234 or abcd."
+msgstr ""
+"Pasahitza ahula da. Saihestu 1234 edo abcd bezalako sekuentzia erabiltzea.."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:115
 msgctxt "Password hint"
-msgid "Try to add more letters, numbers and symbols."
-msgstr "Saiatu hizki, zenbaki eta ikur gehiago gehitzea."
+msgid "This is a weak password. Try to add more letters, numbers and symbols."
+msgstr "Pasahitza ahula da. Erabili hizki, zenbaki eta ikur gehiago."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:117
 msgctxt "Password hint"
@@ -479,11 +515,61 @@ msgctxt "Password strength"
 msgid "Strength: High"
 msgstr "Sendotasuna: altua"
 
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:220
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:109
+#, c-format
+msgid ""
+"Sending reports of technical problems helps us to improve %s. Reports are "
+"sent anonymously and are scrubbed of personal data."
+msgstr ""
+"Arazo teknikoei buruzko txostenak bidaltzean '%s' hobetzen laguntzen "
+"gaituzu. Txostenak anonimo gisa bidaltzen dira eta datu pertsonaletatik "
+"garbi daude."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+msgid "Uses Mozilla Location Service:"
+msgstr "Mozilla-ren kokalekua zerbitzua erabiltzen du:"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:238
+msgid "Privacy Policy"
+msgstr "Pribatutasunaren araua"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:274
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
+msgid "Privacy"
+msgstr "Pribatutasuna"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
+msgid "Location Services"
+msgstr "Kokapen-zerbitzuak"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
+msgid ""
+"Allows applications to determine your geographical location. An indication "
+"is shown when location services are in use."
+msgstr ""
+"Aplikazioek zure kokapen geografikoa zehaztea baimentzen du. Adierazle bat "
+"erakusten da kokapen-zerbitzuak erabiltzen ari direnean."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
+msgid "Automatic Problem Reporting"
+msgstr "Eman erroreen berri automatikoki"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
+msgid ""
+"Privacy controls can be changed at any time from the Settings application."
+msgstr ""
+"Pribatutasunaren kontrolak edozer unetan alda daitezke Ezarpenenetatik."
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"
 msgstr "Ez da eskualderik aurkitu"
 
-#: ../gnome-initial-setup/pages/region/gis-region-page.c:217
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
 msgid "Region"
 msgstr "Eskualdea"
@@ -495,48 +581,143 @@ msgstr "Aukeratu zure herrialdea edo eskualdea."
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
 #. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:330
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:328
 #, c-format
 msgid "_Start using %s"
 msgstr "_Hasi %s erabiltzen"
 
-#. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
-#. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:337
-#, c-format
-msgid ""
-"Thank you for choosing %s.\n"
-"We hope that you love it."
-msgstr ""
-"Eskerrik asko '%s' aukeratzeagatik.\n"
-"Gogokoa izatea itxaroten dugu."
-
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:363
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:358
 msgid "Ready to Go"
 msgstr "Hasteko prest"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
-msgid "You're all set!"
+msgid "You're ready to go!"
 msgstr "Dena konfiguratu duzu."
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#. Translators: "city, country"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:374
 #, c-format
-msgid ""
-"We think that your time zone is %s. Press Next to continue or search for a "
-"city to manually set the time zone."
-msgstr ""
-"Ordu-zona '%s' dela dirudi. Sakatu Hurrengoa jarraitzeko edo bilatu herri "
-"bat ordu-zona eskuz ezartzeko."
+msgctxt "timezone loc"
+msgid "%s, %s"
+msgstr "%s, %s"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#. Translators: UTC here means the Coordinated Universal Time.
+#. * %:::z will be replaced by the offset from UTC e.g. UTC+02
+#.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:411
+msgid "UTC%:::z"
+msgstr "UTC+02"
+
+#. Translators: This is the time format used in 12-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:415
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is the time format used in 24-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:418
+msgid "%R"
+msgstr "%R"
+
+#. Translators: "timezone (utc shift)"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:421
+#, c-format
+msgctxt "timezone map"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:566
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
 msgid "Time Zone"
 msgstr "Ordu-zona"
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid ""
+"The time zone will be set automatically if your location can be found. You "
+"can also search for a city to set it yourself."
+msgstr ""
+"Ordu-zona automatikoki konfiguratuko da zure kokalekua aurkitzen bada. Herri "
+"bat ere bila dezakezu zuk zeuk konfiguratzeko."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:3
 msgid "Please search for a nearby city"
 msgstr "Bilatu hurbileko herri bat"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:112
+#, c-format
+msgid ""
+"Proprietary software sources provide access to additional software, "
+"including web browsers and games. This software typically has restrictions "
+"on use and access to source code, and is not provided by %s."
+msgstr ""
+"Jabedun softwarearen iturburuak software gehigarria eskuratzea "
+"eskaintzen du, web arakatzaileak eta jokoak barne. Software mota "
+"honek murriztapenak eduki ohi ditu bai bere erabilpenean bai "
+"bere iturburuko kodea atzitzean, eta '%s'(e)k ez du hornitzen."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:245
+#| msgid "Input Sources"
+msgid "Software Sources"
+msgstr "Softwareen iturburuak"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:1
+msgid "Additional Software Sources"
+msgstr "Softwareen iturburu gehigarriak"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:2
+msgid "<a href=\"more\">Find out more…</a>"
+msgstr "<a href=\"more\">Bilatu gehiago…</a>"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:3
+msgid "Proprietary Software Sources"
+msgstr "Jabedun softwareen iturburuak"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:4
+msgid ""
+"Proprietary software typically has restrictions on how it can be used and on "
+"access to source code. This prevents anyone but the software owner from "
+"inspecting, improving or learning from its code."
+msgstr ""
+"Jabedun softwareak murriztapenak eduki ohi ditu bai bere erabilpenean bai "
+"bere iturburuko kodea atzitzean. Honek bere jabea ez den beste edonori "
+"kodea aztertzea, hobetzea edo ikastea debekatzen dio."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:5
+msgid ""
+"In contrast, Free Software can be freely run, copied, distributed, studied "
+"and modified."
+msgstr ""
+"Alderantziz, Softwarea Librea libreki exekutatu, kopiatu, banatu, ikertu eta"
+" eralda "
+"daiteke."
+
+#~ msgid "Are these the right details? You can change them if you want."
+#~ msgstr "Xehetasun egokiak dira? Nahi duzunean alda ditzakezu."
+
+#~ msgid "You can review your online accounts (and add others) after setup."
+#~ msgstr ""
+#~ "Zure lineako kontuak (eta beste batzuk gehitu) gainbegira ditzakezu "
+#~ "konfigurazioaren ondoren."
+
+#~ msgid ""
+#~ "Thank you for choosing %s.\n"
+#~ "We hope that you love it."
+#~ msgstr ""
+#~ "Eskerrik asko '%s' aukeratzeagatik.\n"
+#~ "Gogokoa izatea itxaroten dugu."
+
+#~ msgid ""
+#~ "We think that your time zone is %s. Press Next to continue or search for "
+#~ "a city to manually set the time zone."
+#~ msgstr ""
+#~ "Ordu-zona '%s' dela dirudi. Sakatu Hurrengoa jarraitzeko edo bilatu herri "
+#~ "bat ordu-zona eskuz ezartzeko."
+
+#~ msgid "Cancel"
+#~ msgstr "Utzi"
 
 #~ msgid "Your username cannot be changed after setup."
 #~ msgstr "Zure erabiltzaile-izena ezingo da aldatu konfigurazioaren ondoren."
@@ -556,9 +737,6 @@ msgstr "Bilatu hurbileko herri bat"
 
 #~ msgid "_Confirm password"
 #~ msgstr "_Berretsi pasahitza"
-
-#~ msgid "Choose a _password"
-#~ msgstr "Aukeratu _pasahitza"
 
 #~ msgctxt "Password strength"
 #~ msgid "Too short"
@@ -636,26 +814,17 @@ msgstr "Bilatu hurbileko herri bat"
 #~ msgid "Other"
 #~ msgstr "Bestelakoa"
 
-#~ msgid "Input Sources"
-#~ msgstr "Sarrerako iturburuak"
-
 #~ msgid "Add an Input Source"
 #~ msgstr "Gehitu sarrerako iturburu bat"
 
 #~ msgid "Search for a location"
 #~ msgstr "Bilatu kokaleku bat"
 
-#~ msgid "Location"
-#~ msgstr "Kokalekua"
-
 #~ msgid "_Determine your location automatically"
 #~ msgstr "_Zehaztu zure kokalekua automatikoki"
 
 #~ msgid "No network devices found."
 #~ msgstr "Ez da sareko interfazerik aurkitu."
-
-#~ msgid "Wireless Networks"
-#~ msgstr "Haririk gabeko sareak"
 
 #~ msgid "Thank You"
 #~ msgstr "Eskerrik asko"

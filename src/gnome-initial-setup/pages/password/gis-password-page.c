@@ -59,7 +59,7 @@ page_validate (GisPasswordPage *page)
 {
   GisPasswordPagePrivate *priv = gis_password_page_get_instance_private (page);
 
-  return priv->valid_confirm;
+  return priv->valid_confirm && priv->valid_password;
 }
 
 static void
@@ -74,15 +74,18 @@ gis_password_page_save_data (GisPage *gis_page)
   GisPasswordPage *page = GIS_PASSWORD_PAGE (gis_page);
   GisPasswordPagePrivate *priv = gis_password_page_get_instance_private (page);
   ActUser *act_user;
+  UmAccountMode account_mode;
   const gchar *password;
 
   if (gis_page->driver == NULL)
     return;
 
-  gis_driver_get_user_permissions (gis_page->driver, &act_user, &password);
+  account_mode = gis_driver_get_account_mode (gis_page->driver);
 
-  if (act_user == NULL) /* enterprise account */
+  if (account_mode == UM_ENTERPRISE)
     return;
+
+  gis_driver_get_user_permissions (gis_page->driver, &act_user, &password);
 
   password = gtk_entry_get_text (GTK_ENTRY (priv->password_entry));
 
@@ -127,18 +130,24 @@ validate (GisPasswordPage *page)
   gtk_level_bar_set_value (GTK_LEVEL_BAR (priv->password_strength), strength_level);
   gtk_label_set_label (GTK_LABEL (priv->password_explanation), long_hint);
 
+  if (strlen (password) > 0 && strength_level <= 0)
+    set_entry_validation_error (GTK_ENTRY (priv->password_entry), _("This is a weak password."));
+  else
+    clear_entry_validation_error (GTK_ENTRY (priv->password_entry));
+
+  gtk_label_set_label (GTK_LABEL (priv->confirm_explanation), "");
+  priv->valid_confirm = FALSE;
+
   priv->valid_password = (strength_level > 0);
   if (priv->valid_password)
     set_entry_validation_checkmark (GTK_ENTRY (priv->password_entry));
 
-  priv->valid_confirm = (strcmp (password, verify) == 0);
   if (strlen (password) > 0 && strlen (verify) > 0) {
+    priv->valid_confirm = (strcmp (password, verify) == 0);
     if (!priv->valid_confirm) {
-      gtk_label_set_label (GTK_LABEL (priv->confirm_explanation),
-                           _("The passwords do not match."));
+      gtk_label_set_label (GTK_LABEL (priv->confirm_explanation), _("The passwords do not match."));
     }
     else {
-      gtk_label_set_label (GTK_LABEL (priv->confirm_explanation), "");
       set_entry_validation_checkmark (GTK_ENTRY (priv->confirm_entry));
     }
   }
@@ -248,6 +257,7 @@ gis_password_page_constructed (GObject *object)
 static void
 gis_password_page_dispose (GObject *object)
 {
+  if (GIS_PAGE (object)->driver)
   g_signal_handlers_disconnect_by_func (GIS_PAGE (object)->driver,
                                         username_changed, object);
 

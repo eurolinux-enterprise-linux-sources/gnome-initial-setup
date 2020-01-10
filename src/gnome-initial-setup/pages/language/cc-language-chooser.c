@@ -75,6 +75,7 @@ typedef struct {
         gchar *locale_name;
         gchar *locale_current_name;
         gchar *locale_untranslated_name;
+        gchar *sort_key;
         gboolean is_extra;
 } LanguageWidget;
 
@@ -108,6 +109,7 @@ language_widget_free (gpointer data)
         g_free (widget->locale_name);
         g_free (widget->locale_current_name);
         g_free (widget->locale_untranslated_name);
+        g_free (widget->sort_key);
         g_free (widget);
 }
 
@@ -119,6 +121,7 @@ language_widget_new (const char *locale_id,
         gchar *locale_name, *locale_current_name, *locale_untranslated_name;
         gchar *language, *language_name;
         gchar *country, *country_name;
+        gchar *sort_key;
         LanguageWidget *widget = g_new0 (LanguageWidget, 1);
 
         if (!gnome_parse_locale (locale_id, &language, &country, NULL, NULL))
@@ -141,7 +144,7 @@ language_widget_new (const char *locale_id,
         label = gtk_label_new (language_name);
         gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
         gtk_label_set_max_width_chars (GTK_LABEL (label), 30);
-        gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
+        gtk_label_set_xalign (GTK_LABEL (label), 0);
         gtk_box_pack_start (GTK_BOX (widget->box), label, FALSE, FALSE, 0);
 
         widget->checkmark = gtk_image_new_from_icon_name ("object-select-symbolic", GTK_ICON_SIZE_MENU);
@@ -152,7 +155,7 @@ language_widget_new (const char *locale_id,
         gtk_label_set_ellipsize (GTK_LABEL (label), PANGO_ELLIPSIZE_END);
         gtk_label_set_max_width_chars (GTK_LABEL (label), 30);
         gtk_style_context_add_class (gtk_widget_get_style_context (label), "dim-label");
-        gtk_misc_set_alignment (GTK_MISC (label), 0, 0.5);
+        gtk_label_set_xalign (GTK_LABEL (label), 0);
         gtk_widget_set_halign (label, GTK_ALIGN_END);
         gtk_box_pack_end (GTK_BOX (widget->box), label, FALSE, FALSE, 0);
 
@@ -161,6 +164,10 @@ language_widget_new (const char *locale_id,
         widget->locale_current_name = locale_current_name;
         widget->locale_untranslated_name = locale_untranslated_name;
         widget->is_extra = is_extra;
+
+        sort_key = g_utf8_normalize (locale_name, -1, G_NORMALIZE_DEFAULT);
+        widget->sort_key = g_utf8_casefold (sort_key, -1);
+        g_free (sort_key);
 
         g_object_set_data_full (G_OBJECT (widget->box), "language-widget", widget,
                                 language_widget_free);
@@ -215,7 +222,6 @@ more_widget_new (void)
         gtk_style_context_add_class (gtk_widget_get_style_context (arrow), "dim-label");
         gtk_widget_set_margin_top (widget, 10);
         gtk_widget_set_margin_bottom (widget, 10);
-        gtk_misc_set_alignment (GTK_MISC (arrow), 0.5, 0.5);
         gtk_box_pack_start (GTK_BOX (widget), arrow, TRUE, TRUE, 0);
 
         return widget;
@@ -238,10 +244,6 @@ add_one_language (CcLanguageChooser *chooser,
 {
         CcLanguageChooserPrivate *priv = cc_language_chooser_get_instance_private (chooser);
 	GtkWidget *widget;
-
-	if (!g_str_has_suffix (locale_id, "utf8")) {
-		return;
-	}
 
 	if (!cc_common_language_has_font (locale_id)) {
 		return;
@@ -359,7 +361,7 @@ sort_languages (GtkListBoxRow *a,
         if (!la->is_extra && lb->is_extra)
                 return -1;
 
-        return strcmp (la->locale_name, lb->locale_name);
+        return strcmp (la->sort_key, lb->sort_key);
 }
 
 static void

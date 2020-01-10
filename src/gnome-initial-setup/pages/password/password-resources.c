@@ -134,7 +134,7 @@ static const SECTION union { const guint8 data[6463]; const double alignment; vo
   0x72, 0x6f, 0x70, 0x65, 0x72, 0x74, 0x79, 0x20, 
   0x6e, 0x61, 0x6d, 0x65, 0x3d, 0x22, 0x6d, 0x61, 
   0x72, 0x67, 0x69, 0x6e, 0x5f, 0x74, 0x6f, 0x70, 
-  0x22, 0x3e, 0x34, 0x30, 0x3c, 0x2f, 0x70, 0x72, 
+  0x22, 0x3e, 0x32, 0x34, 0x3c, 0x2f, 0x70, 0x72, 
   0x6f, 0x70, 0x65, 0x72, 0x74, 0x79, 0x3e, 0x3c, 
   0x70, 0x72, 0x6f, 0x70, 0x65, 0x72, 0x74, 0x79, 
   0x20, 0x6e, 0x61, 0x6d, 0x65, 0x3d, 0x22, 0x6d, 
@@ -855,17 +855,43 @@ GResource *password_get_resource (void)
 
 #define G_HAS_CONSTRUCTORS 1
 
-#define G_DEFINE_CONSTRUCTOR(_func) \
-  static void _func(void); \
-  static int _func ## _wrapper(void) { _func(); return 0; } \
-  __pragma(section(".CRT$XCU",read)) \
-  __declspec(allocate(".CRT$XCU")) static int (* _array ## _func)(void) = _func ## _wrapper;
+/* We do some weird things to avoid the constructors being optimized
+ * away on VS2015 if WholeProgramOptimization is enabled. First we
+ * make a reference to the array from the wrapper to make sure its
+ * references. Then we use a pragma to make sure the wrapper function
+ * symbol is always included at the link stage. Also, the symbols
+ * need to be extern (but not dllexport), even though they are not
+ * really used from another object file.
+ */
 
-#define G_DEFINE_DESTRUCTOR(_func) \
+/* We need to account for differences between the mangling of symbols
+ * for Win32 (x86) and x64 programs, as symbols on Win32 are prefixed
+ * with an underscore but symbols on x64 are not.
+ */
+#ifdef _WIN64
+#define G_MSVC_SYMBOL_PREFIX ""
+#else
+#define G_MSVC_SYMBOL_PREFIX "_"
+#endif
+
+#define G_DEFINE_CONSTRUCTOR(_func) G_MSVC_CTOR (_func, G_MSVC_SYMBOL_PREFIX)
+#define G_DEFINE_DESTRUCTOR(_func) G_MSVC_DTOR (_func, G_MSVC_SYMBOL_PREFIX)
+
+#define G_MSVC_CTOR(_func,_sym_prefix) \
   static void _func(void); \
-  static int _func ## _constructor(void) { atexit (_func); return 0; } \
+  extern int (* _array ## _func)(void);              \
+  int _func ## _wrapper(void) { _func(); g_slist_find (NULL,  _array ## _func); return 0; } \
+  __pragma(comment(linker,"/include:" _sym_prefix # _func "_wrapper")) \
   __pragma(section(".CRT$XCU",read)) \
-  __declspec(allocate(".CRT$XCU")) static int (* _array ## _func)(void) = _func ## _constructor;
+  __declspec(allocate(".CRT$XCU")) int (* _array ## _func)(void) = _func ## _wrapper;
+
+#define G_MSVC_DTOR(_func,_sym_prefix) \
+  static void _func(void); \
+  extern int (* _array ## _func)(void);              \
+  int _func ## _constructor(void) { atexit (_func); g_slist_find (NULL,  _array ## _func); return 0; } \
+   __pragma(comment(linker,"/include:" _sym_prefix # _func "_constructor")) \
+  __pragma(section(".CRT$XCU",read)) \
+  __declspec(allocate(".CRT$XCU")) int (* _array ## _func)(void) = _func ## _constructor;
 
 #elif defined (_MSC_VER)
 

@@ -53,6 +53,8 @@ struct _GisNetworkPagePrivate {
   GtkWidget *scrolled_window;
   GtkWidget *no_network_label;
   GtkWidget *no_network_spinner;
+  GtkWidget *turn_on_label;
+  GtkWidget *turn_on_switch;
 
   NMClient *nm_client;
   NMRemoteSettings *nm_settings;
@@ -322,12 +324,8 @@ static gboolean
 refresh_again (gpointer user_data)
 {
   GisNetworkPage *page = GIS_NETWORK_PAGE (user_data);
-  GisNetworkPagePrivate *priv = gis_network_page_get_instance_private (page);
-
-  priv->refresh_timeout_id = 0;
-
   refresh_wireless_list (page);
-  return FALSE;
+  return G_SOURCE_REMOVE;
 }
 
 static void
@@ -345,6 +343,12 @@ refresh_wireless_list (GisNetworkPage *page)
 
   g_assert (NM_IS_DEVICE_WIFI (priv->nm_device));
 
+  if (priv->refresh_timeout_id != 0)
+    {
+      g_source_remove (priv->refresh_timeout_id);
+      priv->refresh_timeout_id = 0;
+    }
+
   active_ap = nm_device_wifi_get_active_access_point (NM_DEVICE_WIFI (priv->nm_device));
 
   children = gtk_container_get_children (GTK_CONTAINER (priv->network_list));
@@ -355,16 +359,35 @@ refresh_wireless_list (GisNetworkPage *page)
   aps = nm_device_wifi_get_access_points (NM_DEVICE_WIFI (priv->nm_device));
 
   if (aps == NULL || aps->len == 0) {
-    gtk_label_set_text (GTK_LABEL (priv->no_network_label), _("Checking for available wireless networks"));
-    gtk_widget_show (priv->no_network_spinner);
-    gtk_widget_show (priv->no_network_label);
+    gboolean enabled, hw_enabled;
+
+    enabled = nm_client_wireless_get_enabled (priv->nm_client);
+    hw_enabled = nm_client_wireless_hardware_get_enabled (priv->nm_client);
+
+    if (!enabled || !hw_enabled) {
+      gtk_label_set_text (GTK_LABEL (priv->no_network_label), _("Wireless networking is disabled"));
+      gtk_widget_show (priv->no_network_label);
+      gtk_widget_hide (priv->no_network_spinner);
+
+      gtk_widget_set_visible (priv->turn_on_label, hw_enabled);
+      gtk_widget_set_visible (priv->turn_on_switch, hw_enabled);
+    } else {
+      gtk_label_set_text (GTK_LABEL (priv->no_network_label), _("Checking for available wireless networks"));
+      gtk_widget_show (priv->no_network_spinner);
+      gtk_widget_show (priv->no_network_label);
+      gtk_widget_hide (priv->turn_on_label);
+      gtk_widget_hide (priv->turn_on_switch);
+    }
+
     gtk_widget_hide (priv->scrolled_window);
     priv->refresh_timeout_id = g_timeout_add_seconds (1, refresh_again, page);
-
     goto out;
+
   } else {
     gtk_widget_hide (priv->no_network_spinner);
     gtk_widget_hide (priv->no_network_label);
+    gtk_widget_hide (priv->turn_on_label);
+    gtk_widget_hide (priv->turn_on_switch);
     gtk_widget_show (priv->scrolled_window);
   }
 
@@ -539,6 +562,10 @@ gis_network_page_constructed (GObject *object)
 
   priv->nm_client = nm_client_new ();
 
+  g_object_bind_property (priv->nm_client, "wireless-enabled",
+                          priv->turn_on_switch, "active",
+                          G_BINDING_BIDIRECTIONAL | G_BINDING_SYNC_CREATE);
+
   devices = nm_client_get_devices (priv->nm_client);
   if (devices) {
     for (i = 0; i < devices->len; i++) {
@@ -626,6 +653,8 @@ gis_network_page_class_init (GisNetworkPageClass *klass)
   gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisNetworkPage, scrolled_window);
   gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisNetworkPage, no_network_label);
   gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisNetworkPage, no_network_spinner);
+  gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisNetworkPage, turn_on_label);
+  gtk_widget_class_bind_template_child_private (GTK_WIDGET_CLASS (klass), GisNetworkPage, turn_on_switch);
 
   page_class->page_id = PAGE_ID;
   page_class->locale_changed = gis_network_page_locale_changed;

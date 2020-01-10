@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "initial-setup&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-02-26 19:54+0000\n"
-"PO-Revision-Date: 2015-02-05 00:31+0000\n"
+"POT-Creation-Date: 2015-02-26 19:55+0000\n"
+"PO-Revision-Date: 2015-03-02 12:01+0100\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "Language: bs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2015-02-05 06:49+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Generator: Poedit 1.7.4\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
 #: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
@@ -44,11 +44,11 @@ msgstr "_Prethodno"
 msgid "_Cancel"
 msgstr "_Otkaži"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:194
+#: ../gnome-initial-setup/gnome-initial-setup.c:196
 msgid "Force existing user mode"
 msgstr "Forsiraj postojeći korisnički mod"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:203
+#: ../gnome-initial-setup/gnome-initial-setup.c:205
 msgid "- GNOME initial setup"
 msgstr "GNOME Poćetna postavka"
 
@@ -470,6 +470,49 @@ msgstr "Jačina: Dobra"
 msgctxt "Password strength"
 msgid "Strength: High"
 msgstr "Jačina: Visoka"
+
+#. Translators: the parameter here is the nami of a distribution,
+#. * liki "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:109
+#, c-format
+msgid ""
+"Sending reports of technical problems helps us to improve %s. Reports are "
+"sent anonymously and are scrubbed of personal data."
+msgstr ""
+"Slanje izvještaja o tehničkim problemima nam pomaže da se poboljša %s. "
+"Izvještaji se anonimno šalju bez ličnih podataka."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:239
+msgid "Privacy Policy"
+msgstr "Polica privatnosti"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
+msgid "Privacy"
+msgstr "Privatnost"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
+msgid "Privacy controls can be changed at any time from Settings."
+msgstr ""
+"Kontrole privatnosti mogu se mijenjati u bilo koje vrijeme od Postavke."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
+msgid "Location Services"
+msgstr "Usluge vezane za Lokaciju"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
+msgid ""
+"Allows applications to determine your geographical location. An indication "
+"is shown when location services are in use."
+msgstr ""
+"Omogućava aplikaciji da utvrdi vaš geografski položaj. Indikator se "
+"prikazuje kada su u upotrebi usluge lokacije."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
+msgid "Automatic Problem Reporting"
+msgstr "Automatsko javljanje problema"
 
 #: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"

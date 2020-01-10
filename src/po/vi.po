@@ -1,16 +1,17 @@
 # Vietnamese translation for gnome-initial-setup.
-# Copyright © 2014 GNOME i18n Project for Vietnamese.
+# Bản dịch tiếng Việt dành cho gnome-initial-setup.
+# Copyright © 2016 GNOME i18n Project for Vietnamese.
 # This file is distributed under the same license as the gnome-initial-setup package.
 # Nguyễn Thái Ngọc Duy <pclouds@gmail.com>, 2012-2013.
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2014.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-initial-setup master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "initial-setup&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-12 19:45+0000\n"
-"PO-Revision-Date: 2014-12-13 15:12+0700\n"
+"POT-Creation-Date: 2016-09-04 21:41+0000\n"
+"PO-Revision-Date: 2016-09-05 08:45+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <gnome-vi-list@gnome.org>\n"
 "Language: vi\n"
@@ -18,58 +19,59 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
 #: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
 msgid "Initial Setup"
 msgstr "Cài đặt lần đầu"
 
-#: ../gnome-initial-setup/gis-assistant.c:384
+#: ../gnome-initial-setup/gis-assistant.c:396
 msgid "_Next"
 msgstr "_Tiếp"
 
-#: ../gnome-initial-setup/gis-assistant.c:385
+#: ../gnome-initial-setup/gis-assistant.c:397
 msgid "_Accept"
 msgstr "_Chấp nhận"
 
-#: ../gnome-initial-setup/gis-assistant.c:386
+#: ../gnome-initial-setup/gis-assistant.c:398
 msgid "_Skip"
 msgstr "_Bỏ qua"
 
-#: ../gnome-initial-setup/gis-assistant.c:387
+#: ../gnome-initial-setup/gis-assistant.c:399
 msgid "_Previous"
 msgstr "T_rước"
 
-#: ../gnome-initial-setup/gis-assistant.c:388
+#: ../gnome-initial-setup/gis-assistant.c:400
 msgid "_Cancel"
 msgstr "T_hôi"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:194
+#: ../gnome-initial-setup/gnome-initial-setup.c:199
 msgid "Force existing user mode"
 msgstr "Ép buộc chế độ người dùng cũ"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:203
+#: ../gnome-initial-setup/gnome-initial-setup.c:205
 msgid "- GNOME initial setup"
 msgstr "- Cài đặt GNOME lần đầu"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page.c:231
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:242
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
 msgid "About You"
-msgstr "Về bạn"
+msgstr "Vài nét về bạn"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:180
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:182
 msgid "Failed to register account"
 msgstr "Gặp lỗi khi đăng ký tài khoản"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:374
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:376
 msgid "No supported way to authenticate with this domain"
 msgstr "Không có cách xác thực được hỗ trợ nào với miền này"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:414
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:416
 msgid "Failed to join domain"
 msgstr "Gặp lỗi khi gia nhập vào miền"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:482
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:484
 msgid "Failed to log into domain"
 msgstr "Gặp lỗi khi đăng nhập vào miền"
 
@@ -87,7 +89,7 @@ msgstr ""
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
 msgid "_Domain"
-msgstr "_Miền"
+msgstr "Tên _miền"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
@@ -133,18 +135,21 @@ msgstr "Tên _quản trị viên"
 msgid "Administrator Password"
 msgstr "Mật khẩu quản trị"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:203
-msgid "Are these the right details? You can change them if you want."
-msgstr "Những thông tin chi tiết đã đúng chưa? Bạn có thể sửa chúng nếu muốn."
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:202
+msgid "Please check the name and username. You can choose a picture too."
+msgstr "Vui lòng kiểm tra tên và tài khoản. Bạn còn có thể chọn một ảnh chụp."
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:404
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:403
 msgid "We need a few details to complete setup."
 msgstr "Chúng tôi cần một ít thông tin chi tiết để hoàn tất việc cài đặt."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
 msgid "Avatar image"
 msgstr "Ánh Avatar"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "Please provide a name and username. You can choose a picture too."
+msgstr "Vui lòng cung cấp tên và tài khoản. Bạn còn có thể chọn một ảnh chụp."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
 msgid "_Full Name"
@@ -215,24 +220,20 @@ msgstr "Đây sẽ là tên thư mục cá nhân của bạn và không thể th
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
 msgid "License Agreements"
-msgstr "Thoả thuận giấy phép"
+msgstr "Thỏa thuận giấy phép"
 
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
 msgid ""
 "I have _agreed to the terms and conditions in this end user license "
 "agreement."
 msgstr ""
-"Tôi đồ_ng ý với những điều khoản trong thoả thuận giấy phép người dùng cuối"
+"Tôi đồ_ng ý với những điều khoản trong thỏa thuận giấy phép người dùng cuối"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
 msgid "Add Account"
 msgstr "Thêm tài khoản"
 
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
-msgid "Cancel"
-msgstr "Thôi"
-
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:336
 msgid "Online Accounts"
 msgstr "Tài khoản trực tuyến"
 
@@ -242,24 +243,24 @@ msgstr "Kết nối tài khoản trực tuyến của bạn"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
 msgid ""
-"Connecting your accounts will allow you to easily access your email, online "
-"calendar, contacts, documents and photos."
+"Connect your accounts to easily access your email, online calendar, "
+"contacts, documents and photos."
 msgstr ""
 "Kết nối tài khoản của bạn sẽ cho phép bạn dễ dàng truy cập đến thư, lịch "
 "trực tuyến, liên lạc, tài liệu và ảnh."
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
-msgid "You can review your online accounts (and add others) after setup."
+msgid ""
+"Accounts can be added and removed at any time from the Settings application."
 msgstr ""
-"Bạn có thể xem xét lại các tài khoản trực tuyến (và có thể thêm) sau khi cài "
-"đặt."
+"Các tài khoản có thể được thêm hay gỡ bỏ bất kỳ lúc nào từ ứng dụng cài đặt."
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:240
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
 msgid "Preview"
 msgstr "Xem trước"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:299
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:212
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:300
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:219
 #: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
 msgid "More…"
 msgstr "Còn nữa…"
@@ -267,11 +268,11 @@ msgstr "Còn nữa…"
 #. Translators: a search for input methods or keyboard layouts
 #. * did not yield any results
 #.
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:320
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:322
 msgid "No inputs found"
 msgstr "Không tìm đầu vào nào"
 
-#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:355
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:363
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
 msgid "Typing"
 msgstr "Nhập liệu"
@@ -280,28 +281,36 @@ msgstr "Nhập liệu"
 msgid "Select your keyboard layout or an input method."
 msgstr "Chọn bố cục bàn phím hay phương thức nhập liệu."
 
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:229
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:235
 msgid "No languages found"
 msgstr "Không tìm thấy ngôn ngữ"
 
-#: ../gnome-initial-setup/pages/language/gis-language-page.c:282
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:292
 msgid "Welcome"
 msgstr "Chào mừng bạn"
 
-#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+#. Translators: This is meant to be a warm, engaging welcome message,
+#. * like greeting somebody at the door. If the exclamation mark is not
+#. * suitable for this in your language you may replace it.
+#.
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:123
 msgid "Welcome!"
 msgstr "Chào mừng bạn!"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:309
 msgctxt "Wireless access point"
 msgid "Other…"
 msgstr "Khác…"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:368
+msgid "Wireless networking is disabled"
+msgstr "Mạng không dây bị tắt"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:375
 msgid "Checking for available wireless networks"
 msgstr "Đang kiểm xem có mạng không dây nào dùng được không"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:641
 msgid "Network"
 msgstr "Mạng"
 
@@ -323,11 +332,19 @@ msgstr ""
 msgid "No wireless available"
 msgstr "Không có mạng không dây dùng được"
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:138
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:4
+msgid "Turn On"
+msgstr "Bật lên"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:134
+msgid "This is a weak password."
+msgstr "Đây là mật khẩu yếu."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:148
 msgid "The passwords do not match."
 msgstr "Mật khẩu không khớp nhau."
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:260
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:270
 msgid "Password"
 msgstr "Mật khẩu"
 
@@ -350,87 +367,107 @@ msgstr "Mật khẩu mới cần phải khác với mật khẩu cũ."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:83
 msgctxt "Password hint"
-msgid "Try changing some letters and numbers."
-msgstr "Hãy thay đổi một số chữ cái và chữ số."
+msgid ""
+"This password is very similar to your last one. Try changing some letters "
+"and numbers."
+msgstr ""
+"Mật khẩu vẫn rất giống với cái bạn đã nhập lần trước. Hãy thay đổi một số "
+"chữ cái và chữ số."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:85
 #: ../gnome-initial-setup/pages/password/pw-utils.c:93
 msgctxt "Password hint"
-msgid "Try changing the password a bit more."
-msgstr "Hãy thay đổi mật khẩu một chút nữa."
+msgid ""
+"This password is very similar to your last one. Try changing the password a "
+"bit more."
+msgstr ""
+"Mật khẩu vẫn rất giống với cái bạn đã nhập lần trước. Hãy thay đổi mật khẩu "
+"một chút nữa."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:87
 msgctxt "Password hint"
-msgid "A password without your user name would be stronger."
-msgstr "Mật khẩu mạnh hơn nếu không chứa tên của bạn."
+msgid ""
+"This is a weak password. A password without your user name would be stronger."
+msgstr "Đây là mật khẩu yếu. Mật khẩu mạnh hơn nếu không chứa tên của bạn."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:89
 msgctxt "Password hint"
-msgid "Try to avoid using your name in the password."
-msgstr "Không nên dùng tên của bạn làm mật khẩu."
+msgid "This is a weak password. Try to avoid using your name in the password."
+msgstr "Đây là mật khẩu yếu. Không nên dùng tên của bạn làm mật khẩu."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:91
 msgctxt "Password hint"
-msgid "Try to avoid some of the words included in the password."
-msgstr "Tránh sử dụng mật khẩu có chứa một số từ."
+msgid ""
+"This is a weak password. Try to avoid some of the words included in the "
+"password."
+msgstr "Đây là mật khẩu yếu. Tránh sử dụng mật khẩu có chứa một số từ."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:95
 msgctxt "Password hint"
-msgid "Try to avoid common words."
-msgstr "Hãy tránh dùng các từ phổ biến."
+msgid "This is a weak password. Try to avoid common words."
+msgstr "Đây là mật khẩu yếu. Hãy tránh dùng các từ phổ biến."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:97
 msgctxt "Password hint"
-msgid "Try to avoid reordering existing words."
-msgstr "Tránh đảo ngược thứ tự chữ cái của một từ cụ thể"
+msgid "This is a weak password. Try to avoid reordering existing words."
+msgstr "Đây là mật khẩu yếu. Tránh đảo ngược thứ tự chữ cái của một từ cụ thể"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:99
 msgctxt "Password hint"
-msgid "Try to use more numbers."
-msgstr "Hãy dùng thêm một số chữ số."
+msgid "This is a weak password. Try to use more numbers."
+msgstr "Đây là mật khẩu yếu. Hãy dùng thêm một số chữ số."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:101
 msgctxt "Password hint"
-msgid "Try to use more uppercase letters."
-msgstr "Hãy dùng thêm các chữ HOA."
+msgid "This is a weak password. Try to use more uppercase letters."
+msgstr "Đây là mật khẩu yếu. Hãy dùng thêm các chữ HOA."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:103
 msgctxt "Password hint"
-msgid "Try to use more lowercase letters."
-msgstr "Nên dùng nhiều chữ cái thường hơn."
+msgid "This is a weak password. Try to use more lowercase letters."
+msgstr "Đây là mật khẩu yếu. Nên dùng nhiều chữ cái thường hơn."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:105
 msgctxt "Password hint"
-msgid "Try to use more special characters, like punctuation."
-msgstr "Hãy dùng nhiều ký tự đặc biệt hơn nữa, như là dấu chấm câu chẳng hạn."
+msgid ""
+"This is a weak password. Try to use more special characters, like "
+"punctuation."
+msgstr ""
+"Đây là mật khẩu yếu. Hãy dùng nhiều ký tự đặc biệt hơn nữa, như là dấu chấm "
+"câu chẳng hạn."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:107
 msgctxt "Password hint"
-msgid "Try to use a mixture of letters, numbers and punctuation."
-msgstr "Hãy trộn lẫn chữ cái, chữ số và dấu chấm câu."
+msgid ""
+"This is a weak password. Try to use a mixture of letters, numbers and "
+"punctuation."
+msgstr "Đây là mật khẩu yếu. Hãy trộn lẫn chữ cái, chữ số và dấu chấm câu."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:109
 msgctxt "Password hint"
-msgid "Try to avoid repeating the same character."
-msgstr "Tránh lặp lại cùng một ký tự."
+msgid "This is a weak password. Try to avoid repeating the same character."
+msgstr "Đây là mật khẩu yếu. Tránh lặp lại cùng một ký tự."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:111
 msgctxt "Password hint"
 msgid ""
-"Try to avoid repeating the same type of character: you need to mix up "
-"letters, numbers and punctuation."
+"This is a weak password. Try to avoid repeating the same type of character: "
+"you need to mix up letters, numbers and punctuation."
 msgstr ""
-"Không được lặp cùng một kiểu chữ: bạn cần trộn lẫn chữ cái, số và dấu chấm."
+"Đây là mật khẩu yếu. Không được lặp cùng một kiểu chữ: bạn cần trộn lẫn chữ "
+"cái, số và dấu chấm."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:113
 msgctxt "Password hint"
-msgid "Try to avoid sequences like 1234 or abcd."
-msgstr "Hãy tránh sử dụng các chuỗi kế tiếp nhau như là 1234 hay abcd."
+msgid "This is a weak password. Try to avoid sequences like 1234 or abcd."
+msgstr ""
+"Đây là mật khẩu yếu. Hãy tránh sử dụng các chuỗi kế tiếp nhau như là 1234 "
+"hay abcd."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:115
 msgctxt "Password hint"
-msgid "Try to add more letters, numbers and symbols."
-msgstr "Hãy thử thêm các chữ cái, chữ số và ký hiệu."
+msgid "This is a weak password. Try to add more letters, numbers and symbols."
+msgstr "Đây là mật khẩu yếu. Hãy thử thêm các chữ cái, chữ số và ký hiệu."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:117
 msgctxt "Password hint"
@@ -471,6 +508,55 @@ msgctxt "Password strength"
 msgid "Strength: High"
 msgstr "Độ mạnh: Cao"
 
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:109
+#, c-format
+msgid ""
+"Sending reports of technical problems helps us to improve %s. Reports are "
+"sent anonymously and are scrubbed of personal data."
+msgstr ""
+"Gửi báo cáo các trục trặc kỹ thuật để giúp chúng tôi nâng cấp %s. Báo cáo "
+"được gửi nặc danh và được xóa các dữ liệu cá nhân."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+msgid "Uses Mozilla Location Service:"
+msgstr "Dùng dịch vụ vị trí Mozilla"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:238
+msgid "Privacy Policy"
+msgstr "Chính sách riêng tư"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:274
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
+msgid "Privacy"
+msgstr "Riêng tư"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
+msgid "Location Services"
+msgstr "Dịch vụ vị trí"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
+msgid ""
+"Allows applications to determine your geographical location. An indication "
+"is shown when location services are in use."
+msgstr ""
+"Cho phép các ứng dụng dò tìm vị trí địa lý của bạn. Và hiển thị chỉ thị các "
+"dịch vụ vị trí đang được dùng."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
+msgid "Automatic Problem Reporting"
+msgstr "Tự động báo cáo trục trặc"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
+msgid ""
+"Privacy controls can be changed at any time from the Settings application."
+msgstr ""
+"Điều kiển chính sách riêng tư được thay đổi bất cứ lúc nào từ phần cài đặt."
+
 #: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"
 msgstr "Không tìm thấy vùng miền nào"
@@ -482,53 +568,146 @@ msgstr "Vùng"
 
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
 msgid "Choose your country or region."
-msgstr "Chọn nước hay vùng địa lý của bạn"
+msgstr "Chọn nước hay vùng địa lý của bạn."
 
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
 #. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:327
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:328
 #, c-format
 msgid "_Start using %s"
 msgstr "_Bắt đầu dùng %s"
 
-#. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
-#. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:334
-#, c-format
-msgid ""
-"Thank you for choosing %s.\n"
-"We hope that you love it."
-msgstr ""
-"Cảm ơn bạn vì đã chọn %s.\n"
-"Chúng tôi hi vọng rằng bạn thích nó."
-
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:360
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:358
 msgid "Ready to Go"
 msgstr "Đã sẵn sàng lên đường"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
-msgid "You're all set!"
-msgstr "Bạn đã đặt xong!"
+msgid "You're ready to go!"
+msgstr "Bạn đã sẵn sàng lên đường!"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#. Translators: "city, country"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:374
 #, c-format
-msgid ""
-"We think that your time zone is %s. Press Next to continue or search for a "
-"city to manually set the time zone."
-msgstr ""
-"Chúng tôi nghĩ rằng múi giờ của bạn là %s. Hãy nhấn “Tiếp” để tiếp tục hay "
-"tìm một thành phố để đặt múi giờ bằng tay."
+msgctxt "timezone loc"
+msgid "%s, %s"
+msgstr "%s, %s"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#. Translators: UTC here means the Coordinated Universal Time.
+#. * %:::z will be replaced by the offset from UTC e.g. UTC+02
+#.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:411
+msgid "UTC%:::z"
+msgstr "UTC%:::z"
+
+#. Translators: This is the time format used in 12-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:415
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is the time format used in 24-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:418
+msgid "%R"
+msgstr "%R"
+
+#. Translators: "timezone (utc shift)"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:421
+#, c-format
+msgctxt "timezone map"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:566
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
 msgid "Time Zone"
 msgstr "Múi giờ"
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid ""
+"The time zone will be set automatically if your location can be found. You "
+"can also search for a city to set it yourself."
+msgstr ""
+"Sẽ đặt múi giờ một cách tự động nếu không thể tìm thấy vị trí của bạn. Bạn "
+"còn có thể tìm thành phố để tự mình đặt nó."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:3
 msgid "Please search for a nearby city"
 msgstr "Vui lòng tìm thành phố gần đây"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:112
+#, c-format
+msgid ""
+"Proprietary software sources provide access to additional software, "
+"including web browsers and games. This software typically has restrictions "
+"on use and access to source code, and is not provided by %s."
+msgstr ""
+"Nguồn phần mềm độc quyền cung cấp khả năng truy cập vào phần mềm bổ sung, "
+"bao gồm trình duyệt web và các trò chơi. Những phần mềm này bị hạn chế việc "
+"sử dụng và truy cập vào mã nguồn, và nó không được cung cấp bởi %s."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:245
+msgid "Software Sources"
+msgstr "Nguồn phần mềm"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:1
+msgid "Additional Software Sources"
+msgstr "Các nguồn phần mềm bổ sung"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:2
+msgid "<a href=\"more\">Find out more…</a>"
+msgstr "<a href=\"more\">Tìm thêm nữa…</a>"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:3
+msgid "Proprietary Software Sources"
+msgstr "Nguồn phần mềm độc quyền"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:4
+msgid ""
+"Proprietary software typically has restrictions on how it can be used and on "
+"access to source code. This prevents anyone but the software owner from "
+"inspecting, improving or learning from its code."
+msgstr ""
+"Phần mềm độc quyền thường có hạn chế việc sử dụng và truy cập vào mã nguồn. "
+"Điều này ngăn trở mọi người không sở hữu phần mềm khỏi việc điều tra, cải "
+"tiến hay học hỏi từ mã nguồn của nó."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:5
+msgid ""
+"In contrast, Free Software can be freely run, copied, distributed, studied "
+"and modified."
+msgstr ""
+"Đối lập với điều đó, phần mềm tự do có thể tự do chạy, sao chép, phân phối, "
+"nghiên cứu và sửa đổi."
+
+#~ msgid "Are these the right details? You can change them if you want."
+#~ msgstr ""
+#~ "Những thông tin chi tiết đã đúng chưa? Bạn có thể sửa chúng nếu muốn."
+
+#~ msgid "You can review your online accounts (and add others) after setup."
+#~ msgstr ""
+#~ "Bạn có thể xem xét lại các tài khoản trực tuyến (và có thể thêm) sau khi "
+#~ "cài đặt."
+
+#~ msgid ""
+#~ "Thank you for choosing %s.\n"
+#~ "We hope that you love it."
+#~ msgstr ""
+#~ "Cảm ơn bạn vì đã chọn %s.\n"
+#~ "Chúng tôi hi vọng rằng bạn thích nó."
+
+#~ msgid ""
+#~ "We think that your time zone is %s. Press Next to continue or search for "
+#~ "a city to manually set the time zone."
+#~ msgstr ""
+#~ "Chúng tôi nghĩ rằng múi giờ của bạn là %s. Hãy nhấn “Tiếp” để tiếp tục "
+#~ "hay tìm một thành phố để đặt múi giờ bằng tay."
+
+#~ msgid "Cancel"
+#~ msgstr "Thôi"
 
 #~ msgid "_Back"
 #~ msgstr "_Lùi"
@@ -573,16 +752,16 @@ msgstr "Vui lòng tìm thành phố gần đây"
 #~ msgstr "Gặp lỗi khi tạo tài khoản"
 
 #~ msgid "Error removing account"
-#~ msgstr "Gặp lỗi khi xoá tài khoản"
+#~ msgstr "Gặp lỗi khi xóa tài khoản"
 
 #~ msgid "Are you sure you want to remove the account?"
-#~ msgstr "Bạn có chắc muốn xoá tài khoản không?"
+#~ msgstr "Bạn có chắc muốn xóa tài khoản không?"
 
 #~ msgid "This will not remove the account on the server."
-#~ msgstr "Hành động này không xoá tài khoản trên máy chủ."
+#~ msgstr "Hành động này không xóa tài khoản trên máy chủ."
 
 #~ msgid "_Remove"
-#~ msgstr "_Xoá"
+#~ msgstr "_Xóa"
 
 #~ msgid "Connect to your existing data in the cloud"
 #~ msgstr "Kết nối đến dữ liệu của bạn trên mây"
@@ -606,7 +785,7 @@ msgstr "Vui lòng tìm thành phố gần đây"
 #~ msgstr "Chuyển nguồn nhập xuống"
 
 #~ msgid "Input Source Settings"
-#~ msgstr "Thiết lập nguồn nhập"
+#~ msgstr "Cài đặt nguồn nhập"
 
 #~ msgid "Show Keyboard Layout"
 #~ msgstr "Hiện bố trí bàn phím"
@@ -620,17 +799,11 @@ msgstr "Vui lòng tìm thành phố gần đây"
 #~ msgid "Search for a location"
 #~ msgstr "Tìm vị trí"
 
-#~ msgid "Location"
-#~ msgstr "Vị trí"
-
 #~ msgid "_Determine your location automatically"
 #~ msgstr "_Xác định tự động vị trí của bạn"
 
 #~ msgid "No network devices found."
 #~ msgstr "Không tìm thấy thiết bị mạng."
-
-#~ msgid "Wireless Networks"
-#~ msgstr "Mạng không dây"
 
 #~ msgid "Thank You"
 #~ msgstr "Cám ơn bạn"
@@ -639,7 +812,7 @@ msgstr "Vui lòng tìm thành phố gần đây"
 #~ msgstr "Máy tính đã sẵn sàng để sử dụng."
 
 #~ msgid "You may change these options at any time in Settings."
-#~ msgstr "Bạn có thể thay đổi tuỳ chọn bất kỳ lúc nào thông qua Thiết lập."
+#~ msgstr "Bạn có thể thay đổi tùy chọn bất kỳ lúc nào thông qua phần cài đặt."
 
 #~ msgid "Create Local Account"
 #~ msgstr "Tạo tài khoản cục bộ"
@@ -657,7 +830,7 @@ msgstr "Vui lòng tìm thành phố gần đây"
 #~ msgstr "Chọn cách đăng nhập"
 
 #~ msgid "Remove"
-#~ msgstr "Xoá"
+#~ msgstr "Xóa"
 
 #~ msgid "English"
 #~ msgstr "Tiếng Anh"

@@ -1,22 +1,270 @@
-3.14.4
+3.22.1
 
- * Deal gracefully with absence of goa
+ * Clarify privacy policy links
  * Translation updates
-  Bosnian
+
+3.22.0
+
+ * Translation updates
+
+3.21.92
+
+ * Port timezone page to use new Geoclue convencience library
+ * Minor UI fixes on privacy page
+ * Correct license of um-realm-manager
+ * Translation updates
+
+3.21.91
+
+ * Better handling of small screens
+ * Add a page to configure software sources
+ * Translation updates
+  British English
+  French
+  Icelandic
+  Indonesian
+  Norwegian bokmål
+  Occitan
+  Polish
+  Portuguese
+  Slovenian
+  Spanish
+
+3.20.1
+
+ * Translation updates
+  Bulgarian
+  Friulian
+  Persian
+  Vietnamese
+
+3.20.0
+
+ * Translation updates
+
+3.19.92
+
+ * Add a translator comment for 'Welcome!'
+ * Translation updates
+  Finnish
+  Friulian
+  Hebrew
+  Hungarian
+  Korean
+  Latvian
+  Lithuanian
+  Occitan
+  Russian
+  Slovenian
+  Ukrainian
+
+
+3.19.91
+
+ * Visual refinements on online accounts page
+ * Minor tweaks on the privacy and accounts pages
+ * Ensure keyring gets created for new users
+ * Translation updates
+  Catalan
+  Chinese (Taiwan)
+  Czech
+  Galician
+  German
+  Greek
+  Kazakh
+  Polish
+  Punjabi
+  Serbian
+  Slovak
+  Spanish
+  Swedish
+  Vietnamese
+
+3.19.90
+
+ * Visual refresh for the 'ready to go' page
+
+3.19.2
+
+ * Fix timezone lookup after locale change
+ * Handle screen resolution changes
+ * Design updates to the timezone page
+ * Don't create a keyring for existing users
+ * Translation updates
+  Bulgarian
+  Chinese (Taiwan)
+  German
+  Hungarian
+  Latvian
+  Lithuanian
+  Polish
+  Slovak
+  Vietnamese
+
+3.19.1
+
+ * Ensure locale region matches the selected language
+ * Sort languages case-insensitively
+ * Translation updates
+  Basque
+  Irish
+  Serbian
+  Serbian Latin
+  Vietnamese
+
+3.18.0
+
+ * Translation updates
+  Danish
+  Dutch
+  French
+  Indonesian
+  Italian
+  Japanese
+  Kazakh
+  Korean
+  Lithuanian
+  Persian
+
+3.17.91
+
+ * Go back to enforcing password policy (#754213)
+ * Translation updates
+  Chinese (Taiwan)
+  Galician
+  Polish
+  Swedish
+
+3.17.90
+
+ * Detect enterprise accounts without heuristic (#752980)
+ * Don't change keyring password explicitly (#752980)
+ * Fix problem with restarting geoclue client
+ * Translation updates
+  Norwegian bokmål
+  Brazilian Portuguese
+
+3.17.4
+
+ * Create keyring initially unencrypted
+ * Password page refinements (#735578)
+ * Make policy dialog resize properly (#749426)
+ * Use correct key for privacy policy (#749545)
+ * Handle disabled network better
+ * Avoid a crash on language change (#752134)
+ * Make gnome-shell launch first
+ * AVoid a race in launching welcome tour
+ * Translation updates
+  Catalan
+  Czech
+  Friulian
+  German
+  Greek
+  Hebrew
+  Hungarian
+  Occitan
+  Portuguese
+  Romanian
+  Russian
+  Slovak
+  Slovenian
+  Spanish
+  Tajik
+  Turkish
+  Vietnamese
+
+3.16.2
+
+ * Translation updates
   Icelandic
   Occitan
+  Simplified Chinese
 
 
-3.14.3
+3.16.1
 
- * Fix a crash in the network page
- * Append ibus sources to input sources list
- * Allow resizing on small screens
- * Use header bars on goa dialogs
- * Fix a crash in the language page
- * Hide the window instead of letting gdm kill it
- * Fix a crash in the keyboard page
  * Translation updates
+  Dutch
+  Latvian
+  Punjabi
+
+
+3.16.0
+
+ * Translation updates
+  Basque
+  Indonesian
+  Italian
+  Japanese
+
+
+3.15.92
+
+ * Stop using deprecated API
+ * Improved keyboard navigation
+ * Adapt to gnome-desktop locale codeset changes
+ * Translation updates
+  Aragonese
+  Bosnian
+  Bulgarian
+  Catalan
+  Danish
+  Esperanto
+  Finnish
+  German
+  Korean
+  Swedish
+  Tajik
+
+
+3.15.91.1
+
+ * Port to Webkit2
+ * Translation updates
+  Czech
+  Polish
+  Serbian
+  Slovenian
+
+
+3.15.91
+
+ * Fix a possible crash in the network page
+ * Translation updates
+  Brazilian Portuguese
+  Chinese (Taiwan)
+  French
+  Galician
+  Greek
+  Hebrew
+  Hungarian
+  Kazakh
+  Norwegian bokmal
+  Spanish
+  Turkish
+  Ukrainian
+
+
+3.15.90.1
+
+ * Append ibus input sources
+ * Allow resizing on small screens
+ * Improve account creation dialogs
+ * Move privacy page before timezone
+ * Use the permanent bus name for abrtd
+ * Translation updates
+  Lithuanian
+  Russian
+  Slovak
+  Vietnamese
+
+
+3.15.90
+
+ * Add a privacy page
+ * Don't wait for GDM to kill us
+ * Translation updates
+  Aragonese
   Portuguese
   Vietnamese
 

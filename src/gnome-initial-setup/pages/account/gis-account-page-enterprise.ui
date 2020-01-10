@@ -2,7 +2,6 @@
 <interface>
   <!-- interface-requires gtk+ 3.0 -->
   <template class="GisAccountPageEnterprise" parent="GtkBin">
-    <signal name="hierarchy-changed" handler="gis_account_page_enterprise_hierarchy_changed"/>
     <child>
       <object class="GtkBox" id="area">
         <property name="visible">True</property>
@@ -17,7 +16,7 @@
             <property name="pixel_size">96</property>
             <property name="icon_name">dialog-password-symbolic</property>
             <property name="icon_size">1</property>
-            <property name="margin_top">54</property>
+            <property name="margin_top">24</property>
             <property name="margin_bottom">26</property>
             <style>
               <class name="dim-label" />

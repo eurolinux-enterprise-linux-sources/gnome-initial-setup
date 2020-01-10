@@ -1,0 +1,25 @@
+From c2044fdaabf7b1c16d38f610a63c5078d453720e Mon Sep 17 00:00:00 2001
+From: Rui Matos <tiagomatos@gmail.com>
+Date: Wed, 10 May 2017 16:27:15 +0200
+Subject: [PATCH] Disable 'software' page as it doesn't make sense in RHEL
+
+---
+ gnome-initial-setup/gnome-initial-setup.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gnome-initial-setup/gnome-initial-setup.c b/gnome-initial-setup/gnome-initial-setup.c
+index 0338aa0..c2db63e 100644
+--- a/gnome-initial-setup/gnome-initial-setup.c
++++ b/gnome-initial-setup/gnome-initial-setup.c
+@@ -69,7 +69,7 @@ static PageData page_table[] = {
+   PAGE (network,  FALSE),
+   PAGE (privacy,  FALSE),
+   PAGE (timezone, TRUE),
+-  PAGE (software, TRUE),
++  /* PAGE (software, TRUE), */
+   PAGE (goa,      FALSE),
+   PAGE (account,  TRUE),
+   PAGE (password, TRUE),
+-- 
+2.9.3
+

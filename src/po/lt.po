@@ -1,15 +1,15 @@
 # Lithuanian translation for gnome-initial-setup.
 # Copyright (C) 2012 gnome-initial-setup's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-initial-setup package.
-# Aurimas Černius <aurisc4@gmail.com>, 2012, 2013, 2014.
+# Aurimas Černius <aurisc4@gmail.com>, 2012, 2013, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-initial-setup master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "initial-setup&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-02 18:44+0000\n"
-"PO-Revision-Date: 2014-06-02 23:17+0300\n"
+"POT-Creation-Date: 2016-09-01 15:51+0000\n"
+"PO-Revision-Date: 2016-09-04 12:01+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -18,58 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
+#: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
 msgid "Initial Setup"
 msgstr "Pradinis nustatymas"
 
-#: ../gnome-initial-setup/gis-assistant.c:377
+#: ../gnome-initial-setup/gis-assistant.c:396
 msgid "_Next"
 msgstr "_Pirmyn"
 
-#: ../gnome-initial-setup/gis-assistant.c:378
+#: ../gnome-initial-setup/gis-assistant.c:397
 msgid "_Accept"
 msgstr "_Priimti"
 
-#: ../gnome-initial-setup/gis-assistant.c:379
+#: ../gnome-initial-setup/gis-assistant.c:398
 msgid "_Skip"
 msgstr "Pra_leisti"
 
-#: ../gnome-initial-setup/gis-assistant.c:380
+#: ../gnome-initial-setup/gis-assistant.c:399
 msgid "_Previous"
 msgstr "_Ankstesnis"
 
-#: ../gnome-initial-setup/gis-assistant.c:381
+#: ../gnome-initial-setup/gis-assistant.c:400
 msgid "_Cancel"
 msgstr "_Atsisakyti"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:194
+#: ../gnome-initial-setup/gnome-initial-setup.c:199
 msgid "Force existing user mode"
 msgstr "Priverstinė naujo naudotojo veiksena"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:200
+#: ../gnome-initial-setup/gnome-initial-setup.c:205
 msgid "- GNOME initial setup"
-msgstr "- GNOME Pradinis nustatymas"
+msgstr "- Pradinė GNOME sąranka"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page.c:202
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:242
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
 msgid "About You"
 msgstr "Apie jus"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:182
 msgid "Failed to register account"
 msgstr "Nepavyko registruoti paskyros"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:376
 msgid "No supported way to authenticate with this domain"
 msgstr "Nepalaikomas tapatybės patvirtinimo būdas šiam domenui"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:416
 msgid "Failed to join domain"
 msgstr "Nepavyko tapti domeno dalimi"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:484
 msgid "Failed to log into domain"
 msgstr "Nepavyko prisijungti prie domeno"
 
@@ -83,7 +84,7 @@ msgid ""
 "used on this device."
 msgstr ""
 "Kompanijos prisijungimas leidžia šiame įrenginyje naudoti centralizuotai "
-"valdomą paskyrą."
+"tvarkomą paskyrą."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
 msgid "_Domain"
@@ -118,8 +119,8 @@ msgid ""
 "here, and choose a unique computer name for your computer."
 msgstr ""
 "Norint naudoti kompanijos prisijungimus, šis kompiuteris turi būti įtrauktas "
-"į domeną. Paprašykite tinklo administratoriaus čia įvesti jo slaptažodį ir "
-"parinkti jūsų kompiuteriui unikalų vardą."
+"į domeną. Paprašykite tinklo administratoriaus, kad čia įvestų domeno "
+"slaptažodį ir parinktų jūsų kompiuteriui unikalų vardą."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
 msgid "_Computer"
@@ -134,17 +135,23 @@ msgid "Administrator Password"
 msgstr "Administratoriaus slaptažodis"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.c:202
-msgid "Are these the right details? You can change them if you want."
-msgstr "Ar tai teisingi duomenys? Jei norite, galite pakeisti."
+msgid "Please check the name and username. You can choose a picture too."
+msgstr ""
+"Patikrinkite vardą ir naudotojo vardą. Taip pat galite pasirinkti "
+"paveikslėlį."
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:394
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:403
 msgid "We need a few details to complete setup."
 msgstr "Nustatymo užbaigimui reikia papildomos informacijos."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
 msgid "Avatar image"
 msgstr "Atvaizdas"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "Please provide a name and username. You can choose a picture too."
+msgstr ""
+"Pateikite vardą bei naudotojo vardą. Taip pat galite pasirinkti paveikslėlį."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
 msgid "_Full Name"
@@ -171,44 +178,36 @@ msgstr "Negalima automatiškai prisijungti prie šio tipo domeno"
 msgid "No such domain or realm found"
 msgstr "Nerastas toks domenas arba sritis"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:780
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:794
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
 msgstr "Nepavyksta prisijungti prie %2$s domeno kaip %1$s"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:786
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
 msgid "Invalid password, please try again"
 msgstr "Netinkamas slaptažodis, mėginkite dar kartą"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:799
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
 #, c-format
 msgid "Couldn't connect to the %s domain: %s"
 msgstr "Nepavyko prisijungti prie domeno %s: %s"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:245
 #, c-format
-#| msgid "A user with the username '%s' already exists"
 msgid "A user with the username '%s' already exists."
 msgstr "Naudotojas vardu „%s“ jau yra."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:249
 #, c-format
-#| msgid "The username is too long"
 msgid "The username is too long."
 msgstr "Naudotojo vardas yra per ilgas."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:252
-#| msgid "The username cannot start with a '-'"
 msgid "The username cannot start with a '-'."
 msgstr "Naudotojo vardas negali prasidėti „-“."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:255
-#| msgid ""
-#| "The username must only consist of:\n"
-#| " ➣ letters from the English alphabet\n"
-#| " ➣ digits\n"
-#| " ➣ any of the characters '.', '-' and '_'"
 msgid ""
 "The username should only consist of lower and upper case letters from a-z, "
 "digits and any of characters '.', '-' and '_'."
@@ -237,11 +236,7 @@ msgstr ""
 msgid "Add Account"
 msgstr "Pridėti paskyrą"
 
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
-msgid "Cancel"
-msgstr "Atsisakyti"
-
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:336
 msgid "Online Accounts"
 msgstr "Internetinės paskyros"
 
@@ -251,35 +246,36 @@ msgstr "Prijunkite savo internetines paskyras"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
 msgid ""
-"Connecting your accounts will allow you to easily access your email, online "
-"calendar, contacts, documents and photos."
+"Connect your accounts to easily access your email, online calendar, "
+"contacts, documents and photos."
 msgstr ""
-"Jūsų paskyrų prijungimas leis lengvai pasiekti savo el. paštą, internetinį "
-"kalendorių, kontaktus, dokumentus bei nuotraukas."
+"Prijunkite savo paskyras ir galėsite lengvai pasiekti savo el. paštą, "
+"internetinį kalendorių, kontaktus, dokumentus bei nuotraukas."
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
-msgid "You can review your online accounts (and add others) after setup."
+msgid ""
+"Accounts can be added and removed at any time from the Settings application."
 msgstr ""
-"Internetines paskyras peržiūrėti (ir pridėti kitas) galėsite po nustatymo."
+"Paskyras taip pat galima bet kada pridėti ar pašalinti nustatymų programoje."
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:235
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
 msgid "Preview"
 msgstr "Peržiūra"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:290
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:184
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:203
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:300
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:219
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
 msgid "More…"
 msgstr "Daugiau…"
 
 #. Translators: a search for input methods or keyboard layouts
 #. * did not yield any results
 #.
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:311
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:322
 msgid "No inputs found"
 msgstr "Nerasta įvesties šaltinių"
 
-#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:209
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:363
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
 msgid "Typing"
 msgstr "Rašoma"
@@ -288,28 +284,36 @@ msgstr "Rašoma"
 msgid "Select your keyboard layout or an input method."
 msgstr "Pasirinkite savo klaviatūros išdėstymą arba įvesties metodą."
 
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:201
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:235
 msgid "No languages found"
 msgstr "Nerasta kalbų"
 
-#: ../gnome-initial-setup/pages/language/gis-language-page.c:272
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:292
 msgid "Welcome"
 msgstr "Sveiki"
 
-#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+#. Translators: This is meant to be a warm, engaging welcome message,
+#. * like greeting somebody at the door. If the exclamation mark is not
+#. * suitable for this in your language you may replace it.
+#.
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:123
 msgid "Welcome!"
 msgstr "Sveiki!"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:309
 msgctxt "Wireless access point"
 msgid "Other…"
 msgstr "Kita…"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:368
+msgid "Wireless networking is disabled"
+msgstr "Belaidis tinklas išjungtas"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:375
 msgid "Checking for available wireless networks"
 msgstr "Ieškoma prieinamų belaidžių tinklų"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:641
 msgid "Network"
 msgstr "Tinklas"
 
@@ -331,11 +335,19 @@ msgstr ""
 msgid "No wireless available"
 msgstr "Belaidis tinklas nepasiekiamas"
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:135
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:4
+msgid "Turn On"
+msgstr "Įjungti"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:134
+msgid "This is a weak password."
+msgstr "Tai yra silpnas slaptažodis."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:148
 msgid "The passwords do not match."
 msgstr "Slaptažodžiai nesutampa."
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:243
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:270
 msgid "Password"
 msgstr "Slaptažodis"
 
@@ -358,88 +370,112 @@ msgstr "Naujas slaptažodis turi skirtis nuo ankstesnio."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:83
 msgctxt "Password hint"
-msgid "Try changing some letters and numbers."
-msgstr "Pabandykite pakeisti kai kurias raides ar skaitmenis."
+msgid ""
+"This password is very similar to your last one. Try changing some letters "
+"and numbers."
+msgstr ""
+"Šis slaptažodis labai panašus į ankstesnį. Pabandykite pakeisti kai kurias "
+"raides ar skaitmenis."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:85
 #: ../gnome-initial-setup/pages/password/pw-utils.c:93
 msgctxt "Password hint"
-msgid "Try changing the password a bit more."
-msgstr "Pabandykite kiek labiau pakeisti slaptažodį."
+msgid ""
+"This password is very similar to your last one. Try changing the password a "
+"bit more."
+msgstr ""
+"Šis slaptažodis labai panašus į ankstesnį. Pabandykite kiek labiau pakeisti "
+"slaptažodį."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:87
 msgctxt "Password hint"
-msgid "A password without your user name would be stronger."
-msgstr "Slaptažodis be jūsų naudotojo vardo būtų saugesnis."
+msgid ""
+"This is a weak password. A password without your user name would be stronger."
+msgstr ""
+"Tai yra silpnas slaptažodis. Slaptažodis be jūsų naudotojo vardo būtų "
+"saugesnis."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:89
 msgctxt "Password hint"
-msgid "Try to avoid using your name in the password."
-msgstr "Venkite slaptažodyje naudoti savo vardą."
+msgid "This is a weak password. Try to avoid using your name in the password."
+msgstr "Tai yra silpnas slaptažodis. Venkite slaptažodyje naudoti savo vardą."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:91
 msgctxt "Password hint"
-msgid "Try to avoid some of the words included in the password."
-msgstr "Venkite kai kurių žodžių slaptažodyje."
+msgid ""
+"This is a weak password. Try to avoid some of the words included in the "
+"password."
+msgstr "Tai yra silpnas slaptažodis. Venkite kai kurių žodžių slaptažodyje."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:95
 msgctxt "Password hint"
-msgid "Try to avoid common words."
-msgstr "Venkite dažnai naudojamų žodžių."
+msgid "This is a weak password. Try to avoid common words."
+msgstr "Tai yra silpnas slaptažodis. Venkite dažnai naudojamų žodžių."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:97
 msgctxt "Password hint"
-msgid "Try to avoid reordering existing words."
-msgstr "Venkite keisti esamus žodžius vietomis."
+msgid "This is a weak password. Try to avoid reordering existing words."
+msgstr "Tai yra silpnas slaptažodis. Venkite keisti esamus žodžius vietomis."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:99
 msgctxt "Password hint"
-msgid "Try to use more numbers."
-msgstr "Bandykite naudoti daugiau skaitmenų."
+msgid "This is a weak password. Try to use more numbers."
+msgstr "Tai yra silpnas slaptažodis. Bandykite naudoti daugiau skaitmenų."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:101
 msgctxt "Password hint"
-msgid "Try to use more uppercase letters."
-msgstr "Bandykite naudoti daugiau didžiųjų raidžių."
+msgid "This is a weak password. Try to use more uppercase letters."
+msgstr ""
+"Tai yra silpnas slaptažodis. Bandykite naudoti daugiau didžiųjų raidžių."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:103
 msgctxt "Password hint"
-msgid "Try to use more lowercase letters."
-msgstr "Bandykite naudoti daugiau mažųjų raidžių."
+msgid "This is a weak password. Try to use more lowercase letters."
+msgstr "Tai yra silpnas slaptažodis. Bandykite naudoti daugiau mažųjų raidžių."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:105
 msgctxt "Password hint"
-msgid "Try to use more special characters, like punctuation."
-msgstr "Bandykite naudoti daugiau specialiųjų simbolių, pvz. skyrybos ženklų."
+msgid ""
+"This is a weak password. Try to use more special characters, like "
+"punctuation."
+msgstr ""
+"Tai yra silpnas slaptažodis. Bandykite naudoti daugiau specialiųjų simbolių, "
+"pvz. skyrybos ženklų."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:107
 msgctxt "Password hint"
-msgid "Try to use a mixture of letters, numbers and punctuation."
-msgstr "Bandykite naudoti raidžių, skaitmenų ir skyrybos ženklų mišinį."
+msgid ""
+"This is a weak password. Try to use a mixture of letters, numbers and "
+"punctuation."
+msgstr ""
+"Tai yra silpnas slaptažodis. Bandykite naudoti raidžių, skaitmenų ir "
+"skyrybos ženklų mišinį."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:109
 msgctxt "Password hint"
-msgid "Try to avoid repeating the same character."
-msgstr "Venkite kartoti tą patį simbolį."
+msgid "This is a weak password. Try to avoid repeating the same character."
+msgstr "Tai yra silpnas slaptažodis. Venkite kartoti tą patį simbolį."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:111
 msgctxt "Password hint"
 msgid ""
-"Try to avoid repeating the same type of character: you need to mix up "
-"letters, numbers and punctuation."
+"This is a weak password. Try to avoid repeating the same type of character: "
+"you need to mix up letters, numbers and punctuation."
 msgstr ""
-"Venkite kartoti tą patį simbolį: reikia maišyti raides, skaitmenis ir "
-"skyrybos ženklus."
+"Tai yra silpnas slaptažodis. Venkite kartoti tą patį simbolį: reikia maišyti "
+"raides, skaitmenis ir skyrybos ženklus."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:113
 msgctxt "Password hint"
-msgid "Try to avoid sequences like 1234 or abcd."
-msgstr "Venkite sekų, tokių kaip 1234 ar abcd."
+msgid "This is a weak password. Try to avoid sequences like 1234 or abcd."
+msgstr "Tai yra silpnas slaptažodis. Venkite sekų, tokių kaip 1234 ar abcd."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:115
 msgctxt "Password hint"
-msgid "Try to add more letters, numbers and symbols."
-msgstr "Bandykite pridėti daugiau raidžių, skaitmenų ar simbolių."
+msgid "This is a weak password. Try to add more letters, numbers and symbols."
+msgstr ""
+"Tai yra silpnas slaptažodis. Bandykite pridėti daugiau raidžių, skaitmenų ar "
+"simbolių."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:117
 msgctxt "Password hint"
@@ -480,11 +516,59 @@ msgctxt "Password strength"
 msgid "Strength: High"
 msgstr "Stiprumas: aukštas"
 
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:220
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:109
+#, c-format
+msgid ""
+"Sending reports of technical problems helps us to improve %s. Reports are "
+"sent anonymously and are scrubbed of personal data."
+msgstr ""
+"Ataskaitų apie technines problemas siuntimas mums padeda pagerinti %s. "
+"Ataskaitos siunčiamas anonimiškai, o asmeniniai duomenys jose išdarkomi."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+msgid "Uses Mozilla Location Service:"
+msgstr "Naudoja Mozilla vietos tarnybą:"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:238
+msgid "Privacy Policy"
+msgstr "Privatumo politika"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:274
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
+msgid "Privacy"
+msgstr "Privatumas"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
+msgid "Location Services"
+msgstr "Vietos tarnybos"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
+msgid ""
+"Allows applications to determine your geographical location. An indication "
+"is shown when location services are in use."
+msgstr ""
+"Leidžia programoms nustatyti jūsų geografinę vietą. Kai vietos tarnybos "
+"veikia, yra rodomas indikatorius."
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
+msgid "Automatic Problem Reporting"
+msgstr "Automatinis pranešimas apie problemas"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
+msgid ""
+"Privacy controls can be changed at any time from the Settings application."
+msgstr "Privatumo valdymą bet kada galima pakeisti nustatymų programoje."
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"
 msgstr "Nerasta regionų"
 
-#: ../gnome-initial-setup/pages/region/gis-region-page.c:217
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
 msgid "Region"
 msgstr "Regionas"
@@ -496,46 +580,137 @@ msgstr "Pasirinkite savo šalį ar regioną."
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
 #. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:330
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:328
 #, c-format
 msgid "_Start using %s"
 msgstr "_Pradėti naudoti %s"
 
-#. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
-#. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:337
-#, c-format
-msgid ""
-"Thank you for choosing %s.\n"
-"We hope that you love it."
-msgstr ""
-"Ačiū, kad pasirinkote %s.\n"
-"Tikimės, kad jums patiks."
-
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:363
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:358
 msgid "Ready to Go"
 msgstr "Pasiruošta darbui"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
-msgid "You're all set!"
+msgid "You're ready to go!"
 msgstr "Viskas nustatyta!"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#. Translators: "city, country"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:374
 #, c-format
-msgid ""
-"We think that your time zone is %s. Press Next to continue or search for a "
-"city to manually set the time zone."
-msgstr ""
-"Manome, kad jūsų laiko juosta yra %s. Spauskite Tęsti arba ieškokite miesto "
-"laiko juostos nustatymui rankiniu būdu."
+msgctxt "timezone loc"
+msgid "%s, %s"
+msgstr "%s, %s"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#. Translators: UTC here means the Coordinated Universal Time.
+#. * %:::z will be replaced by the offset from UTC e.g. UTC+02
+#.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:411
+msgid "UTC%:::z"
+msgstr "UTC%:::z"
+
+#. Translators: This is the time format used in 12-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:415
+msgid "%l:%M %p"
+msgstr "%l:%M %p"
+
+#. Translators: This is the time format used in 24-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:418
+msgid "%R"
+msgstr "%R"
+
+#. Translators: "timezone (utc shift)"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:421
+#, c-format
+msgctxt "timezone map"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:566
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
 msgid "Time Zone"
 msgstr "Laiko zona"
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid ""
+"The time zone will be set automatically if your location can be found. You "
+"can also search for a city to set it yourself."
+msgstr ""
+"Jei pavyks rasti jūsų vietą, laiko juosta bus nustatyta automatiškai. Jūs "
+"taip pat galite atlikti miesto paiešką, kad nusistatytumėte jį patys."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:3
 msgid "Please search for a nearby city"
 msgstr "Ieškokite artimiausio miesto"
 
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:112
+#, c-format
+msgid ""
+"Proprietary software sources provide access to additional software, "
+"including web browsers and games. This software typically has restrictions "
+"on use and access to source code, and is not provided by %s."
+msgstr ""
+"Nuosavybinės programinės įrangos šaltiniai suteikia prieigą prie papildomos "
+"programinės įrangos, įskaitant žiniatinklio naršykles bei žaidimus. Ši "
+"programinė įranga dažniausiai turi naudojimo ir prieigos prie pradinio kodo "
+"ribojimų, todėl nėra pateikiama su %s."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:245
+msgid "Software Sources"
+msgstr "Programinės įrangos šaltiniai"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:1
+msgid "Additional Software Sources"
+msgstr "Papildomi programinės įrangos šaltiniai"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:2
+msgid "<a href=\"more\">Find out more…</a>"
+msgstr "<a href=\"more\">Sužinokite daugiau…</a>"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:3
+msgid "Proprietary Software Sources"
+msgstr "Nuosavybinės programinės įrangos šaltiniai"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:4
+msgid ""
+"Proprietary software typically has restrictions on how it can be used and on "
+"access to source code. This prevents anyone but the software owner from "
+"inspecting, improving or learning from its code."
+msgstr ""
+"Nuosavybinė programinė įranga turi naudojimo ir prieigos prie pradinio kodo "
+"ribojimų. Tai neleidžia niekam išskyrus jos savininką ją analizuoti, "
+"tobulinti bei mokytis iš jos kodo."
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:5
+msgid ""
+"In contrast, Free Software can be freely run, copied, distributed, studied "
+"and modified."
+msgstr ""
+"Priešingai yra su laisva programine įranga, kurią galima laisvai vykdyti, "
+"kopijuoti, platinti, analizuoti bei keisti."
+
+#~ msgid "Are these the right details? You can change them if you want."
+#~ msgstr "Ar tai teisingi duomenys? Jei norite, galite pakeisti."
+
+#~ msgid "You can review your online accounts (and add others) after setup."
+#~ msgstr ""
+#~ "Internetines paskyras peržiūrėti (ir pridėti kitas) galėsite po nustatymo."
+
+#~ msgid ""
+#~ "Thank you for choosing %s.\n"
+#~ "We hope that you love it."
+#~ msgstr ""
+#~ "Ačiū, kad pasirinkote %s.\n"
+#~ "Tikimės, kad jums patiks."
+
+#~ msgid ""
+#~ "We think that your time zone is %s. Press Next to continue or search for "
+#~ "a city to manually set the time zone."
+#~ msgstr ""
+#~ "Manome, kad jūsų laiko juosta yra %s. Spauskite Tęsti arba ieškokite "
+#~ "miesto laiko juostos nustatymui rankiniu būdu."
+
+#~ msgid "Cancel"
+#~ msgstr "Atsisakyti"

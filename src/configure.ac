@@ -1,4 +1,4 @@
-AC_INIT([gnome-initial-setup],[3.14.4])
+AC_INIT([gnome-initial-setup],[3.22.1])
 AC_CONFIG_MACRO_DIR([m4])
 
 AM_INIT_AUTOMAKE([dist-xz no-dist-gzip foreign])
@@ -19,14 +19,15 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [gettext package])
 AM_GLIB_GNU_GETTEXT
 
 NETWORK_MANAGER_REQUIRED_VERSION=0.9.6.4
-GLIB_REQUIRED_VERSION=2.36.0
+GLIB_REQUIRED_VERSION=2.46.0
 GTK_REQUIRED_VERSION=3.11.3
 PANGO_REQUIRED_VERSION=1.32.5
 IBUS_REQUIRED_VERSION=1.4.99
 GNOME_DESKTOP_REQUIRED_VERSION=3.7.5
 POLKIT_REQUIRED_VERSION=0.103
 GDM_REQUIRED_VERSION=3.8.3
-GEOCLUE_REQUIRED_VERSION=2.1.2
+GEOCLUE_REQUIRED_VERSION=2.3.1
+PACKAGEKIT_REQUIRED_VERSION=1.1.4
 
 PKG_CHECK_MODULES(INITIAL_SETUP,
                   NetworkManager >= $NETWORK_MANAGER_REQUIRED_VERSION
@@ -43,18 +44,25 @@ PKG_CHECK_MODULES(INITIAL_SETUP,
                   gtk+-3.0 >= $GTK_REQUIRED_VERSION
                   gio-unix-2.0 >= $GLIB_REQUIRED_VERSION
                   gdm >= $GDM_REQUIRED_VERSION
-                  geoclue-2.0 >= $GEOCLUE_REQUIRED_VERSION
+                  geocode-glib-1.0
+                  libgeoclue-2.0 >= $GEOCLUE_REQUIRED_VERSION
                   pango >= $PANGO_REQUIRED_VERSION
                   rest-0.7
                   json-glib-1.0
 		  libsecret-1
-                  pwquality)
+                  pwquality
+                  webkit2gtk-4.0)
 
-GEOCLUE_DBUS_INTERFACE_XML=`pkg-config --variable=dbus_interface geoclue-2.0`
-if test "x$GEOCLUE_DBUS_INTERFACE_XML" = "x"; then
-  AC_MSG_ERROR([Cannot find dbus_interface variable in geoclue-2.0.pc])
+
+AC_ARG_ENABLE(software-sources,
+              [AS_HELP_STRING([--enable-software-sources],
+                              [enable software sources page])],,
+              [enable_software_sources=no])
+
+if test "$enable_software_sources" = "yes"; then
+  PKG_CHECK_MODULES(SOFTWARE_SOURCES, packagekit-glib2 >= $PACKAGEKIT_REQUIRED_VERSION)
+  AC_DEFINE(ENABLE_SOFTWARE_SOURCES, [1], [Enable software sources page])
 fi
-AC_SUBST(GEOCLUE_DBUS_INTERFACE_XML)
 
 PKG_CHECK_MODULES(CHEESE,
                   cheese
@@ -131,9 +139,11 @@ gnome-initial-setup/pages/keyboard/Makefile
 gnome-initial-setup/pages/eulas/Makefile
 gnome-initial-setup/pages/network/Makefile
 gnome-initial-setup/pages/timezone/Makefile
+gnome-initial-setup/pages/privacy/Makefile
 gnome-initial-setup/pages/goa/Makefile
 gnome-initial-setup/pages/account/Makefile
 gnome-initial-setup/pages/password/Makefile
+gnome-initial-setup/pages/software/Makefile
 gnome-initial-setup/pages/summary/Makefile
 po/Makefile.in
 ])

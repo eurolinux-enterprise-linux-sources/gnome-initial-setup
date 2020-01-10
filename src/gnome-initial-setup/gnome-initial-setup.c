@@ -42,6 +42,8 @@
 #include "pages/eulas/gis-eula-pages.h"
 #include "pages/network/gis-network-page.h"
 #include "pages/timezone/gis-timezone-page.h"
+#include "pages/privacy/gis-privacy-page.h"
+#include "pages/software/gis-software-page.h"
 #include "pages/goa/gis-goa-page.h"
 #include "pages/account/gis-account-pages.h"
 #include "pages/password/gis-password-page.h"
@@ -65,7 +67,9 @@ static PageData page_table[] = {
   PAGE (keyboard, FALSE),
   PAGE (eula,     FALSE),
   PAGE (network,  FALSE),
+  PAGE (privacy,  FALSE),
   PAGE (timezone, TRUE),
+  PAGE (software, TRUE),
   PAGE (goa,      FALSE),
   PAGE (account,  TRUE),
   PAGE (password, TRUE),
@@ -188,15 +192,13 @@ main (int argc, char *argv[])
   GisDriver *driver;
   int status;
   GOptionContext *context;
+  GisDriverMode mode;
 
   GOptionEntry entries[] = {
     { "existing-user", 0, 0, G_OPTION_ARG_NONE, &force_existing_user_mode,
       _("Force existing user mode"), NULL },
     { NULL }
   };
-
-  /* FIXME: remove this when GOA uses WebKit2 */
-  g_setenv("G_TLS_GNUTLS_PRIORITY", "NORMAL:%COMPAT:!VERS-SSL3.0", FALSE);
 
   g_unsetenv ("GIO_USE_VFS");
 
@@ -222,9 +224,17 @@ main (int argc, char *argv[])
   }
 #endif
 
-  gis_ensure_login_keyring ();
+  mode = get_mode ();
 
-  driver = gis_driver_new (get_mode ());
+  /* When we are running as the gnome-initial-setup user we
+   * dont have a normal user session and need to initialize
+   * the keyring manually so that we can pass the credentials
+   * along to the new user in the handoff.
+   */
+  if (mode == GIS_DRIVER_MODE_NEW_USER)
+    gis_ensure_login_keyring ();
+
+  driver = gis_driver_new (mode);
   g_signal_connect (driver, "rebuild-pages", G_CALLBACK (rebuild_pages_cb), NULL);
   status = g_application_run (G_APPLICATION (driver), argc, argv);
 

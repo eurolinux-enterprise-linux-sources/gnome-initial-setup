@@ -114,9 +114,11 @@ am__DEPENDENCIES_1 =
 gnome_initial_setup_DEPENDENCIES = pages/language/libgislanguage.la \
 	pages/region/libgisregion.la pages/keyboard/libgiskeyboard.la \
 	pages/eulas/libgiseulas.la pages/network/libgisnetwork.la \
-	pages/timezone/libgistimezone.la pages/goa/libgisgoa.la \
+	pages/timezone/libgistimezone.la \
+	pages/privacy/libgisprivacy.la pages/goa/libgisgoa.la \
 	pages/account/libgisaccount.la \
 	pages/password/libgispassword.la \
+	pages/software/libgissoftware.la \
 	pages/summary/libgissummary.la $(am__DEPENDENCIES_1)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
@@ -270,7 +272,6 @@ ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
 FGREP = @FGREP@
-GEOCLUE_DBUS_INTERFACE_XML = @GEOCLUE_DBUS_INTERFACE_XML@
 GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GLIB_COMPILE_RESOURCES = @GLIB_COMPILE_RESOURCES@
 GMOFILES = @GMOFILES@
@@ -308,6 +309,7 @@ LIBTOOL = @LIBTOOL@
 LIPO = @LIPO@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
+LT_SYS_LIBRARY_PATH = @LT_SYS_LIBRARY_PATH@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
@@ -341,6 +343,8 @@ RANLIB = @RANLIB@
 SED = @SED@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
+SOFTWARE_SOURCES_CFLAGS = @SOFTWARE_SOURCES_CFLAGS@
+SOFTWARE_SOURCES_LIBS = @SOFTWARE_SOURCES_LIBS@
 STRIP = @STRIP@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
@@ -428,9 +432,11 @@ gnome_initial_setup_LDADD = \
 	pages/eulas/libgiseulas.la \
 	pages/network/libgisnetwork.la \
 	pages/timezone/libgistimezone.la \
+	pages/privacy/libgisprivacy.la \
 	pages/goa/libgisgoa.la \
 	pages/account/libgisaccount.la \
 	pages/password/libgispassword.la \
+	pages/software/libgissoftware.la \
 	pages/summary/libgissummary.la \
 	$(INITIAL_SETUP_LIBS) \
 	-lm

@@ -1,26 +1,19 @@
+%global nm_version 0.9.6.4
+%global glib_required_version 2.46.0
+%global gtk_required_version 3.11.3
+%global geoclue_version 2.3.1
+
 Name:           gnome-initial-setup
-Version:        3.14.4
-Release:        5%{?dist}
+Version:        3.22.1
+Release:        4%{?dist}
 Summary:        Bootstrapping your OS
 
 License:        GPLv2+
-URL:            https://live.gnome.org/GnomeOS/Design/Whiteboards/InitialSetup
-Source0:        http://download.gnome.org/sources/%{name}/3.14/%{name}-%{version}.tar.xz
-
-Patch0: gnome-initial-setup-translations-3.14.patch
-Patch1: welcome-tour-race.patch
-Patch2: 0001-setup-shell-Make-sure-that-the-shell-launches-first.patch
-Patch3: 0002-network-Avoid-a-crash-on-locale-change.patch
-Patch4: 0003-password-Avoid-a-critical.patch
-Patch5: style.patch
-Patch6: debug.patch
-Patch7: 0001-timezone-Stop-the-geoclue-client.patch
-Patch8: fix-enterprise-login.patch
-
-%global nm_version 0.9.6.4
-%global glib_required_version 2.36.0
-%global gtk_required_version 3.11.3
-%global geoclue_version 2.1.2
+URL:            https://wiki.gnome.org/Design/OS/InitialSetup
+Source0:        https://download.gnome.org/sources/%{name}/3.22/%{name}-%{version}.tar.xz
+Patch0:         honor-anaconda-firstboot-disabled.patch
+Patch1:         0001-Disable-software-page-as-it-doesn-t-make-sense-in-RH.patch
+Patch2:         0001-password-Make-our-password-validation-similar-to-ana.patch
 
 BuildRequires:  krb5-devel
 BuildRequires:  desktop-file-utils
@@ -36,7 +29,7 @@ BuildRequires:  pkgconfig(gstreamer-1.0)
 BuildRequires:  pkgconfig(cheese)
 BuildRequires:  pkgconfig(cheese-gtk) >= 3.3.5
 BuildRequires:  pkgconfig(fontconfig)
-BuildRequires:  pkgconfig(geoclue-2.0) >= %{geoclue_version}
+BuildRequires:  pkgconfig(geocode-glib-1.0)
 BuildRequires:  pkgconfig(gweather-3.0)
 BuildRequires:  pkgconfig(goa-1.0)
 BuildRequires:  pkgconfig(goa-backend-1.0)
@@ -46,6 +39,9 @@ BuildRequires:  pkgconfig(gio-2.0) >= %{glib_required_version}
 BuildRequires:  pkgconfig(gio-unix-2.0) >= %{glib_required_version}
 BuildRequires:  pkgconfig(gdm)
 BuildRequires:  pkgconfig(iso-codes)
+BuildRequires:  pkgconfig(libgeoclue-2.0) >= %{geoclue_version}
+BuildRequires:  pkgconfig(packagekit-glib2)
+BuildRequires:  pkgconfig(webkit2gtk-4.0)
 BuildRequires:  krb5-devel
 BuildRequires:  ibus-devel
 BuildRequires:  rest-devel
@@ -54,7 +50,7 @@ BuildRequires:  libsecret-devel
 
 # gnome-initial-setup is being run by gdm
 Requires: gdm
-Requires: geoclue2 >= %{geoclue_version}
+Requires: geoclue2-libs%{?_isa} >= %{geoclue_version}
 # we install a rules file
 Requires: polkit-js-engine
 Requires: /usr/bin/gkbd-keyboard-display
@@ -73,19 +69,13 @@ you through configuring it. It is integrated with gdm.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
 
 %build
-%configure
+%configure --enable-software-sources
 make %{?_smp_mflags}
 
 %install
-make install DESTDIR=%{buildroot}
+%make_install
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 # Desktop file does not (and probably will not) ever validate, as it uses
@@ -103,7 +93,8 @@ mkdir -p %{buildroot}%{_localstatedir}/lib/gnome-initial-setup
 useradd -rM -d /run/gnome-initial-setup/ -s /sbin/nologin %{name} &>/dev/null || :
 
 %files -f %{name}.lang
-%doc COPYING README
+%license COPYING
+%doc README
 %{_libexecdir}/gnome-initial-setup
 %{_libexecdir}/gnome-initial-setup-copy-worker
 %{_libexecdir}/gnome-welcome-tour
@@ -118,58 +109,204 @@ useradd -rM -d /run/gnome-initial-setup/ -s /sbin/nologin %{name} &>/dev/null ||
 %{_datadir}/polkit-1/rules.d/20-gnome-initial-setup.rules
 
 %changelog
-* Mon Jul 27 2015 Ray Strode <rstrode@redhat.com> - 3.14.4-5
-- Fix login with enterprise accounts
-Resolves: #1242861
-Related: #1173234
+* Fri May 12 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-4
+- Make our password validation similar to anaconda's
+  Resolves: rhbz#1447941
 
-* Mon Jul 27 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.4-4
-- Avoid more criticals on locale change
-Related: #1174725
+* Wed May 10 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-3
+- Disable 'software' page as it doesn't make sense in RHEL
+  Resolves: rhbz#1446735
 
-* Wed Jul 15 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.4-3
-- Avoid criticals and crashes on locale change
-Resolves: #1173234
+* Thu Mar  9 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-2
+- Honor anaconda's firstboot being disabled
+  Resolves: rhbz#1226819
 
-* Wed Jul 15 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.4-2
-- Fix a race condition in launching the welcome tour
-Resolves: #1242061
+* Wed Oct 12 2016 Kalev Lember <klember@redhat.com> - 3.22.1-1
+- Update to 3.22.1
 
-* Thu May 28 2015 Matthias Clasen <mclasen@redhat.com> - 3.14.4-1
-- Update to 3.14.4
-- Related: #1174725
+* Mon Sep 19 2016 Kalev Lember <klember@redhat.com> - 3.22.0-1
+- Update to 3.22.0
 
-* Mon Mar 23 2015 Richard Hughes <rhughes@redhat.com> - 3.14.3-1
-- Update to 3.14.3
-- Resolves: #1174725
+* Tue Sep 13 2016 Kalev Lember <klember@redhat.com> - 3.21.92-1
+- Update to 3.21.92
 
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.13.1-4
-- Mass rebuild 2014-01-24
+* Mon Sep 05 2016 Kalev Lember <klember@redhat.com> - 3.21.91-2
+- Build the software sources page
 
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.13.1-3
-- Mass rebuild 2013-12-27
+* Sat Sep 03 2016 Kalev Lember <klember@redhat.com> - 3.21.91-1
+- Update to 3.21.91
+- Update project URL
 
-* Thu Dec 12 2013 Matthias Clasen <mclasen@redhat.com> - 0.13.1-2
-- Update translations
-- Resolves: #1030342
+* Wed Apr 13 2016 Kalev Lember <klember@redhat.com> - 3.20.1-1
+- Update to 3.20.1
 
-* Wed Nov  6 2013 Jasper St. Pierre <jasper@redhat.com> - 0.13.1
-- Fix build again... sigh.
-- Resolves: rhbz#1019973
-- Resolves: rhbz#1024370
+* Tue Mar 22 2016 Kalev Lember <klember@redhat.com> - 3.20.0-1
+- Update to 3.20.0
 
-* Wed Nov  6 2013 Jasper St. Pierre <jasper@redhat.com> - 0.13
-- Fix build
-- Resolves: rhbz#1019973
-- Resolves: rhbz#1024370
+* Tue Mar 15 2016 Kalev Lember <klember@redhat.com> - 3.19.92-1
+- Update to 3.19.92
 
-* Wed Nov  6 2013 Jasper St. Pierre <jasper@redhat.com> - 0.13
-- Update to 0.13
-- Resolves: rhbz#1019973
-- Resolves: rhbz#1024370
+* Tue Mar 01 2016 Richard Hughes <rhughes@redhat.com> - 3.19.91-1
+- Update to 3.19.91
 
-* Tue Jul 30 2013 Petr Kovar <pkovar@redhat.com> - 0.12-2
-- Require gnome-getting-started-docs
+* Tue Feb 16 2016 Richard Hughes <rhughes@redhat.com> - 3.19.2-1
+- Update to 3.19.2
+
+* Wed Feb 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 3.19.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
+* Wed Oct 28 2015 Kalev Lember <klember@redhat.com> - 3.19.1-1
+- Update to 3.19.1
+
+* Mon Sep 21 2015 Kalev Lember <klember@redhat.com> - 3.18.0-1
+- Update to 3.18.0
+
+* Mon Aug 31 2015 Kalev Lember <klember@redhat.com> - 3.17.91-1
+- Update to 3.17.91
+
+* Mon Aug 17 2015 Kalev Lember <klember@redhat.com> - 3.17.90-1
+- Update to 3.17.90
+- Use make_install macro
+
+* Mon Aug 17 2015 Kalev Lember <klember@redhat.com> - 3.17.4-2
+- Rebuilt for libcheese soname bump
+
+* Mon Jul 27 2015 David King <amigadave@amigadave.com> - 3.17.4-1
+- Update to 3.17.4
+
+* Wed Jul 22 2015 David King <amigadave@amigadave.com> - 3.16.3-3
+- Bump for new gnome-desktop3
+
+* Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.16.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* Mon May 18 2015 Matthias Clasen <mclasen@redhat.com> - 3.16.3-1
+- Update to 3.16.3
+
+* Tue May 12 2015 Kalev Lember <kalevlember@gmail.com> - 3.16.2-1
+- Update to 3.16.2
+
+* Wed Apr 15 2015 Kalev Lember <kalevlember@gmail.com> - 3.16.1-1
+- Update to 3.16.1
+
+* Mon Mar 23 2015 Kalev Lember <kalevlember@gmail.com> - 3.16.0-1
+- Update to 3.16.0
+
+* Wed Mar 18 2015 Kalev Lember <kalevlember@gmail.com> - 3.15.92-1
+- Update to 3.15.92
+
+* Thu Mar 05 2015 Kalev Lember <kalevlember@gmail.com> - 3.15.91.1-1
+- Update to 3.15.91.1
+
+* Mon Mar 02 2015 Kalev Lember <kalevlember@gmail.com> - 3.15.91-1
+- Update to 3.15.91
+- Use the %%license macro for the COPYING file
+
+* Thu Feb 19 2015 Matthias Clasen <mclasen@redhat.com> - 3.15.90.1-1
+- Update to 3.15.90.1
+
+* Tue Dec 16 2014 Rui Matos <rmatos@redhat.com> - 3.14.2.1-2
+- Resolves: rhbz#1172363
+
+* Tue Nov 11 2014 Rui Matos <rmatos@redhat.com> - 3.14.2.1-1
+- Update to 3.14.2.1
+
+* Mon Nov 10 2014 Rui Matos <rmatos@redhat.com> - 3.14.2-1
+- Update to 3.14.2
+- Resolves: rhbz#1158442
+
+* Fri Oct 31 2014 Rui Matos <rmatos@redhat.com> - 3.14.1-3
+- Resolves: rhbz#1151519
+
+* Tue Oct 21 2014 Rui Matos <rmatos@redhat.com> - 3.14.1-2
+- Resolves: rhbz#1154206
+
+* Sat Oct 11 2014 Kalev Lember <kalevlember@gmail.com> - 3.14.1-1
+- Update to 3.14.1
+
+* Tue Sep 23 2014 Kalev Lember <kalevlember@gmail.com> - 3.14.0-1
+- Update to 3.14.0
+
+* Wed Sep 17 2014 Kalev Lember <kalevlember@gmail.com> - 3.13.7-1
+- Update to 3.13.7
+
+* Tue Sep 16 2014 Kalev Lember <kalevlember@gmail.com> - 3.13.6-1
+- Update to 3.13.6
+
+* Mon Sep 08 2014 Adam Williamson <awilliam@redhat.com> - 3.13.5-2
+- backport upstream patch to offer full list of keyboard layouts (BGO #729208)
+
+* Wed Sep 03 2014 Kalev Lember <kalevlember@gmail.com> - 3.13.5-1
+- Update to 3.13.5
+
+* Sat Aug 16 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.13.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* Wed Aug 13 2014 Matthias Clasen <mclasen@redhat.com> - 3.13.4-2
+- Drop the yelp focus patch (we've dropped the yelp patch it depends on)
+
+* Fri Jul 25 2014 Kalev Lember <kalevlember@gmail.com> - 3.13.4-1
+- Update to 3.13.4
+
+* Thu Jul 24 2014 Matthias Clasen <mclasen@redhat.com> - 3.12.1-3
+- Fix a memory corruption crash (#1116478)
+
+* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.12.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* Thu May 15 2014 Kalev Lember <kalevlember@gmail.com> - 3.12.1-1
+- Update to 3.12.1
+
+* Tue Mar 25 2014 Kalev Lember <kalevlember@gmail.com> - 3.12.0-1
+- Update to 3.12.0
+
+* Thu Mar 20 2014 Richard Hughes <rhughes@redhat.com> - 3.11.92-1
+- Update to 3.11.92
+
+* Sat Mar 08 2014 Richard Hughes <rhughes@redhat.com> - 3.11.91-1
+- Update to 3.11.91
+
+* Fri Feb 28 2014 Richard Hughes <rhughes@redhat.com> - 3.11.90-1
+- Update to 3.11.90
+
+* Wed Feb 19 2014 Kalev Lember <kalevlember@gmail.com> - 3.10.1.1-5
+- Rebuilt for libgnome-desktop soname bump
+
+* Fri Nov 29 2013 Rui Matos <rmatos@redhat.com> - 3.10.1.1-4
+- Resolves: rhbz#1035548 - Disables the GOA page in new user mode
+
+* Thu Nov 28 2013 Rui Matos <rmatos@redhat.com> - 3.10.1.1-3
+- Resolves: rhbz#1027507 - [abrt] gnome-initial-setup-3.10.1.1-2.fc20: magazine_chain_pop_head
+
+* Fri Nov  1 2013 Matthias Clasen <mclasen@redhat.com> - 3.10.1.1-2
+- Fix goa add dialog to not be empty
+
+* Mon Oct 28 2013 Richard Hughes <rhughes@redhat.com> - 3.10.1.1-1
+- Update to 3.10.1.1
+
+* Thu Sep 26 2013 Kalev Lember <kalevlember@gmail.com> - 3.10.0.1-1
+- Update to 3.10.0.1
+
+* Wed Sep 25 2013 Kalev Lember <kalevlember@gmail.com> - 3.10.0-1
+- Update to 3.10.0
+
+* Tue Sep 03 2013 Kalev Lember <kalevlember@gmail.com> - 0.12-7
+- Rebuilt for libgnome-desktop soname bump
+
+* Fri Aug 23 2013 Kalev Lember <kalevlember@gmail.com> - 0.12-6
+- Rebuilt for gnome-online-accounts soname bump
+
+* Fri Aug 09 2013 Kalev Lember <kalevlember@gmail.com> - 0.12-5
+- Rebuilt for cogl 1.15.4 soname bump
+
+* Tue Aug 06 2013 Adam Williamson <awilliam@redhat.com> - 0.12-4
+- rebuild for new libgweather
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Fri Jun 21 2013 Kalev Lember <kalevlember@gmail.com> - 0.12-2
+- Rebuilt for libgweather 3.9.3 soname bump
 
 * Mon Jun 17 2013 Rui Matos <rmatos@redhat.com> - 0.12-1
 - Update to 0.12
@@ -179,12 +316,6 @@ Resolves: #1242061
 
 * Tue May 28 2013 Matthias Clasen <mclasen@redhat.com> - 0.11-1
 - Update to 0.11
-
-* Fri May 17 2013 Matthias Clasen <mclasen@redhat.com> - 0.10-3
-- Fix passwordless user creation (#961140)
-
-* Fri May 17 2013 Rui Matos <rmatos@redhat.com> - 0.10-2
-- Add upstream patch for AcceptedFreezeException bug 928645
 
 * Tue May 14 2013 Rui Matos <rmatos@redhat.com> - 0.10-1
 - Update to 0.10

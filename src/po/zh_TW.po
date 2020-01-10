@@ -8,66 +8,67 @@ msgstr ""
 "Project-Id-Version: gnome-initial-setup master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "initial-setup&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-22 06:48+0000\n"
-"PO-Revision-Date: 2014-06-22 15:46+0800\n"
+"POT-Creation-Date: 2016-09-30 23:08+0000\n"
+"PO-Revision-Date: 2016-10-09 22:21+0800\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
+#: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
 msgid "Initial Setup"
 msgstr "初始設定"
 
-#: ../gnome-initial-setup/gis-assistant.c:377
+#: ../gnome-initial-setup/gis-assistant.c:396
 msgid "_Next"
 msgstr "下一步(_N)"
 
-#: ../gnome-initial-setup/gis-assistant.c:378
+#: ../gnome-initial-setup/gis-assistant.c:397
 msgid "_Accept"
-msgstr "接受(_A)"
+msgstr "套用(_A)"
 
-#: ../gnome-initial-setup/gis-assistant.c:379
+#: ../gnome-initial-setup/gis-assistant.c:398
 msgid "_Skip"
 msgstr "略過(_S)"
 
-#: ../gnome-initial-setup/gis-assistant.c:380
+#: ../gnome-initial-setup/gis-assistant.c:399
 msgid "_Previous"
 msgstr "上一個(_P)"
 
-#: ../gnome-initial-setup/gis-assistant.c:381
+#: ../gnome-initial-setup/gis-assistant.c:400
 msgid "_Cancel"
 msgstr "取消(_C)"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:194
+#: ../gnome-initial-setup/gnome-initial-setup.c:199
 msgid "Force existing user mode"
 msgstr "強制既有使用者模式"
 
-#: ../gnome-initial-setup/gnome-initial-setup.c:200
+#: ../gnome-initial-setup/gnome-initial-setup.c:205
 msgid "- GNOME initial setup"
 msgstr "- GNOME 初始設定"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page.c:202
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:242
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
 msgid "About You"
 msgstr "關於您"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:182
 msgid "Failed to register account"
 msgstr "無法註冊帳號"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:376
 msgid "No supported way to authenticate with this domain"
 msgstr "沒有支援這個網域的核對方式"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:416
 msgid "Failed to join domain"
 msgstr "無法加入網域"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:484
 msgid "Failed to log into domain"
 msgstr "無法登入到網域"
 
@@ -105,20 +106,16 @@ msgstr "繼續(_O)"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
 msgid "Domain Administrator Login"
-msgstr "網域系統管理員登入"
+msgstr "網域管理員登入"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
-#| msgid ""
-#| "In order to use enterprise logins, this computer needs to be enrolled in "
-#| "the domain. Please have your network administrator type their domain "
-#| "password here, and choose a unique computer name for your computer."
 msgid ""
 "In order to use enterprise logins, this computer needs to be enrolled in a "
 "domain. Please have your network administrator type the domain password "
 "here, and choose a unique computer name for your computer."
 msgstr ""
-"為了使用企業登入，這臺電腦需要註冊到網域中。請讓您的網路系統管理者在此輸入網"
-"域密碼，及用於您電腦的獨特電腦名稱。"
+"為了使用企業登入，這臺電腦需要註冊到網域中。請讓您的網路管理員在此輸入網域密"
+"碼，及用於您電腦的獨特電腦名稱。"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
 msgid "_Computer"
@@ -126,18 +123,17 @@ msgstr "電腦(_C)"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
 msgid "Administrator _Name"
-msgstr "系統管理員名稱(_N)"
+msgstr "管理員名稱(_N)"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
 msgid "Administrator Password"
-msgstr "系統管理員密碼"
+msgstr "管理員密碼"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.c:202
-msgid "Are these the right details? You can change them if you want."
-msgstr "這些資料正確嗎？您可以更改它們。"
+msgid "Please check the name and username. You can choose a picture too."
+msgstr "請檢查名稱和使用者名稱。您也可以選擇一張照片。"
 
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:394
-#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:403
 msgid "We need a few details to complete setup."
 msgstr "我們需要一些資料來完成設定。"
 
@@ -145,18 +141,21 @@ msgstr "我們需要一些資料來完成設定。"
 msgid "Avatar image"
 msgstr "大頭貼影像"
 
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "Please provide a name and username. You can choose a picture too."
+msgstr "請提供名稱和使用者名稱。您也可以選擇一張照片。"
+
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
 msgid "_Full Name"
 msgstr "全名(_F)"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
-#| msgid "Enterprise Login"
 msgid "Set Up _Enterprise Login"
 msgstr "設置企業登入(_E)"
 
 #: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
 msgid "Disable image"
-msgstr "停用圖片"
+msgstr "停用影像"
 
 #: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
 msgid "Take a photo..."
@@ -171,44 +170,36 @@ msgstr "不能自動加入這個類型的網域"
 msgid "No such domain or realm found"
 msgstr "找不到這個網域或領域名稱"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:780
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:794
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
 msgstr "不能以 %s 身分登入 %s 網域"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:786
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
 msgid "Invalid password, please try again"
 msgstr "密碼錯誤，請再試一次"
 
-#: ../gnome-initial-setup/pages/account/um-realm-manager.c:799
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
 #, c-format
 msgid "Couldn't connect to the %s domain: %s"
 msgstr "無法連接到 %s 網域：%s"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:245
 #, c-format
-#| msgid "A user with the username '%s' already exists"
 msgid "A user with the username '%s' already exists."
 msgstr "以「%s」為名的使用者已經存在。"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:249
 #, c-format
-#| msgid "The username is too long"
 msgid "The username is too long."
 msgstr "使用者名稱太長。"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:252
-#| msgid "The username cannot start with a '-'"
 msgid "The username cannot start with a '-'."
 msgstr "使用者名稱不能以「-」字元開頭。"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:255
-#| msgid ""
-#| "The username must only consist of:\n"
-#| " ➣ letters from the English alphabet\n"
-#| " ➣ digits\n"
-#| " ➣ any of the characters '.', '-' and '_'"
 msgid ""
 "The username should only consist of lower and upper case letters from a-z, "
 "digits and any of characters '.', '-' and '_'."
@@ -235,11 +226,7 @@ msgstr "我已同意這個條款與條件(_A)"
 msgid "Add Account"
 msgstr "加入帳號"
 
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
-msgid "Cancel"
-msgstr "取消"
-
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:336
 msgid "Online Accounts"
 msgstr "線上帳號"
 
@@ -249,34 +236,34 @@ msgstr "連接您的線上帳號"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
 msgid ""
-"Connecting your accounts will allow you to easily access your email, online "
-"calendar, contacts, documents and photos."
+"Connect your accounts to easily access your email, online calendar, "
+"contacts, documents and photos."
 msgstr ""
-"連接您的帳號可讓您輕鬆存取您的電子郵件、線上行事曆、聯絡人資訊、文件、相片..."
-"等等。"
+"連接您的帳號可讓您輕鬆存取您的電子郵件、線上行事曆、聯絡人資訊、文件和相片。"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
-msgid "You can review your online accounts (and add others) after setup."
-msgstr "您可以在設定後檢閱您的線上帳號 (與加入其他帳號)。"
+msgid ""
+"Accounts can be added and removed at any time from the Settings application."
+msgstr "帳號可以在任何時刻從設定值加入或移除。"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:235
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
 msgid "Preview"
 msgstr "預覽"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:290
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:184
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:203
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:300
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:219
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
 msgid "More…"
 msgstr "更多…"
 
 #. Translators: a search for input methods or keyboard layouts
 #. * did not yield any results
 #.
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:311
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:322
 msgid "No inputs found"
 msgstr "找不到輸入來源"
 
-#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:209
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:363
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
 msgid "Typing"
 msgstr "輸入"
@@ -285,28 +272,36 @@ msgstr "輸入"
 msgid "Select your keyboard layout or an input method."
 msgstr "選擇您的鍵盤配置或是輸入法。"
 
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:201
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:235
 msgid "No languages found"
 msgstr "找不到語言"
 
-#: ../gnome-initial-setup/pages/language/gis-language-page.c:272
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:292
 msgid "Welcome"
 msgstr "歡迎使用"
 
-#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+#. Translators: This is meant to be a warm, engaging welcome message,
+#. * like greeting somebody at the door. If the exclamation mark is not
+#. * suitable for this in your language you may replace it.
+#.
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:123
 msgid "Welcome!"
 msgstr "歡迎使用！"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:309
 msgctxt "Wireless access point"
 msgid "Other…"
 msgstr "其他…"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:368
+msgid "Wireless networking is disabled"
+msgstr "無線網路已停用"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:375
 msgid "Checking for available wireless networks"
 msgstr "檢查有沒有無線網路可用"
 
-#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:641
 msgid "Network"
 msgstr "網路"
 
@@ -327,12 +322,19 @@ msgstr ""
 msgid "No wireless available"
 msgstr "有線網路無法使用"
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:135
-#| msgid "Passwords do not match"
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:4
+msgid "Turn On"
+msgstr "開啟"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:134
+msgid "This is a weak password."
+msgstr "這個密碼強度不足。"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:148
 msgid "The passwords do not match."
 msgstr "密碼不相符合。"
 
-#: ../gnome-initial-setup/pages/password/gis-password-page.c:243
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:270
 msgid "Password"
 msgstr "密碼"
 
@@ -355,92 +357,101 @@ msgstr "新密碼需與舊密碼不同。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:83
 msgctxt "Password hint"
-msgid "Try changing some letters and numbers."
-msgstr "試著改動一些英文字母與數字。"
+msgid ""
+"This password is very similar to your last one. Try changing some letters "
+"and numbers."
+msgstr "這個密碼與您前一個密碼太類似。試著改動一些英文字母與數字。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:85
 #: ../gnome-initial-setup/pages/password/pw-utils.c:93
 msgctxt "Password hint"
-msgid "Try changing the password a bit more."
-msgstr "試著更大幅改動密碼。"
+msgid ""
+"This password is very similar to your last one. Try changing the password a "
+"bit more."
+msgstr "這個密碼與您前一個密碼太類似。試著更大幅改動密碼。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:87
 msgctxt "Password hint"
-msgid "A password without your user name would be stronger."
-msgstr "若密碼不含使用名稱的相關資訊會更強。"
+msgid ""
+"This is a weak password. A password without your user name would be stronger."
+msgstr "這個密碼強度不足。若密碼不含使用名稱的相關資訊會更強。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:89
 msgctxt "Password hint"
-msgid "Try to avoid using your name in the password."
-msgstr "試著避免在密碼中使用您的名稱。"
+msgid "This is a weak password. Try to avoid using your name in the password."
+msgstr "這個密碼強度不足。試著避免在密碼中使用您的姓名。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:91
 msgctxt "Password hint"
-msgid "Try to avoid some of the words included in the password."
-msgstr "試著避免在密碼中包含一些單字。"
+msgid ""
+"This is a weak password. Try to avoid some of the words included in the "
+"password."
+msgstr "這個密碼強度不足。試著避免在密碼中包含一些單字。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:95
 msgctxt "Password hint"
-msgid "Try to avoid common words."
-msgstr "試著避免常見單字。"
+msgid "This is a weak password. Try to avoid common words."
+msgstr "這個密碼強度不足。試著避免常見單字。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:97
 msgctxt "Password hint"
-msgid "Try to avoid reordering existing words."
-msgstr "試著避免重新排序已有的單字。"
+msgid "This is a weak password. Try to avoid reordering existing words."
+msgstr "這個密碼強度不足。試著避免重新排序已有的單字。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:99
 msgctxt "Password hint"
-msgid "Try to use more numbers."
-msgstr "試著使用更多數字。"
+msgid "This is a weak password. Try to use more numbers."
+msgstr "這個密碼強度不足。試著使用更多數字。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:101
 msgctxt "Password hint"
-msgid "Try to use more uppercase letters."
-msgstr "試著使用更多大寫英文字母。"
+msgid "This is a weak password. Try to use more uppercase letters."
+msgstr "這個密碼強度不足。試著使用更多大寫英文字母。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:103
 msgctxt "Password hint"
-msgid "Try to use more lowercase letters."
-msgstr "試著使用更多小寫英文字母。"
+msgid "This is a weak password. Try to use more lowercase letters."
+msgstr "這個密碼強度不足。試著使用更多小寫英文字母。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:105
 msgctxt "Password hint"
-msgid "Try to use more special characters, like punctuation."
-msgstr "試著使用更多特殊字元，例如半形標點符號。"
+msgid ""
+"This is a weak password. Try to use more special characters, like "
+"punctuation."
+msgstr "這個密碼強度不足。試著使用更多特殊字元，例如半形標點符號。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:107
 msgctxt "Password hint"
-msgid "Try to use a mixture of letters, numbers and punctuation."
-msgstr "試著混合使用英文字母、數字、半形標點等。"
+msgid ""
+"This is a weak password. Try to use a mixture of letters, numbers and "
+"punctuation."
+msgstr "這個密碼強度不足。試著混合使用英文字母、數字、半形標點等。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:109
 msgctxt "Password hint"
-msgid "Try to avoid repeating the same character."
-msgstr "試著避免重複使用相同字元。"
+msgid "This is a weak password. Try to avoid repeating the same character."
+msgstr "這個密碼強度不足。試著避免重複使用相同字元。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:111
 msgctxt "Password hint"
 msgid ""
-"Try to avoid repeating the same type of character: you need to mix up "
-"letters, numbers and punctuation."
+"This is a weak password. Try to avoid repeating the same type of character: "
+"you need to mix up letters, numbers and punctuation."
 msgstr ""
-"試著避免重複使用相同類型的字元：您需要混用英文字母、數字與半形標點符號。"
+"這個密碼強度不足。試著避免重複使用相同類型的字元：您需要混用英文字母、數字與"
+"半形標點符號。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:113
 msgctxt "Password hint"
-msgid "Try to avoid sequences like 1234 or abcd."
-msgstr "試著必須連續字，例如 1234 或 abcd。"
+msgid "This is a weak password. Try to avoid sequences like 1234 or abcd."
+msgstr "這個密碼強度不足。試著避免連續字，例如 1234 或 abcd。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:115
 msgctxt "Password hint"
-msgid "Try to add more letters, numbers and symbols."
-msgstr "試著加入更多英文字母、數字，以及標點符號。"
+msgid "This is a weak password. Try to add more letters, numbers and symbols."
+msgstr "這個密碼強度不足。試著加入更多英文字母、數字，以及標點符號。"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:117
-#| msgid ""
-#| "Try to use at least 8 different characters. Mix upper and lower case and "
-#| "use a number or two."
 msgctxt "Password hint"
 msgid "Mix uppercase and lowercase and use a number or two."
 msgstr "試著混用英文大小寫並使用一、二個數字。"
@@ -453,40 +464,80 @@ msgid ""
 msgstr "好密瑪！若能加入更多字母、數字、半形標點符號會更牢固！"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:141
-#| msgid "Strength: %s"
 msgctxt "Password strength"
 msgid "Strength: Weak"
 msgstr "強度：脆弱"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:145
-#| msgid "Strength: %s"
 msgctxt "Password strength"
 msgid "Strength: Low"
 msgstr "強度：低"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:148
-#| msgid "Strength: %s"
 msgctxt "Password strength"
 msgid "Strength: Medium"
 msgstr "強度：中"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:151
-#| msgid "Strength: %s"
 msgctxt "Password strength"
 msgid "Strength: Good"
 msgstr "強度：良好"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:154
-#| msgid "Strength: %s"
 msgctxt "Password strength"
 msgid "Strength: High"
 msgstr "強度：高"
 
-#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:220
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:109
+#, c-format
+msgid ""
+"Sending reports of technical problems helps us to improve %s. Reports are "
+"sent anonymously and are scrubbed of personal data."
+msgstr ""
+"傳送協助我們改進 %s 的技術問題報告。報告會以匿名方式送出並清除個人資料。"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+msgid "Uses Mozilla Location Service:"
+msgstr "使用 Mozilla 位置服務："
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:116
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:238
+msgid "Privacy Policy"
+msgstr "隱私權原則"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:274
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
+msgid "Privacy"
+msgstr "隱私權"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
+msgid "Location Services"
+msgstr "位置服務"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
+msgid ""
+"Allows applications to determine your geographical location. An indication "
+"is shown when location services are in use."
+msgstr "允許應用程式確定您的地理位置。當位置服務在使用時會顯示相關指示。"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
+msgid "Automatic Problem Reporting"
+msgstr "自動錯誤回報"
+
+#: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
+msgid ""
+"Privacy controls can be changed at any time from the Settings application."
+msgstr "隱私權控制可以在任何時刻從設定值改變。"
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"
 msgstr "找不到地區"
 
-#: ../gnome-initial-setup/pages/region/gis-region-page.c:217
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
 msgid "Region"
 msgstr "地區"
@@ -498,47 +549,131 @@ msgstr "選擇您的國家或地區。"
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
 #. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:330
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:328
 #, c-format
 msgid "_Start using %s"
 msgstr "開始使用 %s"
 
-#. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
-#. * detect any distribution.
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:337
-#, c-format
-msgid ""
-"Thank you for choosing %s.\n"
-"We hope that you love it."
-msgstr ""
-"感謝您選擇 %s。\n"
-"我們衷心希望您會喜歡。"
-
-#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:363
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:358
 msgid "Ready to Go"
 msgstr "準備出發"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
-msgid "You're all set!"
-msgstr "您已經全部設定好了！"
+msgid "You're ready to go!"
+msgstr "您已經準備好了！"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#. Translators: "city, country"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:238
 #, c-format
-msgid ""
-"We think that your time zone is %s. Press Next to continue or search for a "
-"city to manually set the time zone."
-msgstr ""
-"我們認為您的時區為 %s。請按下「下一步」繼續，或是手動搜尋城市以設定時區。"
+msgctxt "timezone loc"
+msgid "%s, %s"
+msgstr "%s，%s"
 
-#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#. Translators: UTC here means the Coordinated Universal Time.
+#. * %:::z will be replaced by the offset from UTC e.g. UTC+02
+#.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:275
+msgid "UTC%:::z"
+msgstr "UTC%:::z"
+
+#. Translators: This is the time format used in 12-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:279
+msgid "%l:%M %p"
+msgstr "%p %l:%M"
+
+#. Translators: This is the time format used in 24-hour mode.
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:282
+msgid "%R"
+msgstr "%R"
+
+#. Translators: "timezone (utc shift)"
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:285
+#, c-format
+msgctxt "timezone map"
+msgid "%s (%s)"
+msgstr "%s (%s)"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:432
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
 msgid "Time Zone"
 msgstr "時區"
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid ""
+"The time zone will be set automatically if your location can be found. You "
+"can also search for a city to set it yourself."
+msgstr "如果可以找到您所在的位置，將自動設定時區。您也可以自己搜尋城市。"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:3
 msgid "Please search for a nearby city"
 msgstr "請搜尋鄰近的城市"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+#. * detect any distribution.
+#.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:112
+#, c-format
+msgid ""
+"Proprietary software sources provide access to additional software, "
+"including web browsers and games. This software typically has restrictions "
+"on use and access to source code, and is not provided by %s."
+msgstr ""
+"專有軟體來源可提供額外軟體，包括一些網頁瀏覽器和遊戲。這類軟體一般對於使用用"
+"途和源始碼存取都有所限制，而且並非由 %s 所提供。"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:245
+msgid "Software Sources"
+msgstr "軟體來源"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:1
+msgid "Additional Software Sources"
+msgstr "額外軟體來源"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:2
+msgid "<a href=\"more\">Find out more…</a>"
+msgstr "<a href=\"more\">深入瞭解…</a>"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:3
+msgid "Proprietary Software Sources"
+msgstr "專有軟體來源"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:4
+msgid ""
+"Proprietary software typically has restrictions on how it can be used and on "
+"access to source code. This prevents anyone but the software owner from "
+"inspecting, improving or learning from its code."
+msgstr ""
+"專有軟體一般都有使用用途、和源始碼存取上的限制。這使得只有軟體擁有者才能檢"
+"閱、改善、或從其程式碼中學習，而其他人都不可以。"
+
+#: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:5
+msgid ""
+"In contrast, Free Software can be freely run, copied, distributed, studied "
+"and modified."
+msgstr "相反的，自由軟體則可以自由使用、複製、散佈、研究、和修改。"
+
+#~ msgid "Are these the right details? You can change them if you want."
+#~ msgstr "這些資料正確嗎？您可以更改它們。"
+
+#~ msgid "You can review your online accounts (and add others) after setup."
+#~ msgstr "您可以在設定後檢閱您的線上帳號 (與加入其他帳號)。"
+
+#~ msgid ""
+#~ "Thank you for choosing %s.\n"
+#~ "We hope that you love it."
+#~ msgstr ""
+#~ "感謝您選擇 %s。\n"
+#~ "我們衷心希望您會喜歡。"
+
+#~ msgid ""
+#~ "We think that your time zone is %s. Press Next to continue or search for "
+#~ "a city to manually set the time zone."
+#~ msgstr ""
+#~ "我們認為您的時區為 %s。請按下「下一步」繼續，或是手動搜尋城市以設定時區。"
+
+#~ msgid "Cancel"
+#~ msgstr "取消"
 
 #~ msgid "Your username cannot be changed after setup."
 #~ msgstr "您的使用者名稱無法在設定之後變更。"
@@ -548,10 +683,6 @@ msgstr "請搜尋鄰近的城市"
 
 #~ msgid "_Confirm password"
 #~ msgstr "確認密碼(_C)"
-
-#~| msgid "No password"
-#~ msgid "Choose a _password"
-#~ msgstr "設定密碼(_P)"
 
 #~ msgctxt "Password strength"
 #~ msgid "Too short"
@@ -629,26 +760,17 @@ msgstr "請搜尋鄰近的城市"
 #~ msgid "Other"
 #~ msgstr "其他"
 
-#~ msgid "Input Sources"
-#~ msgstr "輸入來源"
-
 #~ msgid "Add an Input Source"
 #~ msgstr "加入輸入來源"
 
 #~ msgid "Search for a location"
 #~ msgstr "搜尋位置"
 
-#~ msgid "Location"
-#~ msgstr "位置"
-
 #~ msgid "_Determine your location automatically"
 #~ msgstr "自動判斷您的位置(_D)"
 
 #~ msgid "No network devices found."
 #~ msgstr "找不到網路裝置。"
-
-#~ msgid "Wireless Networks"
-#~ msgstr "無線網路"
 
 #~ msgid "Thank You"
 #~ msgstr "謝謝您"

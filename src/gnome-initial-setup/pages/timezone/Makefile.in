@@ -104,12 +104,11 @@ CONFIG_CLEAN_VPATH_FILES =
 LTLIBRARIES = $(noinst_LTLIBRARIES)
 am__DEPENDENCIES_1 =
 libgistimezone_la_DEPENDENCIES = $(am__DEPENDENCIES_1)
-am__objects_1 = libgistimezone_la-geoclue.lo \
-	libgistimezone_la-timedated.lo \
+am__objects_1 = libgistimezone_la-timedated.lo \
 	libgistimezone_la-cc-datetime-resources.lo \
 	libgistimezone_la-timezone-resources.lo
 am_libgistimezone_la_OBJECTS = libgistimezone_la-cc-timezone-map.lo \
-	libgistimezone_la-gis-bubble-widget.lo \
+	libgistimezone_la-tz.lo libgistimezone_la-gis-bubble-widget.lo \
 	libgistimezone_la-gis-timezone-page.lo $(am__objects_1)
 libgistimezone_la_OBJECTS = $(am_libgistimezone_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
@@ -216,7 +215,6 @@ ECHO_T = @ECHO_T@
 EGREP = @EGREP@
 EXEEXT = @EXEEXT@
 FGREP = @FGREP@
-GEOCLUE_DBUS_INTERFACE_XML = @GEOCLUE_DBUS_INTERFACE_XML@
 GETTEXT_PACKAGE = @GETTEXT_PACKAGE@
 GLIB_COMPILE_RESOURCES = @GLIB_COMPILE_RESOURCES@
 GMOFILES = @GMOFILES@
@@ -254,6 +252,7 @@ LIBTOOL = @LIBTOOL@
 LIPO = @LIPO@
 LN_S = @LN_S@
 LTLIBOBJS = @LTLIBOBJS@
+LT_SYS_LIBRARY_PATH = @LT_SYS_LIBRARY_PATH@
 MAINT = @MAINT@
 MAKEINFO = @MAKEINFO@
 MANIFEST_TOOL = @MANIFEST_TOOL@
@@ -287,6 +286,8 @@ RANLIB = @RANLIB@
 SED = @SED@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
+SOFTWARE_SOURCES_CFLAGS = @SOFTWARE_SOURCES_CFLAGS@
+SOFTWARE_SOURCES_LIBS = @SOFTWARE_SOURCES_LIBS@
 STRIP = @STRIP@
 USE_NLS = @USE_NLS@
 VERSION = @VERSION@
@@ -347,9 +348,9 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 noinst_LTLIBRARIES = libgistimezone.la
-BUILT_SOURCES = geoclue.c geoclue.h timedated.c timedated.h \
-	cc-datetime-resources.c cc-datetime-resources.h \
-	timezone-resources.c timezone-resources.h
+BUILT_SOURCES = timedated.c timedated.h cc-datetime-resources.c \
+	cc-datetime-resources.h timezone-resources.c \
+	timezone-resources.h
 
 # Used for backward file
 AM_CPPFLAGS = \
@@ -359,6 +360,7 @@ resource_files = $(shell glib-compile-resources --sourcedir=$(srcdir) --generate
 resource_files_timezone = $(shell glib-compile-resources --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/timezone.gresource.xml)
 libgistimezone_la_SOURCES = \
 	cc-timezone-map.c cc-timezone-map.h \
+	tz.c tz.h \
 	gis-bubble-widget.c gis-bubble-widget.h \
 	gis-timezone-page.c gis-timezone-page.h \
 	$(BUILT_SOURCES)
@@ -430,11 +432,11 @@ distclean-compile:
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-cc-datetime-resources.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-cc-timezone-map.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-geoclue.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-gis-bubble-widget.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-gis-timezone-page.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-timedated.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-timezone-resources.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/libgistimezone_la-tz.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -464,6 +466,13 @@ libgistimezone_la-cc-timezone-map.lo: cc-timezone-map.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -c -o libgistimezone_la-cc-timezone-map.lo `test -f 'cc-timezone-map.c' || echo '$(srcdir)/'`cc-timezone-map.c
 
+libgistimezone_la-tz.lo: tz.c
+@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -MT libgistimezone_la-tz.lo -MD -MP -MF $(DEPDIR)/libgistimezone_la-tz.Tpo -c -o libgistimezone_la-tz.lo `test -f 'tz.c' || echo '$(srcdir)/'`tz.c
+@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libgistimezone_la-tz.Tpo $(DEPDIR)/libgistimezone_la-tz.Plo
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='tz.c' object='libgistimezone_la-tz.lo' libtool=yes @AMDEPBACKSLASH@
+@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
+@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -c -o libgistimezone_la-tz.lo `test -f 'tz.c' || echo '$(srcdir)/'`tz.c
+
 libgistimezone_la-gis-bubble-widget.lo: gis-bubble-widget.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -MT libgistimezone_la-gis-bubble-widget.lo -MD -MP -MF $(DEPDIR)/libgistimezone_la-gis-bubble-widget.Tpo -c -o libgistimezone_la-gis-bubble-widget.lo `test -f 'gis-bubble-widget.c' || echo '$(srcdir)/'`gis-bubble-widget.c
 @am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libgistimezone_la-gis-bubble-widget.Tpo $(DEPDIR)/libgistimezone_la-gis-bubble-widget.Plo
@@ -477,13 +486,6 @@ libgistimezone_la-gis-timezone-page.lo: gis-timezone-page.c
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='gis-timezone-page.c' object='libgistimezone_la-gis-timezone-page.lo' libtool=yes @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -c -o libgistimezone_la-gis-timezone-page.lo `test -f 'gis-timezone-page.c' || echo '$(srcdir)/'`gis-timezone-page.c
-
-libgistimezone_la-geoclue.lo: geoclue.c
-@am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -MT libgistimezone_la-geoclue.lo -MD -MP -MF $(DEPDIR)/libgistimezone_la-geoclue.Tpo -c -o libgistimezone_la-geoclue.lo `test -f 'geoclue.c' || echo '$(srcdir)/'`geoclue.c
-@am__fastdepCC_TRUE@	$(AM_V_at)$(am__mv) $(DEPDIR)/libgistimezone_la-geoclue.Tpo $(DEPDIR)/libgistimezone_la-geoclue.Plo
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	$(AM_V_CC)source='geoclue.c' object='libgistimezone_la-geoclue.lo' libtool=yes @AMDEPBACKSLASH@
-@AMDEP_TRUE@@am__fastdepCC_FALSE@	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCC_FALSE@	$(AM_V_CC@am__nodep@)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -c -o libgistimezone_la-geoclue.lo `test -f 'geoclue.c' || echo '$(srcdir)/'`geoclue.c
 
 libgistimezone_la-timedated.lo: timedated.c
 @am__fastdepCC_TRUE@	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(libgistimezone_la_CFLAGS) $(CFLAGS) -MT libgistimezone_la-timedated.lo -MD -MP -MF $(DEPDIR)/libgistimezone_la-timedated.Tpo -c -o libgistimezone_la-timedated.lo `test -f 'timedated.c' || echo '$(srcdir)/'`timedated.c
@@ -720,14 +722,6 @@ uninstall-am:
 
 .PRECIOUS: Makefile
 
-
-geoclue.c: geoclue.h
-geoclue.h: Makefile.am $(GEOCLUE_DBUS_INTERFACE_XML)
-	$(AM_V_GEN) gdbus-codegen				\
-		--interface-prefix org.freedesktop.GeoClue2	\
-		--generate-c-code geoclue			\
-		--c-namespace Geoclue				\
-		$(GEOCLUE_DBUS_INTERFACE_XML)
 
 timedated.c: timedated.h
 timedated.h: Makefile.am timedated1-interface.xml
