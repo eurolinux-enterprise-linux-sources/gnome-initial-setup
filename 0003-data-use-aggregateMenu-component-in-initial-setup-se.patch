@@ -1,0 +1,29 @@
+From 8f3951335e9d209a6716bd9d18eb9cf291afefd9 Mon Sep 17 00:00:00 2001
+From: Cosimo Cecchi <cosimoc@gnome.org>
+Date: Mon, 5 Jun 2017 13:34:49 -0700
+Subject: [PATCH 3/4] data: use aggregateMenu component in initial-setup
+ session
+
+The 'battery' and 'volume' components don't exist anymore, and have been
+replaced with the 'aggregateMenu'.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=783452
+---
+ data/initial-setup.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/initial-setup.json b/data/initial-setup.json
+index e6814f3..5cbda2a 100644
+--- a/data/initial-setup.json
++++ b/data/initial-setup.json
+@@ -3,6 +3,6 @@
+     "components": ["networkAgent"],
+     "panel": { "left": [],
+                "center": [],
+-               "right": ["a11yGreeter", "keyboard", "volume", "battery"]
++               "right": ["a11yGreeter", "keyboard", "aggregateMenu"]
+     }
+ }
+-- 
+2.13.6
+

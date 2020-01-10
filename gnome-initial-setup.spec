@@ -5,7 +5,7 @@
 
 Name:           gnome-initial-setup
 Version:        3.22.1
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Bootstrapping your OS
 
 License:        GPLv2+
@@ -14,6 +14,12 @@ Source0:        https://download.gnome.org/sources/%{name}/3.22/%{name}-%{versio
 Patch0:         honor-anaconda-firstboot-disabled.patch
 Patch1:         0001-Disable-software-page-as-it-doesn-t-make-sense-in-RH.patch
 Patch2:         0001-password-Make-our-password-validation-similar-to-ana.patch
+
+Patch3:         0001-data-Update-gnome-session-file-for-gnome-settings-da.patch
+Patch4:         0002-data-Start-gnome-shell-in-the-DisplayServer-autostar.patch
+Patch5:         0003-data-use-aggregateMenu-component-in-initial-setup-se.patch
+Patch6:         0004-data-Adjust-to-g-s-d-s-plugin-removals.patch
+
 
 BuildRequires:  krb5-devel
 BuildRequires:  desktop-file-utils
@@ -69,6 +75,10 @@ you through configuring it. It is integrated with gdm.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
+%patch4 -p1
+%patch5 -p1
+%patch6 -p1
 
 %build
 %configure --enable-software-sources
@@ -109,6 +119,10 @@ useradd -rM -d /run/gnome-initial-setup/ -s /sbin/nologin %{name} &>/dev/null ||
 %{_datadir}/polkit-1/rules.d/20-gnome-initial-setup.rules
 
 %changelog
+* Thu Oct 26 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-5
+- Update session definition files to work with GNOME 3.26
+  Resolves: rhbz#1506607
+
 * Fri May 12 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-4
 - Make our password validation similar to anaconda's
   Resolves: rhbz#1447941
