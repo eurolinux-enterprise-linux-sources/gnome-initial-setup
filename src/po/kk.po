@@ -1,0 +1,603 @@
+# Kazakh translation for gnome-initial-setup.
+# Copyright (C) 2013 gnome-initial-setup's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-initial-setup package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-initial-setup master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"initial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-10-06 18:55+0000\n"
+"PO-Revision-Date: 2014-10-18 07:01+0600\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"Language-Team: Kazakh <kk@li.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/gnome-initial-setup.desktop.in.in.h:1
+#: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
+msgid "Initial Setup"
+msgstr "Бастапқы баптау"
+
+#: ../gnome-initial-setup/gis-assistant.c:384
+msgid "_Next"
+msgstr "_Келесі"
+
+#: ../gnome-initial-setup/gis-assistant.c:385
+msgid "_Accept"
+msgstr "Қ_абылдау"
+
+#: ../gnome-initial-setup/gis-assistant.c:386
+msgid "_Skip"
+msgstr "Атта_п кету"
+
+#: ../gnome-initial-setup/gis-assistant.c:387
+msgid "_Previous"
+msgstr "А_лдыңғы"
+
+#: ../gnome-initial-setup/gis-assistant.c:388
+msgid "_Cancel"
+msgstr "Ба_с тарту"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:194
+msgid "Force existing user mode"
+msgstr "Бар пайдаланушы режимін мәжбүрлету"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:200
+msgid "- GNOME initial setup"
+msgstr "- GNOME бастапқы баптау"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:231
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
+msgid "About You"
+msgstr "Өзіңіз туралы"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+msgid "Failed to register account"
+msgstr "Тіркелгіні тіркеу сәтсіз"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+msgid "No supported way to authenticate with this domain"
+msgstr "Бұл доменде аутентификациялаудың қолдауы бар тәсілдері жоқ"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+msgid "Failed to join domain"
+msgstr "Доменде тіркеу сәтсіз"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+msgid "Failed to log into domain"
+msgstr "Доменге кіру сәтсіз"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:1
+msgid "Enterprise Login"
+msgstr "Кәсіпорын тіркелгісі"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:2
+msgid ""
+"Enterprise login allows an existing centrally managed user account to be "
+"used on this device."
+msgstr ""
+"Кәсіпорын тіркелгілерін қолдану бар болып тұрған, орталықтан басқарылатын, "
+"пайдаланушы тіркелгісін бұл компьютерде қолдануын мүмкін қылады."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
+msgid "_Domain"
+msgstr "До_мен"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
+msgid "_Username"
+msgstr "_Пайдаланушы аты"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:5
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:3
+msgid "_Password"
+msgstr "_Пароль"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:6
+msgid "Enterprise domain or realm name"
+msgstr "Кәсіпорын доменінің (realm) аты"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:7
+msgid "C_ontinue"
+msgstr "Жа_лғастыру"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
+msgid "Domain Administrator Login"
+msgstr "Домен әкімшісінің логині"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
+#| msgid ""
+#| "In order to use enterprise logins, this computer needs to be enrolled in "
+#| "the domain. Please have your network administrator type their domain "
+#| "password here, and choose a unique computer name for your computer."
+msgid ""
+"In order to use enterprise logins, this computer needs to be enrolled in a "
+"domain. Please have your network administrator type the domain password "
+"here, and choose a unique computer name for your computer."
+msgstr ""
+"Кәсіпорын тіркелгілерін қолдану үшін, бұл компьютер доменге кіруі керек. "
+"Желілік әкімшісі осында өз домендік паролін енгізуі тиіс және компьютеріңіз "
+"үшін бірегей атауды таңдау керек."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
+msgid "_Computer"
+msgstr "_Компьютер"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
+msgid "Administrator _Name"
+msgstr "Әкімші а_ты"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
+msgid "Administrator Password"
+msgstr "Әкімші паролі"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:203
+msgid "Are these the right details? You can change them if you want."
+msgstr "Бұл мәлімет дұрыс па? Қаласаңыз, оны өзгерте аласыз."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:404
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "We need a few details to complete setup."
+msgstr "Орнатуды аяқтау үшін біраз ақпарат керек."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
+msgid "Avatar image"
+msgstr "Аватар суреті"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
+msgid "_Full Name"
+msgstr "Тол_ық аты"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
+#| msgid "Enterprise Login"
+msgid "Set Up _Enterprise Login"
+msgstr "Кәсі_порын тіркелгісін баптау"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
+msgid "Disable image"
+msgstr "Суретті сөндіру"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
+msgid "Take a photo..."
+msgstr "Фотоны түсіру..."
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:310
+msgid "Cannot automatically join this type of domain"
+msgstr "Доменнің бұл түріне автоматты түрде кіру мүмкін емес"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:373
+#, c-format
+msgid "No such domain or realm found"
+msgstr "Ондай домен (realm) табылмады"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
+#, c-format
+msgid "Cannot log in as %s at the %s domain"
+msgstr "%s ретінде %s доменіне кіру мүмкін емес"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
+msgid "Invalid password, please try again"
+msgstr "Пароль қате, қайтадан көріңіз"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
+#, c-format
+msgid "Couldn't connect to the %s domain: %s"
+msgstr "%s доменіне байланысу мүмкін емес: %s"
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:245
+#, c-format
+#| msgid "A user with the username '%s' already exists"
+msgid "A user with the username '%s' already exists."
+msgstr "'%s' деген пайдаланушы бар болып тұр."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:249
+#, c-format
+#| msgid "The username is too long"
+msgid "The username is too long."
+msgstr "Пайдаланушы аты тым ұзын."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:252
+#| msgid "The username cannot start with a '-'"
+msgid "The username cannot start with a '-'."
+msgstr "Пайдаланушы аты '-' таңбасынан басталмауы тиіс."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:255
+#| msgid ""
+#| "The username must only consist of:\n"
+#| " ➣ letters from the English alphabet\n"
+#| " ➣ digits\n"
+#| " ➣ any of the characters '.', '-' and '_'"
+msgid ""
+"The username should only consist of lower and upper case letters from a-z, "
+"digits and any of characters '.', '-' and '_'."
+msgstr ""
+"Пайдаланушы атында тек ағылшын әліппесінің әріптері, сандар, '.', '-' және "
+"'_' таңбаларының кез-келгені болуы мүмкін."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:259
+msgid "This will be used to name your home folder and can't be changed."
+msgstr ""
+"Бұл сіздің үй бумаңыздың аты ретінде қолданылады, және оны кейін өзгертуге "
+"болмайды."
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
+msgid "License Agreements"
+msgstr "Лицензиялық келісім-шарт"
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
+msgid ""
+"I have _agreed to the terms and conditions in this end user license "
+"agreement."
+msgstr ""
+"Мен осы түпкі пайдаланушы келісімшартындағы барлық шарттармен к_елісемін."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
+msgid "Add Account"
+msgstr "Тіркелгіні қосу"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
+msgid "Cancel"
+msgstr "Бас тарту"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+msgid "Online Accounts"
+msgstr "Желідегі тіркелгілер"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:1
+msgid "Connect Your Online Accounts"
+msgstr "Желідегі тіркелгілерді байланыстыру"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
+msgid ""
+"Connecting your accounts will allow you to easily access your email, online "
+"calendar, contacts, documents and photos."
+msgstr ""
+"Тіркелгілерді қосу сізге желідегі фото, контакттар, эл. пошта және басқа да "
+"мәліметтеріңізге қатынауға мүмкіндік береді."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
+msgid "You can review your online accounts (and add others) after setup."
+msgstr ""
+"Орнатудан кейін сіз өзіңіздің желідегі тіркелгілеріңізді қарай аласыз (және "
+"басқаларын қоса аласыз)."
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
+msgid "Preview"
+msgstr "Алдын-ала қарау"
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:296
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:212
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
+msgid "More…"
+msgstr "Көбірек..."
+
+#. Translators: a search for input methods or keyboard layouts
+#. * did not yield any results
+#.
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:317
+msgid "No inputs found"
+msgstr "Кіріс көздері табылмады"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:219
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
+msgid "Typing"
+msgstr "Теру"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:2
+msgid "Select your keyboard layout or an input method."
+msgstr "Пернетақта жаймасын не енгізу тәсілін таңдау."
+
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:229
+msgid "No languages found"
+msgstr "Тілдер табылмады"
+
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:282
+msgid "Welcome"
+msgstr "Қош келдіңіз"
+
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+msgid "Welcome!"
+msgstr "Қош келдіңіз!"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+msgctxt "Wireless access point"
+msgid "Other…"
+msgstr "Басқа…"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+msgid "Checking for available wireless networks"
+msgstr "Қолжетерлік сымсыз желілерді іздеу"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+msgid "Network"
+msgstr "Желі"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:1
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:2
+msgid ""
+"Connecting to the Internet will enable you to set the time, add your "
+"details, and enable you to access your email, calendar, and contacts. It is "
+"also necessary for enterprise login accounts."
+msgstr ""
+"Интернетке байланысты орнату сізге дұрыс уақытты орнату, мәліметтеріңізді "
+"қосу, және эл. пошта, күнтізбе және контакттарға қатынауға мүмкін етеді. "
+"Сонымен қатар, ол кәсіпорын тіркелгісін қолдану үшін керек."
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:3
+msgid "No wireless available"
+msgstr "Қолжетерлік сымсыз желілер жоқ"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:144
+#| msgid "Passwords do not match"
+msgid "The passwords do not match."
+msgstr "Парольдер өзара сәйкес келмейді."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:266
+msgid "Password"
+msgstr "Пароль"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:1
+msgid "Set a Password"
+msgstr "Парольді орнату"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:2
+msgid "Be careful not to lose your password."
+msgstr "Пароліңізді жоғалтпауға тырысыңыз."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:4
+msgid "_Verify"
+msgstr "_Тексеру"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:81
+msgctxt "Password hint"
+msgid "The new password needs to be different from the old one."
+msgstr "Жаңа пароль ескі парольден басқа болуы тиіс."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:83
+msgctxt "Password hint"
+msgid "Try changing some letters and numbers."
+msgstr "Кейбір әріптер мен сандарды өзгертіп көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:85
+#: ../gnome-initial-setup/pages/password/pw-utils.c:93
+msgctxt "Password hint"
+msgid "Try changing the password a bit more."
+msgstr "Парольді әрі қарай өзгертіп қараңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:87
+msgctxt "Password hint"
+msgid "A password without your user name would be stronger."
+msgstr "Сіздің пайдаланушы атыңызды қолданбайтын пароль күштірек болады."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:89
+msgctxt "Password hint"
+msgid "Try to avoid using your name in the password."
+msgstr "Пайдаланушы атыңызды парольде қолданбауға тырысыңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:91
+msgctxt "Password hint"
+msgid "Try to avoid some of the words included in the password."
+msgstr "Пароль ішіндегі сөздердің кейбіреулерін қолданбауға тырысыңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:95
+msgctxt "Password hint"
+msgid "Try to avoid common words."
+msgstr "Қарапайым сөздерді қолданбауға тырысыңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:97
+msgctxt "Password hint"
+msgid "Try to avoid reordering existing words."
+msgstr "Бар сөздерді тек орындарымен ауыстыруды қолданбауға тырысыңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:99
+msgctxt "Password hint"
+msgid "Try to use more numbers."
+msgstr "Көбірек сандарды қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:101
+msgctxt "Password hint"
+msgid "Try to use more uppercase letters."
+msgstr "Көбірек бас әріптерді қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:103
+msgctxt "Password hint"
+msgid "Try to use more lowercase letters."
+msgstr "Көбірек кіші әріптерді қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:105
+msgctxt "Password hint"
+msgid "Try to use more special characters, like punctuation."
+msgstr "Көбірек арнайы таңбаларды, тыныс белгілері сияқты, қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:107
+msgctxt "Password hint"
+msgid "Try to use a mixture of letters, numbers and punctuation."
+msgstr "Әріптер, сандар мен тыныс белгілерді араластыруды қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:109
+msgctxt "Password hint"
+msgid "Try to avoid repeating the same character."
+msgstr "Бір таңбаны қайталамауды қолданып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:111
+msgctxt "Password hint"
+msgid ""
+"Try to avoid repeating the same type of character: you need to mix up "
+"letters, numbers and punctuation."
+msgstr ""
+"Бір таңбаны қайталамауды қолданып көріңіз: сізге әріптер, сандар мен тыныс "
+"белгілерді араластырып, қолдану керек."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:113
+msgctxt "Password hint"
+msgid "Try to avoid sequences like 1234 or abcd."
+msgstr "1234 не abcd сияқты тізбектерді қолданбаңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:115
+msgctxt "Password hint"
+msgid "Try to add more letters, numbers and symbols."
+msgstr "Көбірек әріптер, сандар мен таңбаларды қосып көріңіз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:117
+#| msgid ""
+#| "Try to use at least 8 different characters. Mix upper and lower case and "
+#| "use a number or two."
+msgctxt "Password hint"
+msgid "Mix uppercase and lowercase and use a number or two."
+msgstr "Бас/кіші әріптерді араластырып, бір не бірнеше санды да қолданыңыз."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:119
+msgctxt "Password hint"
+msgid ""
+"Good password! Adding more letters, numbers and punctuation will make it "
+"stronger."
+msgstr ""
+"Жақсы пароль! Көбірек әріптер, сандар мен тыныс белгілерін қосу оны қатаңдау "
+"қылады."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:141
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Weak"
+msgstr "Деңгейі: Әлсіз"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:145
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Low"
+msgstr "Деңгейі: Төмен"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:148
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Medium"
+msgstr "Деңгейі: Орташа"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:151
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Good"
+msgstr "Деңгейі: Жақсы"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:154
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: High"
+msgstr "Деңгейі: Өте жақсы"
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
+msgid "No regions found"
+msgstr "Аймақтар табылмады"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
+msgid "Region"
+msgstr "Аймақ"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
+msgid "Choose your country or region."
+msgstr "Ел не аймағыңызды таңдаңыз."
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:332
+#, c-format
+msgid "_Start using %s"
+msgstr "%s қолдануд_ы бастау"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:339
+#, c-format
+msgid ""
+"Thank you for choosing %s.\n"
+"We hope that you love it."
+msgstr ""
+"%s таңдағаныңыз үшін рахмет.\n"
+"Оны ұнатасыз деп үміттенеміз."
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:365
+msgid "Ready to Go"
+msgstr "Жұмысқа дайын"
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
+msgid "You're all set!"
+msgstr "Бәрі де дайын!"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:184
+#, c-format
+msgid ""
+"We think that your time zone is %s. Press Next to continue or search for a "
+"city to manually set the time zone."
+msgstr ""
+"Сіздің уақыт белдеуіңіз %s деп ойлаймыз. Жалғастыру үшін Келесі батырмасын "
+"басыңыз, ал уақыт белдеуін қолмен орнату үшін өз қалаңызды іздеп көріңіз."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:495
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
+msgid "Time Zone"
+msgstr "Уақыт белдеуі"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid "Please search for a nearby city"
+msgstr "Жақын қаланы іздеңіз"
+
+#~ msgid "Your username cannot be changed after setup."
+#~ msgstr "Пайдаланушы атыңызды орнату аяқталғаннан кейін өзгерту мүмкін емес."
+
+#~ msgid "No password"
+#~ msgstr "Пароль жоқ"
+
+#~ msgid "_Confirm password"
+#~ msgstr "Парольді ра_стау"
+
+#~ msgid "Choose a _password"
+#~ msgstr "Парольді _таңдаңыз"
+
+#~ msgctxt "Password strength"
+#~ msgid "Too short"
+#~ msgstr "Тым қысқа"
+
+#~ msgctxt "Password strength"
+#~ msgid "Not good enough"
+#~ msgstr "Жақсыға жетпей тұр"
+
+#~ msgctxt "Password strength"
+#~ msgid "Weak"
+#~ msgstr "Әлсіз"
+
+#~ msgctxt "Password strength"
+#~ msgid "Fair"
+#~ msgstr "Жақсы"
+
+#~ msgctxt "Password strength"
+#~ msgid "Good"
+#~ msgstr "Жақсы"
+
+#~ msgctxt "Password strength"
+#~ msgid "Strong"
+#~ msgstr "Күшті"
+
+#~ msgid "Login"
+#~ msgstr "Кіру"
+
+#~ msgid "Create a Local Account"
+#~ msgstr "Жергілікті тіркелгіні жасау"
+
+#~ msgid "page 1"
+#~ msgstr "бет 1"
+
+#~ msgid "Create an Enterprise Account"
+#~ msgstr "Кәсіпорын деңгейінің тіркелгісін жасау"

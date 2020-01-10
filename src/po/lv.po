@@ -1,0 +1,764 @@
+# Latvian translation for gnome-initial-setup.
+# Copyright (C) 2012 gnome-initial-setup's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-initial-setup package.
+#
+# Anita Reitere <nitalynx@gmail.com>, 2012.
+# Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-initial-setup master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"initial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-10-06 18:55+0000\n"
+"PO-Revision-Date: 2014-10-07 21:43+0300\n"
+"Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
+"Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/gnome-initial-setup.desktop.in.in.h:1
+#: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
+msgid "Initial Setup"
+msgstr "Sākotnējā iestatīšana"
+
+#: ../gnome-initial-setup/gis-assistant.c:384
+msgid "_Next"
+msgstr "_Nākamais"
+
+#: ../gnome-initial-setup/gis-assistant.c:385
+msgid "_Accept"
+msgstr "_Pieņemt"
+
+#: ../gnome-initial-setup/gis-assistant.c:386
+msgid "_Skip"
+msgstr "Izlai_st"
+
+#: ../gnome-initial-setup/gis-assistant.c:387
+msgid "_Previous"
+msgstr "Ie_priekšējais"
+
+#: ../gnome-initial-setup/gis-assistant.c:388
+msgid "_Cancel"
+msgstr "At_celt"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:194
+msgid "Force existing user mode"
+msgstr "Uzspiest esošu lietotāja režīmu"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:200
+msgid "- GNOME initial setup"
+msgstr "- GNOME sākotnējā iestatīšana"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:231
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
+msgid "About You"
+msgstr "Par jums"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+msgid "Failed to register account"
+msgstr "Neizdevās reģistrēt kontu"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+msgid "No supported way to authenticate with this domain"
+msgstr "Nav atbalstīta autentificēšanās veida šim domēnam"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+msgid "Failed to join domain"
+msgstr "Neizdevās pievienoties domēnam"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+msgid "Failed to log into domain"
+msgstr "Neizdevās ierakstīties domēnā"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:1
+msgid "Enterprise Login"
+msgstr "Uzņēmuma ierakstīšanās"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:2
+msgid ""
+"Enterprise login allows an existing centrally managed user account to be "
+"used on this device."
+msgstr ""
+"Uzņēmuma ierakstīšanās ļauj uz šīs ierīces izmantot esošus, centrāli "
+"pārvaldītus lietotāju kontus."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
+msgid "_Domain"
+msgstr "_Domēns"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
+msgid "_Username"
+msgstr "_Lietotājvārds"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:5
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:3
+msgid "_Password"
+msgstr "_Parole"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:6
+msgid "Enterprise domain or realm name"
+msgstr "Uzņēmuma domēs vai nogabala nosaukums"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:7
+msgid "C_ontinue"
+msgstr "T_urpināt"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
+msgid "Domain Administrator Login"
+msgstr "Domēna administratora ierakstīšanās"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
+#| msgid ""
+#| "In order to use enterprise logins, this computer needs to be enrolled in "
+#| "the domain. Please have your network administrator type their domain "
+#| "password here, and choose a unique computer name for your computer."
+msgid ""
+"In order to use enterprise logins, this computer needs to be enrolled in a "
+"domain. Please have your network administrator type the domain password "
+"here, and choose a unique computer name for your computer."
+msgstr ""
+"Lai izmantotu uzņēmuma ierakstīšanos, datoram jābūt reģistrētam domēnā. "
+"Tīkla administratoram šeit jāievada sava domēna parole un jāizvēlas unikāls "
+"datora nosaukums šim datoram."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
+msgid "_Computer"
+msgstr "_Dators"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
+msgid "Administrator _Name"
+msgstr "Administratora _vārds"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
+msgid "Administrator Password"
+msgstr "Administratora parole"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:203
+msgid "Are these the right details? You can change them if you want."
+msgstr "Vai šī informācija ir pareiza? Ja vēlaties, varat to mainīt."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:404
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "We need a few details to complete setup."
+msgstr "Lai beigtu iestatīšanu, vajag papildu informāciju."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
+msgid "Avatar image"
+msgstr "Lietotāja attēls"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
+msgid "_Full Name"
+msgstr "_Pilns vārds"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
+#| msgid "Enterprise Login"
+msgid "Set Up _Enterprise Login"
+msgstr "Iestatīt _Uzņēmuma ierakstīšanos"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
+msgid "Disable image"
+msgstr "Deaktivēt attēlu"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
+msgid "Take a photo..."
+msgstr "Uzņemt fotogrāfiju..."
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:310
+msgid "Cannot automatically join this type of domain"
+msgstr "Nevar automātiski pievienoties šī veida domēnam"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:373
+#, c-format
+msgid "No such domain or realm found"
+msgstr "Nav atrasts tāds domēns vai nogabals"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
+#, c-format
+msgid "Cannot log in as %s at the %s domain"
+msgstr "Nevar ierakstīties kā %s domēnā %s"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
+msgid "Invalid password, please try again"
+msgstr "Nederīga parole; lūdzu, mēģiniet vēlreiz"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
+#, c-format
+msgid "Couldn't connect to the %s domain: %s"
+msgstr "Neizdevās savienoties ar domēnu %s — %s"
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:245
+#, c-format
+#| msgid "A user with the username '%s' already exists"
+msgid "A user with the username '%s' already exists."
+msgstr "Lietotājs ar lietotājvārdu “%s” jau eksistē."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:249
+#, c-format
+#| msgid "The username is too long"
+msgid "The username is too long."
+msgstr "Lietotājvārds ir pārāk garš."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:252
+#| msgid "The username cannot start with a '-'"
+msgid "The username cannot start with a '-'."
+msgstr "Lietotājvārds nedrīkst sākties ar “-”."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:255
+#| msgid ""
+#| "The username must only consist of:\n"
+#| " ➣ letters from the English alphabet\n"
+#| " ➣ digits\n"
+#| " ➣ any of the characters '.', '-' and '_'"
+msgid ""
+"The username should only consist of lower and upper case letters from a-z, "
+"digits and any of characters '.', '-' and '_'."
+msgstr ""
+"Lietotājvārds drīkst saturēt tikai lielos un mazos burtus no a–z, ciparus un "
+"jebkuru no rakstzīmēm “.”, “-”, “_”."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:259
+msgid "This will be used to name your home folder and can't be changed."
+msgstr "To izmantos, lai nosauktu mājas mapi un to nevar mainīt."
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
+msgid "License Agreements"
+msgstr "Licences nosacījumi"
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
+msgid ""
+"I have _agreed to the terms and conditions in this end user license "
+"agreement."
+msgstr "Es _piekrītu šīs lietotāja licences noteikumiem."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
+msgid "Add Account"
+msgstr "Pievienot kontu"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+msgid "Online Accounts"
+msgstr "Tiešsaistes konti"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:1
+msgid "Connect Your Online Accounts"
+msgstr "Savienoties ar tiešsaistes kontiem"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
+msgid ""
+"Connecting your accounts will allow you to easily access your email, online "
+"calendar, contacts, documents and photos."
+msgstr ""
+"Kontu pievienošana ļaus jums viegli piekļūt e-pastam, tiešsaistes "
+"kalendāram, kontaktiem, dokumentiem un fotogrāfijām."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
+msgid "You can review your online accounts (and add others) after setup."
+msgstr ""
+"Jūs varat caurskatīt savus tiešsaistes kontus (un citas lietas) pēc "
+"iestatīšanas."
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
+msgid "Preview"
+msgstr "Priekšskatījums"
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:296
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:212
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
+msgid "More…"
+msgstr "Vairāk…"
+
+#. Translators: a search for input methods or keyboard layouts
+#. * did not yield any results
+#.
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:317
+msgid "No inputs found"
+msgstr "Netika derīga ievade"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:219
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
+msgid "Typing"
+msgstr "Rakstīšana"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:2
+msgid "Select your keyboard layout or an input method."
+msgstr "Izvēlēties tastatūras izkārtojumus vai ievades metodi."
+
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:229
+msgid "No languages found"
+msgstr "Nav atrastas valodas"
+
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:282
+msgid "Welcome"
+msgstr "Sveicināti"
+
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+msgid "Welcome!"
+msgstr "Laipni lūdzam!"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+msgctxt "Wireless access point"
+msgid "Other…"
+msgstr "Citi…"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+msgid "Checking for available wireless networks"
+msgstr "Meklē pieejamos bezvadu tīklus"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+msgid "Network"
+msgstr "Tīkls"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:1
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:2
+msgid ""
+"Connecting to the Internet will enable you to set the time, add your "
+"details, and enable you to access your email, calendar, and contacts. It is "
+"also necessary for enterprise login accounts."
+msgstr ""
+"Savienošanās ar internetu jums ļaus iestatīt laiku un piekļūt e-pastam, "
+"kalendāram un kontaktiem. Tas ir arī vajadzīgs, lai ierakstītos uzņēmuma "
+"kontā."
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:3
+msgid "No wireless available"
+msgstr "Bezvadu tīkls nav pieejams."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:144
+#| msgid "Passwords do not match"
+msgid "The passwords do not match."
+msgstr "Paroles nesakrīt."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:266
+msgid "Password"
+msgstr "Parole"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:1
+msgid "Set a Password"
+msgstr "Iestatīt paroli"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:2
+msgid "Be careful not to lose your password."
+msgstr "Centieties nepazaudēt savu paroli."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:4
+msgid "_Verify"
+msgstr "_Pārbaudīt"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:81
+msgctxt "Password hint"
+msgid "The new password needs to be different from the old one."
+msgstr "Jaunajai parolei ir jāatšķiras no vecās."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:83
+msgctxt "Password hint"
+msgid "Try changing some letters and numbers."
+msgstr "Mēģiniet mainīt dažus burtus un ciparus."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:85
+#: ../gnome-initial-setup/pages/password/pw-utils.c:93
+msgctxt "Password hint"
+msgid "Try changing the password a bit more."
+msgstr "Mēģiniet paroli vēl nedaudz pamainīt."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:87
+msgctxt "Password hint"
+msgid "A password without your user name would be stronger."
+msgstr "Parole būtu stiprāka, ja nesaturētu jūsu lietotājvārdu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:89
+msgctxt "Password hint"
+msgid "Try to avoid using your name in the password."
+msgstr "Mēģiniet neiekļaut savu vārdu parolē."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:91
+msgctxt "Password hint"
+msgid "Try to avoid some of the words included in the password."
+msgstr "Mēģiniet neizmantot dažus vārdus, kas ir parolē."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:95
+msgctxt "Password hint"
+msgid "Try to avoid common words."
+msgstr "Mēģiniet neizmantot bieži izmantotus vārdus."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:97
+msgctxt "Password hint"
+msgid "Try to avoid reordering existing words."
+msgstr "Mēģiniet neizmantot esošo vārdu pārkārtošanu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:99
+msgctxt "Password hint"
+msgid "Try to use more numbers."
+msgstr "Mēģiniet izmantot vairāk ciparu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:101
+msgctxt "Password hint"
+msgid "Try to use more uppercase letters."
+msgstr "Mēģiniet izmantot vairāk lieto burtu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:103
+msgctxt "Password hint"
+msgid "Try to use more lowercase letters."
+msgstr "Mēģiniet izmantot vairāk mazo burtu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:105
+msgctxt "Password hint"
+msgid "Try to use more special characters, like punctuation."
+msgstr "Mēģiniet izmantot vairāk īpašās rakstzīmes, piemēram, pieturzīmes."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:107
+msgctxt "Password hint"
+msgid "Try to use a mixture of letters, numbers and punctuation."
+msgstr "Mēģiniet izmantot burtus, ciparus un pieturzīmes."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:109
+msgctxt "Password hint"
+msgid "Try to avoid repeating the same character."
+msgstr "Mēģiniet neatkārtot vienu un to pašu rakstzīmi."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:111
+msgctxt "Password hint"
+msgid ""
+"Try to avoid repeating the same type of character: you need to mix up "
+"letters, numbers and punctuation."
+msgstr ""
+"Lai izvairītos no rakstzīmju atkārtošanas, burti, cipari un pieturzīmes ir "
+"“jāsamaisa”."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:113
+msgctxt "Password hint"
+msgid "Try to avoid sequences like 1234 or abcd."
+msgstr "Mēģiniet neizmantot secīgus simbolus, piemēram, 1234 vai abcd."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:115
+msgctxt "Password hint"
+msgid "Try to add more letters, numbers and symbols."
+msgstr "Mēģiniet pievienot vairāk burtu, ciparu un simbolu."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:117
+#| msgid ""
+#| "Try to use at least 8 different characters. Mix upper and lower case and "
+#| "use a number or two."
+msgctxt "Password hint"
+msgid "Mix uppercase and lowercase and use a number or two."
+msgstr ""
+"Jauciet kopā mazos un lielos burtus, kā arī izmantojiet kādus skaitļus."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:119
+msgctxt "Password hint"
+msgid ""
+"Good password! Adding more letters, numbers and punctuation will make it "
+"stronger."
+msgstr ""
+"Laba parole! Vairāk burtu, ciparu un pieturzīmju izmantošana padarīs to vēl "
+"stiprāku."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:141
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Weak"
+msgstr "Stiprums: vāja"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:145
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Low"
+msgstr "Stiprums: zema"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:148
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Medium"
+msgstr "Stiprums: vidēja"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:151
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Good"
+msgstr "Stiprums: laba"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:154
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: High"
+msgstr "Stiprums: augsta"
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
+msgid "No regions found"
+msgstr "Nav atrastu reģionu"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
+msgid "Region"
+msgstr "Reģions"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
+msgid "Choose your country or region."
+msgstr "Izvēlieties savu valsti vai reģionu."
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:332
+#, c-format
+msgid "_Start using %s"
+msgstr "_Sākt lietot %s"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:339
+#, c-format
+msgid ""
+"Thank you for choosing %s.\n"
+"We hope that you love it."
+msgstr ""
+"Paldies jums, ka izmantojat %s.\n"
+"Mēs ceram, ka jums tas patiks."
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:365
+msgid "Ready to Go"
+msgstr "Gatavs darbam"
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
+msgid "You're all set!"
+msgstr "Viss ir gatavs!"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:184
+#, c-format
+msgid ""
+"We think that your time zone is %s. Press Next to continue or search for a "
+"city to manually set the time zone."
+msgstr ""
+"Mūsuprāt laika zona ir %s. Spiediet “Nākamais”, lai turpinātu meklēt pilsētu, "
+"lai pašrocīgi iestatītu laika zonu."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:495
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
+msgid "Time Zone"
+msgstr "Laika josla"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid "Please search for a nearby city"
+msgstr "Lūdzu, meklējiet tuvumā esošu pilsētu"
+
+#~ msgid "Your username cannot be changed after setup."
+#~ msgstr "Lietotājvārdu pēc iestatīšanas nevar mainīt."
+
+#~ msgid "No password"
+#~ msgstr "Nav paroles"
+
+#~ msgid "_Confirm password"
+#~ msgstr "_Apstiprināt paroli"
+
+#~| msgid "No password"
+#~ msgid "Choose a _password"
+#~ msgstr "Izvēlēties _paroli"
+
+#~ msgctxt "Password strength"
+#~ msgid "Too short"
+#~ msgstr "Pārāk īsa"
+
+#~ msgctxt "Password strength"
+#~ msgid "Not good enough"
+#~ msgstr "Nepietiekami laba"
+
+#~ msgctxt "Password strength"
+#~ msgid "Weak"
+#~ msgstr "Vāja"
+
+#~ msgctxt "Password strength"
+#~ msgid "Fair"
+#~ msgstr "Vidēja"
+
+#~ msgctxt "Password strength"
+#~ msgid "Good"
+#~ msgstr "Laba"
+
+#~ msgctxt "Password strength"
+#~ msgid "Strong"
+#~ msgstr "Stipra"
+
+#~ msgid "Login"
+#~ msgstr "Ierakstīties"
+
+#~ msgid "Create a Local Account"
+#~ msgstr "Izveidot lokālu kontu"
+
+#~ msgid "page 1"
+#~ msgstr "lappuse 1"
+
+#~ msgid "Create an Enterprise Account"
+#~ msgstr "Izveidot uzņēmuma kontu"
+
+#~| msgctxt "Wireless access point"
+#~| msgid "Other…"
+#~ msgctxt "Online Account"
+#~ msgid "Other"
+#~ msgstr "Citi"
+
+#~ msgid "Mail"
+#~ msgstr "Pasts"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontakti"
+
+#~ msgid "Chat"
+#~ msgstr "Tērzēšana"
+
+#~ msgid "Resources"
+#~ msgstr "Resursi"
+
+#~ msgid "Error creating account"
+#~ msgstr "Kļūda, izveidojot kontu"
+
+#~ msgid "Error removing account"
+#~ msgstr "Kļūda, dzēšot kontu"
+
+#~ msgid "Are you sure you want to remove the account?"
+#~ msgstr "Vai tiešām vēlaties izņemt kontu?"
+
+#~ msgid "This will not remove the account on the server."
+#~ msgstr "Šī darbība neizņems kontu no servera."
+
+#~ msgid "_Remove"
+#~ msgstr "_Izņemt"
+
+#~ msgid "Connect to your existing data in the cloud"
+#~ msgstr "Savienojieties ar saviem esošajiem datiem mākonī"
+
+#~| msgid "Add Account"
+#~ msgid "_Add Account"
+#~ msgstr "_Pievienot kontu"
+
+#~| msgctxt "Wireless access point"
+#~| msgid "Other…"
+#~ msgid "Other"
+#~ msgstr "Citi"
+
+#~| msgid "Add Input Source"
+#~ msgid "Input Sources"
+#~ msgstr "Ievades avoti"
+
+#~ msgid "Login settings are used by all users when logging into the system"
+#~ msgstr ""
+#~ "Ierakstīšanās iestatījumus izmanto visi lietotāji, kas ierakstās sistēmā"
+
+#~| msgid "Add Input Source"
+#~ msgid "Add an Input Source"
+#~ msgstr "Pievienot ievades avotu"
+
+#~ msgid "Search for a location"
+#~ msgstr "Meklēt atrašanās vietu"
+
+#~ msgid "Location"
+#~ msgstr "Atrašanās vieta"
+
+#~ msgid "_Determine your location automatically"
+#~ msgstr "_Noteikt atrašanās vietu automātiski"
+
+#~ msgid "No network devices found."
+#~ msgstr "Nav atrastas tīkla ierīces."
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Bezvadu tīkli"
+
+#~ msgid "Thank You"
+#~ msgstr "Paldies"
+
+#~ msgid "Your computer is ready to use."
+#~ msgstr "Dators ir gatavs lietošanai."
+
+#~ msgid "You may change these options at any time in Settings."
+#~ msgstr "Šīs opcijas varēsiet izmainīt jebkurā brīdī Iestatījumos."
+
+#~ msgid "_Start using GNOME 3"
+#~ msgstr "_Sākt lietot GNOME 3"
+
+#~ msgid "_Back"
+#~ msgstr "_Iepriekšējais"
+
+#~ msgid "Keyboard Layout"
+#~ msgstr "Tastatūras izkārtojums"
+
+#~ msgid "Select input sources"
+#~ msgstr "Izvēlieties ievades avotus"
+
+#~ msgid "Remove Input Source"
+#~ msgstr "Izņemt ievades avotu"
+
+#~ msgid "Move Input Source Up"
+#~ msgstr "Pārvietot ievades avotu augšup"
+
+#~ msgid "Input Source Settings"
+#~ msgstr "Ievades avotu iestatījumi"
+
+#~ msgid "Select an input source"
+#~ msgstr "Izvēlieties ievades avotu"
+
+#~ msgid "Create Local Account"
+#~ msgstr "Izveidot lokālu kontu"
+
+#~ msgid "_Done"
+#~ msgstr "_Gatavs"
+
+#~ msgid "_Require a password to use this account"
+#~ msgstr "Piep_rasīt paroli, lai izmantotu šo kontu"
+
+#~ msgid "_Act as administrator of this computer"
+#~ msgstr "Kļūt par šī datora _administratoru"
+
+#~ msgid "Choose How to Login"
+#~ msgstr "Izvēlieties, kā ierakstīties"
+
+#~ msgid "Remove"
+#~ msgstr "Izņemt"
+
+#~ msgid "English"
+#~ msgstr "Angļu"
+
+#~ msgid "British English"
+#~ msgstr "Britu angļu"
+
+#~ msgid "German"
+#~ msgstr "Vācu"
+
+#~ msgid "French"
+#~ msgstr "Franču"
+
+#~ msgid "Spanish"
+#~ msgstr "Spāņu"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "Ķīniešu (vienkāršotā)"
+
+#~ msgid "Unspecified"
+#~ msgstr "Nenorādīta"
+
+#~ msgid "Use %s"
+#~ msgstr "Lietot %s"
+
+#~ msgid "Show _all"
+#~ msgstr "P_arādīt visas"
+
+#~ msgid "Enjoy GNOME!"
+#~ msgstr "Izbaudiet GNOME!"
+
+#~ msgid "New to GNOME 3 and need help finding your way around?"
+#~ msgstr "Vai GNOME 3 vide jums ir nepazīstama, un jums noderētu palīdzība?"
+
+#~ msgid "_Take a Tour"
+#~ msgstr "_GNOME ekskursija"

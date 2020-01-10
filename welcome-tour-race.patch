@@ -1,0 +1,21 @@
+diff -up gnome-initial-setup-3.14.4/data/gnome-welcome-tour.race gnome-initial-setup-3.14.4/data/gnome-welcome-tour
+--- gnome-initial-setup-3.14.4/data/gnome-welcome-tour.race	2015-07-15 11:02:23.112893213 -0400
++++ gnome-initial-setup-3.14.4/data/gnome-welcome-tour	2015-07-15 11:02:37.814074937 -0400
+@@ -2,11 +2,10 @@
+ 
+ cfgdir=${XDG_CONFIG_DIR:-$HOME/.config}
+ 
+-rm -f $cfgdir/run-welcome-tour
+-
+ # Don't do anything if yelp isn't installed
+ yelp_path=$(which yelp 2>/dev/null)
+ if test -z "${yelp_path}"; then
++    rm -f $cfgdir/run-welcome-tour
+     exit
+ fi
+ 
+@@ -19,3 +18,4 @@ EOF
+ fi
+ 
+ yelp help:gnome-help/getting-started
++rm -f $cfgdir/run-welcome-tour

@@ -1,0 +1,783 @@
+# Slovak translation for gnome-initial-setup.
+# Copyright (C) 2012-2013 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-initial-setup package.
+# Dušan Kazik <prescott66@gmail.com>, 2012-2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-initial-setup master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"initial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-09 06:51+0000\n"
+"PO-Revision-Date: 2014-09-09 17:45+0100\n"
+"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
+"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Project-Style: gnome\n"
+
+# desktop entry name
+#: ../data/gnome-initial-setup.desktop.in.in.h:1
+msgid "Initial Setup"
+msgstr "Prvotné nastavenie"
+
+# GTK_BUTTON
+#: ../gnome-initial-setup/gis-assistant.c:379
+msgid "_Next"
+msgstr "Ď_alej"
+
+# GTK_BUTTON
+#: ../gnome-initial-setup/gis-assistant.c:380
+msgid "_Accept"
+msgstr "_Prijať"
+
+# GTK_BUTTON
+#: ../gnome-initial-setup/gis-assistant.c:381
+msgid "_Skip"
+msgstr "Pre_skočiť"
+
+# gtk button
+#: ../gnome-initial-setup/gis-assistant.c:382
+msgid "_Previous"
+msgstr "_Späť"
+
+# GTK_BUTTON
+#: ../gnome-initial-setup/gis-assistant.c:383
+msgid "_Cancel"
+msgstr "_Zrušiť"
+
+# cmd desc
+#: ../gnome-initial-setup/gnome-initial-setup.c:194
+msgid "Force existing user mode"
+msgstr "Vynúti režim existujúceho používateľa"
+
+# cmd desc
+#: ../gnome-initial-setup/gnome-initial-setup.c:200
+msgid "- GNOME initial setup"
+msgstr "- Prvotné nastavenie prostredia GNOME"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:231
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
+msgid "About You"
+msgstr "Osobné údaje"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+msgid "Failed to register account"
+msgstr "Zlyhala registrácia účtu"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+msgid "No supported way to authenticate with this domain"
+msgstr "Žiadny spôsob overenia nie je pre túto doménu podporovaný"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+msgid "Failed to join domain"
+msgstr "Zlyhalo pripojenie k doméne"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+msgid "Failed to log into domain"
+msgstr "Zlyhalo prihlásenie do domény"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:1
+msgid "Enterprise Login"
+msgstr "Firemné prihlásenie"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:2
+msgid ""
+"Enterprise login allows an existing centrally managed user account to be "
+"used on this device."
+msgstr ""
+"Firemné prihlásenie umožňuje použiť na tomto zariadení centrálnu správu "
+"účtov."
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
+msgid "_Domain"
+msgstr "_Doména"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
+msgid "_Username"
+msgstr "_Používateľské meno"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:5
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:3
+msgid "_Password"
+msgstr "_Heslo"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:6
+msgid "Enterprise domain or realm name"
+msgstr "Firemná doména alebo názov pôsobiska"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:7
+msgid "C_ontinue"
+msgstr "P_okračovať"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
+msgid "Domain Administrator Login"
+msgstr "Prihlásenie správcu domény"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
+msgid ""
+"In order to use enterprise logins, this computer needs to be enrolled in a "
+"domain. Please have your network administrator type the domain password "
+"here, and choose a unique computer name for your computer."
+msgstr ""
+"Aby bolo možné použiť firemné prihlasovacie údaje, musí byť tento počítač "
+"zahrnutý v doméne. Prosím, požiadajte správcu siete, aby sem zadal heslo k "
+"doméne, a potom zvoľte jedinečný názov pre váš počítač."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
+msgid "_Computer"
+msgstr "_Počítač"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
+msgid "Administrator _Name"
+msgstr "Me_no správcu"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
+msgid "Administrator Password"
+msgstr "Heslo správcu"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:203
+msgid "Are these the right details? You can change them if you want."
+msgstr "Sú toto správne údaje? Ak budete chcieť, môžete ich zmeniť."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:404
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "We need a few details to complete setup."
+msgstr "Kvôli dokončeniu nastavenia je potrebných niekoľko údajov."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
+msgid "Avatar image"
+msgstr "Obrázok podobizne"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
+msgid "_Full Name"
+msgstr "_Celé meno"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
+#| msgid "Enterprise Login"
+msgid "Set Up _Enterprise Login"
+msgstr "Nastaviť _firemné prihlásenie"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
+msgid "Disable image"
+msgstr "Zakázať obrázok"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
+msgid "Take a photo..."
+msgstr "Zosnímať fotografiu..."
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:310
+msgid "Cannot automatically join this type of domain"
+msgstr "Nedá sa automaticky pripojiť k tomuto typu domény"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:373
+#, c-format
+msgid "No such domain or realm found"
+msgstr "Nenašla sa žiadna taká doména ani pôsobisko"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
+#, c-format
+msgid "Cannot log in as %s at the %s domain"
+msgstr "Nedá sa prihlásiť ako používateľ %s z domény %s"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
+msgid "Invalid password, please try again"
+msgstr "Neplatné heslo. Prosím, skúste to znovu"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
+#, c-format
+msgid "Couldn't connect to the %s domain: %s"
+msgstr "Nepodarilo sa pripojiť k doméne %s: %s"
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:245
+#, c-format
+#| msgid "A user with the username '%s' already exists"
+msgid "A user with the username '%s' already exists."
+msgstr "Používateľ s používateľským menom „%s“ už existuje."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:249
+#, c-format
+#| msgid "The username is too long"
+msgid "The username is too long."
+msgstr "Používateľské meno je príliš dlhé."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:252
+#| msgid "The username cannot start with a '-'"
+msgid "The username cannot start with a '-'."
+msgstr "Používateľské meno nemôže začínať na „-“."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:255
+#| msgid ""
+#| "The username must only consist of:\n"
+#| " ➣ letters from the English alphabet\n"
+#| " ➣ digits\n"
+#| " ➣ any of the characters '.', '-' and '_'"
+msgid ""
+"The username should only consist of lower and upper case letters from a-z, "
+"digits and any of characters '.', '-' and '_'."
+msgstr ""
+"Používateľské meno musí pozostávať iba z malých a veľkých písmen a-z, čísel "
+"a ktoréhokoľvek zo znakov „.“, „-“ a „_“."
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/account/um-utils.c:259
+msgid "This will be used to name your home folder and can't be changed."
+msgstr ""
+"Toto sa použije ako názov vášho domovského priečinka a nebude možné ho "
+"zmeniť."
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
+msgid "License Agreements"
+msgstr "Licenčná zmluva"
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
+msgid ""
+"I have _agreed to the terms and conditions in this end user license "
+"agreement."
+msgstr ""
+"Súhl_asím s podmienkami uvedenými v tejto licenčnej zmluve pre koncového "
+"používateľa."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
+msgid "Add Account"
+msgstr "Pridanie účtu"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
+msgid "Cancel"
+msgstr "Zrušiť"
+
+# page title
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+msgid "Online Accounts"
+msgstr "Účty služieb"
+
+# gtk label
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:1
+msgid "Connect Your Online Accounts"
+msgstr "Pripojte vaše účty služieb"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
+msgid ""
+"Connecting your accounts will allow you to easily access your email, online "
+"calendar, contacts, documents and photos."
+msgstr ""
+"Pripojením vašich účtov sa budete môcť cez internet ľahko dostať k vašim "
+"emailom, online kalendáru, kontaktom, dokumentom a fotografiám."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
+msgid "You can review your online accounts (and add others) after setup."
+msgstr "Môžete prezrieť vaše účty služieb (a pridať ďalšie) po inštalácii."
+
+# gtk button
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:234
+msgid "Preview"
+msgstr "Náhľad"
+
+# tooltip
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:289
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:191
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
+msgid "More…"
+msgstr "Viac…"
+
+#. Translators: a search for input methods or keyboard layouts
+#. * did not yield any results
+#.
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:310
+msgid "No inputs found"
+msgstr "Nenašli sa žiadne zdroje vstupu"
+
+# nazov zalozky
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:219
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
+msgid "Typing"
+msgstr "Písanie"
+
+# label
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:2
+msgid "Select your keyboard layout or an input method."
+msgstr "Vyberte rozloženie klávesnice alebo metódu vstupu."
+
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:208
+msgid "No languages found"
+msgstr "Nenašli sa žiadne jazyky"
+
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:281
+msgid "Welcome"
+msgstr "Vitajte"
+
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+msgid "Welcome!"
+msgstr "Vitajte!"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+msgctxt "Wireless access point"
+msgid "Other…"
+msgstr "Iný…"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+msgid "Checking for available wireless networks"
+msgstr "Kontrolujú sa dostupné bezdrôtové siete"
+
+# page title
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+msgid "Network"
+msgstr "Sieť"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:1
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:2
+msgid ""
+"Connecting to the Internet will enable you to set the time, add your "
+"details, and enable you to access your email, calendar, and contacts. It is "
+"also necessary for enterprise login accounts."
+msgstr ""
+"Pripojením na internet povolíte nastavenie času, pridanie podrobností o vás "
+"a tiež budete môcť pristupovať k vašim emailom, kalendáru a kontaktom. Je "
+"tiež potrebné na prihlásenie k firemným účtom."
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:3
+msgid "No wireless available"
+msgstr "Bezdrôtová sieť nie je dostupná"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:144
+#| msgid "Passwords do not match"
+msgid "The passwords do not match."
+msgstr "Heslá sa nezhodujú."
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:266
+msgid "Password"
+msgstr "Heslo"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:1
+msgid "Set a Password"
+msgstr "Nastavte heslo"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:2
+msgid "Be careful not to lose your password."
+msgstr "Dajte pozor, aby ste heslo nezabudli."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:4
+msgid "_Verify"
+msgstr "O_veriť"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:81
+msgctxt "Password hint"
+msgid "The new password needs to be different from the old one."
+msgstr "Nové heslo musí byť odlišné od starého hesla."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:83
+msgctxt "Password hint"
+msgid "Try changing some letters and numbers."
+msgstr "Skúste zmeniť niektoré písmená a číslice."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:85
+#: ../gnome-initial-setup/pages/password/pw-utils.c:93
+msgctxt "Password hint"
+msgid "Try changing the password a bit more."
+msgstr "Skúste zmeniť heslo trochu viac."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:87
+msgctxt "Password hint"
+msgid "A password without your user name would be stronger."
+msgstr "Heslo bez vášho používateľského mena bude silnejšie."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:89
+msgctxt "Password hint"
+msgid "Try to avoid using your name in the password."
+msgstr "Skúste sa vyhnúť použitiu vášho mena v hesle."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:91
+msgctxt "Password hint"
+msgid "Try to avoid some of the words included in the password."
+msgstr "Skúste sa vyhnúť niektorým slovám zahrnutým v hesle."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:95
+msgctxt "Password hint"
+msgid "Try to avoid common words."
+msgstr "Skúste sa vyhnúť bežným slovám."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:97
+msgctxt "Password hint"
+msgid "Try to avoid reordering existing words."
+msgstr "Skúste sa vyhnúť preskupeniu existujúcich slov."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:99
+msgctxt "Password hint"
+msgid "Try to use more numbers."
+msgstr "Skúste použiť viac číslic."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:101
+msgctxt "Password hint"
+msgid "Try to use more uppercase letters."
+msgstr "Skúste použiť viac veľkých písmen."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:103
+msgctxt "Password hint"
+msgid "Try to use more lowercase letters."
+msgstr "Skúste použiť viac malých písmen."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:105
+msgctxt "Password hint"
+msgid "Try to use more special characters, like punctuation."
+msgstr "Skúste použiť viac špeciálnych znakov, ako sú interpunkcie."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:107
+msgctxt "Password hint"
+msgid "Try to use a mixture of letters, numbers and punctuation."
+msgstr "Skúste použiť zmiešanie písmen, číslic a interpunkcií."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:109
+msgctxt "Password hint"
+msgid "Try to avoid repeating the same character."
+msgstr "Skúste sa vyhnúť opakovaniu toho istého znaku."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:111
+msgctxt "Password hint"
+msgid ""
+"Try to avoid repeating the same type of character: you need to mix up "
+"letters, numbers and punctuation."
+msgstr ""
+"Skúste sa vyhnúť opakovaniu toho istého znaku: musíte premiešať písmená, "
+"číslice a interpunkcie."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:113
+msgctxt "Password hint"
+msgid "Try to avoid sequences like 1234 or abcd."
+msgstr "Skúste sa vyhnúť postupnosti ako sú 1234 alebo abcd."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:115
+msgctxt "Password hint"
+msgid "Try to add more letters, numbers and symbols."
+msgstr "Skúste pridať viac písmen, číslic a znakov."
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/password/pw-utils.c:117
+#| msgid ""
+#| "Try to use at least 8 different characters. Mix upper and lower case and "
+#| "use a number or two."
+msgctxt "Password hint"
+msgid "Mix uppercase and lowercase and use a number or two."
+msgstr "Pomiešajte malé a veľké písmená a použite zopár číslic."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:119
+msgctxt "Password hint"
+msgid ""
+"Good password! Adding more letters, numbers and punctuation will make it "
+"stronger."
+msgstr ""
+"Dobré heslo! Pridaním viacerých písmen, číslic a interpunkcií ho ešte "
+"zosilníte."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:141
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Weak"
+msgstr "Sila: Slabé"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:145
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Low"
+msgstr "Sila: Nízke"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:148
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Medium"
+msgstr "Sila: Priemerné"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:151
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Good"
+msgstr "Sila: Dobré"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:154
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: High"
+msgstr "Sila: Silné"
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:227
+msgid "No regions found"
+msgstr "Žiadne oblasti nenájdené"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:226
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
+msgid "Region"
+msgstr "Oblasť"
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
+msgid "Choose your country or region."
+msgstr "Zvoľte krajinu alebo oblasť."
+
+# DK: %s=nazov OS
+# GtkButton label
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:332
+#, c-format
+msgid "_Start using %s"
+msgstr "_Začať používať systém %s"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:339
+#, c-format
+msgid ""
+"Thank you for choosing %s.\n"
+"We hope that you love it."
+msgstr ""
+"Ďakujeme, že ste si vybrali systém %s.\n"
+"Veríme, že sa vám bude páčiť."
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:365
+msgid "Ready to Go"
+msgstr "Pripravený na spustenie"
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
+msgid "You're all set!"
+msgstr "Všetko je nastavené!"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#, c-format
+msgid ""
+"We think that your time zone is %s. Press Next to continue or search for a "
+"city to manually set the time zone."
+msgstr ""
+"Počítač zistil, že sa nachádzate v časovom pásme %s. Pokračujte stlačením "
+"tlačidla Ďalej alebo ručne nastavte časové pásmo vyhľadaním mesta."
+
+# GtkLabel label
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
+msgid "Time Zone"
+msgstr "Časové pásmo"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid "Please search for a nearby city"
+msgstr "Vyhľadajte blízke mesto"
+
+#~ msgid "Your username cannot be changed after setup."
+#~ msgstr "Po dokončení nastavenia sa používateľské meno nedá zmeniť."
+
+#~| msgid ""
+#~| "In order to use enterprise logins, this computer needs to be\n"
+#~| "enrolled in the domain. Please have your network administrator\n"
+#~| "type their domain password here, and choose a unique computer\n"
+#~| "name for your computer."
+#~ msgid ""
+#~ "In order to use enterprise logins, this computer needs to be enrolled in "
+#~ "the domain. Please have your network administrator type their domain "
+#~ "password here, and choose a unique computer name for your computer."
+#~ msgstr ""
+#~ "Aby bolo možné použiť firemné prihlasovacie údaje, musí byť tento počítač "
+#~ "zahrnutý v doméne. Prosím, požiadajte správcu siete, aby sem zadal heslo "
+#~ "k doméne, a potom zvoľte jedinečný názov pre váš počítač."
+
+#~ msgid "No password"
+#~ msgstr "Bez hesla"
+
+# GtkLabel label
+#~ msgid "_Confirm password"
+#~ msgstr "Po_tvrdenie hesla"
+
+#~| msgid "No password"
+#~ msgid "Choose a _password"
+#~ msgstr "Zvoľte _heslo"
+
+#~ msgctxt "Password strength"
+#~ msgid "Too short"
+#~ msgstr "Príliš krátke"
+
+#~ msgctxt "Password strength"
+#~ msgid "Not good enough"
+#~ msgstr "Nedostatočne dobré"
+
+#~ msgctxt "Password strength"
+#~ msgid "Weak"
+#~ msgstr "Slabé"
+
+#~ msgctxt "Password strength"
+#~ msgid "Fair"
+#~ msgstr "Dostatočné"
+
+#~ msgctxt "Password strength"
+#~ msgid "Good"
+#~ msgstr "Dobré"
+
+#~ msgctxt "Password strength"
+#~ msgid "Strong"
+#~ msgstr "Silné"
+
+# page title
+#~ msgid "Login"
+#~ msgstr "Prihlásenie"
+
+# GtkLabel label
+#~ msgid "Create a Local Account"
+#~ msgstr "Vytvorte miestny účet"
+
+# tab
+#~ msgid "page 1"
+#~ msgstr "strana 1"
+
+# GtkLabel label
+#~ msgid "Create an Enterprise Account"
+#~ msgstr "Vytvorte firemný účet"
+
+#~ msgid "Other"
+#~ msgstr "Iný"
+
+#~| msgid "No input sources found"
+#~ msgid "No input source selected"
+#~ msgstr "Neboli vybrané žiadne zdroje vstupu"
+
+# dialog title
+#~ msgid "Add an Input Source"
+#~ msgstr "Pridanie zdroja vstupu"
+
+#~ msgid "Thank You"
+#~ msgstr "Ďakujeme"
+
+#~ msgid "That's it!"
+#~ msgstr "To je všetko!"
+
+# GtkButton label
+#~ msgid "_Start using GNOME 3"
+#~ msgstr "_Začať používať GNOME 3"
+
+#~ msgctxt "Online Account"
+#~ msgid "Other"
+#~ msgstr "Iný"
+
+#~ msgid "Mail"
+#~ msgstr "Pošta"
+
+#~ msgid "Contacts"
+#~ msgstr "Kontakty"
+
+#~ msgid "Chat"
+#~ msgstr "Rozhovor"
+
+#~ msgid "Resources"
+#~ msgstr "Zdroje"
+
+#~ msgid "Error creating account"
+#~ msgstr "Chyba pri vytváraní účtu"
+
+#~ msgid "Error removing account"
+#~ msgstr "Chyba pri odstraňovaní účtu"
+
+#~ msgid "Are you sure you want to remove the account?"
+#~ msgstr "Naozaj chcete odstrániť účet?"
+
+#~ msgid "This will not remove the account on the server."
+#~ msgstr "Týmto sa neodstráni účet na serveri."
+
+# button
+#~ msgid "_Remove"
+#~ msgstr "O_dstrániť"
+
+# GtkLabel label
+#~ msgid "Connect to your existing data in the cloud"
+#~ msgstr "Spojte sa s vašimi existujúcimi údajmi v cloude"
+
+# button label
+#~ msgid "_Add Account"
+#~ msgstr "_Pridať účet"
+
+# location (London, ...)
+#~ msgid "Search for a location"
+#~ msgstr "Vyhľadajte miesto"
+
+#~ msgid "Location"
+#~ msgstr "Miesto"
+
+# GtkButton label
+#~ msgid "_Determine your location automatically"
+#~ msgstr "_Určiť moju polohu automaticky"
+
+#~ msgid "No network devices found."
+#~ msgstr "Nenašli sa žiadne sieťové zariadenia."
+
+#~ msgid "Wireless Networks"
+#~ msgstr "Bezdrôtové siete"
+
+# GtkLabel label
+#~ msgid "Your computer is ready to use."
+#~ msgstr "Váš počítač je pripravený na používanie."
+
+# GtkLabel label
+#~ msgid "You may change these options at any time in Settings."
+#~ msgstr "Tieto voľby môžete zmeniť kedykoľvek v Nastaveniach systému."
+
+# GtkButton AtkObjekt
+#~ msgid "Input Sources"
+#~ msgstr "Zdroje vstupu"
+
+# GtkLabel
+#~ msgid "Select keyboard layouts"
+#~ msgstr "Vyberte rozloženia klávesnice"
+
+#~ msgid "Login settings are used by all users when logging into the system"
+#~ msgstr ""
+#~ "Nastavenia prihlásenia sú používané všetkými používateľmi počas "
+#~ "prihlasovania do systému"
+
+# GTK_BUTTON
+#~ msgid "_Back"
+#~ msgstr "_Späť"
+
+# GtkLabel label
+#~ msgid "Select input sources"
+#~ msgstr "Vyberte zdroje vstupu"
+
+# page title
+#~ msgid "Keyboard Layout"
+#~ msgstr "Rozloženie klávesnice"
+
+# GtkButton AtkObjekt
+#~ msgid "Remove Input Source"
+#~ msgstr "Odstrániť zdroj vstupu"
+
+# GtkButton AtkObjekt
+#~ msgid "Move Input Source Up"
+#~ msgstr "Presunúť zdroj vstupu nahor"
+
+# GtkButton AtkObjekt
+#~ msgid "Input Source Settings"
+#~ msgstr "Nastavenia zdroja vstupu"
+
+# GtkDialog label
+#~ msgid "Select an input source"
+#~ msgstr "Výber zdroja vstupu"
+
+# PM: k tomuto reťazcu je zle zapísaný komentár pre prekladateľov - nahlás bug
+#, fuzzy
+#~ msgid "Use %s"
+#~ msgstr "Použiť jazyk %s"
+
+#~ msgid "Unspecified"
+#~ msgstr "Neurčený"

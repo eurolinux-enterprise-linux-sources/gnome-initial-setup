@@ -1,0 +1,616 @@
+# Alexsey Nadtochey <irbis4lan@yandex.com>, 2012.
+# Julia Dronova <juliette.tux@gmail.com>, 2013.
+# Yuri Myasoedov <omerta13@yandex.ru>, 2012, 2013.
+# Valery Kirichenko <valera5505@gmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-initial-setup\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"initial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-06-27 06:51+0000\n"
+"PO-Revision-Date: 2014-06-27 22:04+0400\n"
+"Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
+"Language-Team: русский <>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: ../data/gnome-initial-setup.desktop.in.in.h:1
+msgid "Initial Setup"
+msgstr "Первоначальная настройка"
+
+#: ../gnome-initial-setup/gis-assistant.c:377
+msgid "_Next"
+msgstr "_Далее"
+
+#: ../gnome-initial-setup/gis-assistant.c:378
+msgid "_Accept"
+msgstr "_Принять"
+
+#: ../gnome-initial-setup/gis-assistant.c:379
+msgid "_Skip"
+msgstr "_Пропустить"
+
+#: ../gnome-initial-setup/gis-assistant.c:380
+msgid "_Previous"
+msgstr "_Назад"
+
+#: ../gnome-initial-setup/gis-assistant.c:381
+msgid "_Cancel"
+msgstr "_Отмена"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:194
+msgid "Force existing user mode"
+msgstr "Принудительно использовать режим существующего пользователя"
+
+#: ../gnome-initial-setup/gnome-initial-setup.c:200
+msgid "- GNOME initial setup"
+msgstr "— Первоначальная настройка GNOME"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.c:202
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
+msgid "About You"
+msgstr "О вас"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:179
+msgid "Failed to register account"
+msgstr "Не удалось зарегистрировать учётную запись"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:373
+msgid "No supported way to authenticate with this domain"
+msgstr "Нет поддерживаемых способов аутентификации в этом домене"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:413
+msgid "Failed to join domain"
+msgstr "Не удалось присоединиться к домену"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:481
+msgid "Failed to log into domain"
+msgstr "Не удалось войти в домен"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:1
+msgid "Enterprise Login"
+msgstr "Корпоративная учётная запись"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:2
+msgid ""
+"Enterprise login allows an existing centrally managed user account to be "
+"used on this device."
+msgstr ""
+"Корпоративная учётная запись позволяет использовать на этом устройстве "
+"существующее централизованное средство управления учётными записями."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
+msgid "_Domain"
+msgstr "_Домен"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
+msgid "_Username"
+msgstr "_Имя пользователя"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:5
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:3
+msgid "_Password"
+msgstr "_Пароль"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:6
+msgid "Enterprise domain or realm name"
+msgstr "Название домена предприятия или области"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:7
+msgid "C_ontinue"
+msgstr "П_родолжить"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
+msgid "Domain Administrator Login"
+msgstr "Вход для администратора домена"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
+msgid ""
+"In order to use enterprise logins, this computer needs to be enrolled in a "
+"domain. Please have your network administrator type the domain password "
+"here, and choose a unique computer name for your computer."
+msgstr ""
+"Для использования корпоративных учётных записей этот компьютер должен быть "
+"зарегистрирован в домене. Администратор сети должен ввести здесь доменный "
+"пароль и выбрать уникальное имя для вашего компьютера."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
+msgid "_Computer"
+msgstr "_Компьютер"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
+msgid "Administrator _Name"
+msgstr "Имя _администратора"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
+msgid "Administrator Password"
+msgstr "Пароль администратора"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:202
+msgid "Are these the right details? You can change them if you want."
+msgstr "Всё указано верно? Вы можете изменить данные, если хотите."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.c:394
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
+msgid "We need a few details to complete setup."
+msgstr "Для завершения осталось указать ещё немного информации."
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
+msgid "Avatar image"
+msgstr "Аватар"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
+msgid "_Full Name"
+msgstr "П_олное имя"
+
+#: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
+#| msgid "Enterprise Login"
+msgid "Set Up _Enterprise Login"
+msgstr "Настроить _корпоративную учётную запись"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
+msgid "Disable image"
+msgstr "Отключить изображение"
+
+#: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
+msgid "Take a photo..."
+msgstr "Сделать снимок…"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:310
+msgid "Cannot automatically join this type of domain"
+msgstr "Невозможно автоматически присоединиться к данному типу домена"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:373
+#, c-format
+msgid "No such domain or realm found"
+msgstr "Домен или область не найдены"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:780
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:794
+#, c-format
+msgid "Cannot log in as %s at the %s domain"
+msgstr "Не удалось войти в систему как %s в домене %s"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:786
+msgid "Invalid password, please try again"
+msgstr "Неправильный пароль. Попробуйте ещё раз"
+
+#: ../gnome-initial-setup/pages/account/um-realm-manager.c:799
+#, c-format
+msgid "Couldn't connect to the %s domain: %s"
+msgstr "Не удалось подключиться к домену %s: %s"
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:245
+#, c-format
+#| msgid "A user with the username '%s' already exists"
+msgid "A user with the username '%s' already exists."
+msgstr "Пользователь с именем «%s» уже существует."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:249
+#, c-format
+#| msgid "The username is too long"
+msgid "The username is too long."
+msgstr "Имя пользователя слишком длинное."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:252
+#| msgid "The username cannot start with a '-'"
+msgid "The username cannot start with a '-'."
+msgstr "Имя пользователя не может начинаться с символа «-»."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:255
+#| msgid ""
+#| "The username must only consist of:\n"
+#| " ➣ letters from the English alphabet\n"
+#| " ➣ digits\n"
+#| " ➣ any of the characters '.', '-' and '_'"
+msgid ""
+"The username should only consist of lower and upper case letters from a-z, "
+"digits and any of characters '.', '-' and '_'."
+msgstr ""
+"Имя пользователя может состоять только из букв латинского алфавита в верхнем "
+"и нижнем регистре, цифр и символов «.», «-» и «_»."
+
+#: ../gnome-initial-setup/pages/account/um-utils.c:259
+msgid "This will be used to name your home folder and can't be changed."
+msgstr ""
+"Будет использовано для именования вашей домашней папки; не может быть "
+"изменено."
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
+msgid "License Agreements"
+msgstr "Лицензионные соглашения"
+
+#: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
+msgid ""
+"I have _agreed to the terms and conditions in this end user license "
+"agreement."
+msgstr "Я _принимаю соглашения и условия этой лицензии."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
+msgid "Add Account"
+msgstr "Добавить учётную запись"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:90
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:335
+msgid "Online Accounts"
+msgstr "Сетевые учётные записи"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:1
+msgid "Connect Your Online Accounts"
+msgstr "Подключить сетевые учётные записи"
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
+msgid ""
+"Connecting your accounts will allow you to easily access your email, online "
+"calendar, contacts, documents and photos."
+msgstr ""
+"Подключение сетевых учётных записей позволит получить доступ к электронной "
+"почте, онлайн-календарю, контактам, документам и фотографиям."
+
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
+msgid "You can review your online accounts (and add others) after setup."
+msgstr ""
+"Изменить сетевые учётные записи (и добавить другие) можно после настройки."
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:235
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:290
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:184
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:203
+msgid "More…"
+msgstr "Ещё…"
+
+#. Translators: a search for input methods or keyboard layouts
+#. * did not yield any results
+#.
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:311
+msgid "No inputs found"
+msgstr "Источники ввода не найдены"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:209
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
+msgid "Typing"
+msgstr "Набор"
+
+#: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:2
+msgid "Select your keyboard layout or an input method."
+msgstr "Выберите раскладку клавиатуры или способ ввода."
+
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:201
+msgid "No languages found"
+msgstr "Языки не найдены"
+
+#: ../gnome-initial-setup/pages/language/gis-language-page.c:272
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:119
+msgid "Welcome!"
+msgstr "Добро пожаловать!"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:305
+msgctxt "Wireless access point"
+msgid "Other…"
+msgstr "Другая…"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:352
+msgid "Checking for available wireless networks"
+msgstr "Поиск доступных беспроводных сетей"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.c:602
+msgid "Network"
+msgstr "Сеть"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:1
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:2
+msgid ""
+"Connecting to the Internet will enable you to set the time, add your "
+"details, and enable you to access your email, calendar, and contacts. It is "
+"also necessary for enterprise login accounts."
+msgstr ""
+"Интернет-соединение позволит настроить время, добавить персональные "
+"сведения, а также предоставит доступ к электронной почте, календарю и "
+"контактам. Оно также необходимо для корпоративных учётных записей."
+
+#: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:3
+msgid "No wireless available"
+msgstr "Беспроводные сети не найдены"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:135
+#| msgid "Passwords do not match"
+msgid "The passwords do not match."
+msgstr "Пароли не совпадают."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.c:243
+msgid "Password"
+msgstr "Пароль"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:1
+msgid "Set a Password"
+msgstr "Установите пароль"
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:2
+msgid "Be careful not to lose your password."
+msgstr "Будьте внимательны, не потеряйте пароль."
+
+#: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:4
+msgid "_Verify"
+msgstr "_Проверить"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:81
+msgctxt "Password hint"
+msgid "The new password needs to be different from the old one."
+msgstr "Новый пароль должен отличаться от старого."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:83
+msgctxt "Password hint"
+msgid "Try changing some letters and numbers."
+msgstr "Попробуйте изменить некоторые символы и цифры."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:85
+#: ../gnome-initial-setup/pages/password/pw-utils.c:93
+msgctxt "Password hint"
+msgid "Try changing the password a bit more."
+msgstr "Попробуйте изменить пароль сильнее."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:87
+msgctxt "Password hint"
+msgid "A password without your user name would be stronger."
+msgstr "Пароль, который не содержит имя пользователя, будет более стойким."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:89
+msgctxt "Password hint"
+msgid "Try to avoid using your name in the password."
+msgstr "Избегайте использования имени пользователя в пароле."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:91
+msgctxt "Password hint"
+msgid "Try to avoid some of the words included in the password."
+msgstr "Избегайте включения слов в пароль."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:95
+msgctxt "Password hint"
+msgid "Try to avoid common words."
+msgstr "Избегайте простых слов."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:97
+msgctxt "Password hint"
+msgid "Try to avoid reordering existing words."
+msgstr "Избегайте перестановки существующих слов."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:99
+msgctxt "Password hint"
+msgid "Try to use more numbers."
+msgstr "Используйте больше цифр."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:101
+msgctxt "Password hint"
+msgid "Try to use more uppercase letters."
+msgstr "Используйте больше символов в верхнем регистре."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:103
+msgctxt "Password hint"
+msgid "Try to use more lowercase letters."
+msgstr "Используйте больше символов в нижнем регистре."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:105
+msgctxt "Password hint"
+msgid "Try to use more special characters, like punctuation."
+msgstr "Используйте больше специальных символов, например знаков пунктуации."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:107
+msgctxt "Password hint"
+msgid "Try to use a mixture of letters, numbers and punctuation."
+msgstr "Попробуйте чередовать буквы, цифры и знаки пунктуации."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:109
+msgctxt "Password hint"
+msgid "Try to avoid repeating the same character."
+msgstr "Избегайте повторения одних и тех же символов."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:111
+msgctxt "Password hint"
+msgid ""
+"Try to avoid repeating the same type of character: you need to mix up "
+"letters, numbers and punctuation."
+msgstr ""
+"Избегайте повторения символов одного и того же типа: попробуйте чередовать "
+"буквы, цифры и знаки пунктуации."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:113
+msgctxt "Password hint"
+msgid "Try to avoid sequences like 1234 or abcd."
+msgstr "Избегайте простых последовательностей, например «1234» or «abcd»."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:115
+msgctxt "Password hint"
+msgid "Try to add more letters, numbers and symbols."
+msgstr "Попробуйте использовать больше букв, цифр и символов."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:117
+#| msgid ""
+#| "Try to use at least 8 different characters. Mix upper and lower case and "
+#| "use a number or two."
+msgctxt "Password hint"
+msgid "Mix uppercase and lowercase and use a number or two."
+msgstr "Используйте прописные и строчные буквы, а также одну или две цифры."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:119
+msgctxt "Password hint"
+msgid ""
+"Good password! Adding more letters, numbers and punctuation will make it "
+"stronger."
+msgstr ""
+"Хороший пароль! Вы можете улучшить стойкость пароля, добавив буквы, цифры и "
+"знаки пунктуации."
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:141
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Weak"
+msgstr "Стойкость: очень слабая"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:145
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Low"
+msgstr "Стойкость: плохая"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:148
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Medium"
+msgstr "Стойкость: средняя"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:151
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: Good"
+msgstr "Стойкость: хорошая"
+
+#: ../gnome-initial-setup/pages/password/pw-utils.c:154
+#| msgid "Strength: %s"
+msgctxt "Password strength"
+msgid "Strength: High"
+msgstr "Стойкость: очень сильная"
+
+#: ../gnome-initial-setup/pages/region/cc-region-chooser.c:220
+msgid "No regions found"
+msgstr "Регион не найден"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.c:217
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
+msgid "Region"
+msgstr "Регион"
+
+#: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
+msgid "Choose your country or region."
+msgstr "Выберите вашу страну или регион."
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:330
+#, c-format
+msgid "_Start using %s"
+msgstr "_Начать работу с %s"
+
+#. Translators: the parameter here is the name of a distribution,
+#. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
+#. * detect any distribution.
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:337
+#, c-format
+msgid ""
+"Thank you for choosing %s.\n"
+"We hope that you love it."
+msgstr ""
+"Спасибо что выбрали %s.\n"
+"Надеемся, что вам понравится."
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.c:363
+msgid "Ready to Go"
+msgstr "Готово к работе."
+
+#: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
+msgid "You're all set!"
+msgstr "Теперь всё готово!"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:183
+#, c-format
+msgid ""
+"We think that your time zone is %s. Press Next to continue or search for a "
+"city to manually set the time zone."
+msgstr ""
+"Мы полагаем, что ваш часовой пояс — %s. Нажмите «Далее», чтобы продолжить "
+"или найдите город, чтобы выбрать часовой пояс вручную."
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:489
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
+msgid "Time Zone"
+msgstr "Часовой пояс"
+
+#: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
+msgid "Please search for a nearby city"
+msgstr "Найдите ближайший город"
+
+#~ msgid "Your username cannot be changed after setup."
+#~ msgstr "Имя пользователя нельзя поменять после настройки."
+
+#~ msgid ""
+#~ "In order to use enterprise logins, this computer needs to be enrolled in "
+#~ "the domain. Please have your network administrator type their domain "
+#~ "password here, and choose a unique computer name for your computer."
+#~ msgstr ""
+#~ "Для использования корпоративной учётной записи этот компьютер должен быть "
+#~ "зарегистрирован в домене. Администратор сети должен ввести здесь доменный "
+#~ "пароль и выбрать уникальное имя для вашего компьютера."
+
+#~ msgid "No password"
+#~ msgstr "Пароль не указан"
+
+#~ msgid "_Confirm password"
+#~ msgstr "П_одтвердите пароль"
+
+#~ msgid "Choose a _password"
+#~ msgstr "Выберите пароль"
+
+#~ msgctxt "Password strength"
+#~ msgid "Too short"
+#~ msgstr "Слишком короткий"
+
+#~ msgctxt "Password strength"
+#~ msgid "Not good enough"
+#~ msgstr "Недостаточно хороший"
+
+#~ msgctxt "Password strength"
+#~ msgid "Weak"
+#~ msgstr "Слабый"
+
+#~ msgctxt "Password strength"
+#~ msgid "Fair"
+#~ msgstr "Нормальный"
+
+#~ msgctxt "Password strength"
+#~ msgid "Good"
+#~ msgstr "Хороший"
+
+#~ msgctxt "Password strength"
+#~ msgid "Strong"
+#~ msgstr "Надёжный"
+
+#~ msgid "Login"
+#~ msgstr "Вход в систему"
+
+#~ msgid "Create a Local Account"
+#~ msgstr "Создать локальную учётную запись"
+
+#~ msgid "page 1"
+#~ msgstr "страница 1"
+
+#~ msgid "Create an Enterprise Account"
+#~ msgstr "Создать учётную запись для организации"
+
+#~ msgid "Other"
+#~ msgstr "Другой"
+
+#~ msgid "No input source selected"
+#~ msgstr "Источник ввода не выбран"
+
+#~ msgid "Add an Input Source"
+#~ msgstr "Добавить источник ввода"
