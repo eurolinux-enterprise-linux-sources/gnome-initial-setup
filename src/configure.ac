@@ -1,7 +1,7 @@
-AC_INIT([gnome-initial-setup],[3.22.1])
+AC_INIT([gnome-initial-setup],[3.28.0])
 AC_CONFIG_MACRO_DIR([m4])
 
-AM_INIT_AUTOMAKE([dist-xz no-dist-gzip foreign])
+AM_INIT_AUTOMAKE([dist-xz no-dist-gzip foreign tar-ustar])
 AM_MAINTAINER_MODE([enable])
 AM_SILENT_RULES([yes])
 
@@ -18,8 +18,20 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [gettext package])
 
 AM_GLIB_GNU_GETTEXT
 
-NETWORK_MANAGER_REQUIRED_VERSION=0.9.6.4
-GLIB_REQUIRED_VERSION=2.46.0
+AC_ARG_WITH(vendor-conf-file,
+            AS_HELP_STRING([--with-vendor-conf-file=<file>],
+                           [vendor conf file]))
+
+if ! test -z "$with_vendor_conf_file"; then
+   VENDOR_CONF_FILE=$with_vendor_conf_file
+else
+   VENDOR_CONF_FILE=${localstatedir}/lib/gnome-initial-setup/vendor.conf
+fi
+AC_SUBST(VENDOR_CONF_FILE)
+
+LIBNM_REQUIRED_VERSION=1.2
+LIBNMA_REQUIRED_VERSION=1.0
+GLIB_REQUIRED_VERSION=2.53.0
 GTK_REQUIRED_VERSION=3.11.3
 PANGO_REQUIRED_VERSION=1.32.5
 IBUS_REQUIRED_VERSION=1.4.99
@@ -30,10 +42,8 @@ GEOCLUE_REQUIRED_VERSION=2.3.1
 PACKAGEKIT_REQUIRED_VERSION=1.1.4
 
 PKG_CHECK_MODULES(INITIAL_SETUP,
-                  NetworkManager >= $NETWORK_MANAGER_REQUIRED_VERSION
-                  libnm-glib >= $NETWORK_MANAGER_REQUIRED_VERSION
-                  libnm-util >= $NETWORK_MANAGER_REQUIRED_VERSION
-                  libnm-gtk >= $NETWORK_MANAGER_REQUIRED_VERSION
+                  libnm >= $LIBNM_REQUIRED_VERSION
+                  libnma >= $LIBNMA_REQUIRED_VERSION
                   polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
                   accountsservice
                   gnome-desktop-3.0 >= $GNOME_DESKTOP_REQUIRED_VERSION
@@ -49,10 +59,12 @@ PKG_CHECK_MODULES(INITIAL_SETUP,
                   pango >= $PANGO_REQUIRED_VERSION
                   rest-0.7
                   json-glib-1.0
-		  libsecret-1
+                  libsecret-1
                   pwquality
                   webkit2gtk-4.0)
 
+INITIAL_SETUP_CFLAGS="$INITIAL_SETUP_CFLAGS -DNM_VERSION_MIN_REQUIRED=NM_VERSION_1_2"
+INITIAL_SETUP_CFLAGS="$INITIAL_SETUP_CFLAGS -DNM_VERSION_MAX_ALLOWED=NM_VERSION_1_2"
 
 AC_ARG_ENABLE(software-sources,
               [AS_HELP_STRING([--enable-software-sources],

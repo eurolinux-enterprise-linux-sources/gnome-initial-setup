@@ -1,6 +1,56 @@
-3.22.1
+3.28.0
 
- * Clarify privacy policy links
+ * Translation updates
+ * Sync string changes with gnome-software
+
+3.27.90
+
+ * Adjust session components to recent changes
+ * Improve sorting in the language list
+ * Memory leak fixes
+ * Update titlebar when title changes
+ * Translation updates
+
+3.26.0
+
+ * Translation updates
+
+3.25.92
+
+ * Translation updates
+
+3.25.4
+
+ * Use Unicode in translatable strings
+ * Adjust to g-s-d's plugin removals
+ * Translation updates
+
+3.25.3
+
+ * Support a vendor configuration file
+ * Update text direction when the locale changes
+ * Allow configuring network connections
+ * Copy monitor configuration to user session
+ * Sync user account page with control-center
+ * Show strength indicator for passwords
+ * Translation updates
+
+3.24.0
+
+ * Fix g-i-s session startup deadlock
+ * Translation updates
+
+3.23.92
+
+ * Use correct capitalization and unicode characters
+ * Exit gracefully when disabled systemwide
+ * Adjust to gnome-settings-daemon changes
+ * Port network page to use libnm instead of libnm-glib
+ * Translation updates
+
+3.23.1
+
+ * Clarify presentation of privacy policies
  * Translation updates
 
 3.22.0

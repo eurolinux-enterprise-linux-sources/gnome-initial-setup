@@ -89,7 +89,7 @@ add_account_to_provider (ProviderWidget *provider_widget)
                                         GTK_DIALOG_MODAL
                                         | GTK_DIALOG_DESTROY_WITH_PARENT
                                         | GTK_DIALOG_USE_HEADER_BAR,
-                                        NULL);
+                                        NULL, NULL);
 
   goa_provider_add_account (provider_widget->provider,
                             priv->goa_client,
@@ -102,7 +102,7 @@ add_account_to_provider (ProviderWidget *provider_widget)
 
   if (error) {
     if (!g_error_matches (error, GOA_ERROR, GOA_ERROR_DIALOG_DISMISSED))
-      g_warning ("fart %s\n", error->message);
+      g_warning ("fart %s", error->message);
     goto out;
   }
 
@@ -121,7 +121,7 @@ add_provider_to_list (GisGoaPage *page, const char *provider_type)
   GtkWidget *checkmark;
   GtkWidget *account_label;
   GIcon *icon;
-  gchar *markup;
+  gchar *markup, *provider_name;
   GoaProvider *provider;
   ProviderWidget *provider_widget;
 
@@ -136,11 +136,14 @@ add_provider_to_list (GisGoaPage *page, const char *provider_type)
 
   icon = goa_provider_get_provider_icon (provider, NULL);
   image = gtk_image_new_from_gicon (icon, GTK_ICON_SIZE_DIALOG);
+  g_object_unref (icon);
 
-  markup = g_strdup_printf ("<b>%s</b>", goa_provider_get_provider_name (provider, NULL));
+  provider_name = goa_provider_get_provider_name (provider, NULL);
+  markup = g_strdup_printf ("<b>%s</b>", provider_name);
   label = gtk_label_new (NULL);
   gtk_label_set_markup (GTK_LABEL (label), markup);
   g_free (markup);
+  g_free (provider_name);
 
   checkmark = gtk_image_new_from_icon_name ("object-select-symbolic", GTK_ICON_SIZE_MENU);
 

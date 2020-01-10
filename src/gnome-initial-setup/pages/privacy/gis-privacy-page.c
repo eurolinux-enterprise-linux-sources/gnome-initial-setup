@@ -113,8 +113,14 @@ update_os_data (GisPrivacyPage *page)
 
   if (privacy_policy)
     {
-      text = g_strdup_printf ("<a href='%s'>%s</a>", privacy_policy, _("Privacy Policy"));
+      /* Translators: the parameter here is the name of a distribution,
+       * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
+       * detect any distribution.
+       */
+      char *distro_label = g_strdup_printf (_("Problem data will be collected by %s:"), name);
+      text = g_strdup_printf ("%s <a href='%s'>%s</a>", distro_label, privacy_policy, _("Privacy Policy"));
       gtk_label_set_markup (GTK_LABEL (priv->distro_privacy_policy_label), text);
+      g_free (distro_label);
       g_free (text);
     }
   else
@@ -172,7 +178,7 @@ gis_privacy_page_constructed (GObject *object)
 
   update_os_data (page);
 
-  text = g_strdup_printf ("<a href='%s'>%s</a>", "https://location.services.mozilla.com/privacy", _("Privacy Policy"));
+  text = g_strdup_printf ("%s <a href='%s'>%s</a>", _("Uses Mozilla Location Service:"), "https://location.services.mozilla.com/privacy", _("Privacy Policy"));
   gtk_label_set_markup (GTK_LABEL (priv->mozilla_privacy_policy_label), text);
   g_free (text);
 
@@ -252,7 +258,7 @@ activate_link (GtkLabel       *label,
                                         GTK_DIALOG_MODAL
                                         | GTK_DIALOG_DESTROY_WITH_PARENT
                                         | GTK_DIALOG_USE_HEADER_BAR,
-                                        NULL);
+                                        NULL, NULL);
 
   overlay = gtk_overlay_new ();
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), overlay);

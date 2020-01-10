@@ -99,7 +99,7 @@ on_info (GdmUserVerifier *user_verifier,
          const char      *info,
          GisSummaryPage  *page)
 {
-  g_debug ("PAM module info: %s\n", info);
+  g_debug ("PAM module info: %s", info);
 }
 
 static void
@@ -108,7 +108,7 @@ on_problem (GdmUserVerifier *user_verifier,
             const char      *problem,
             GisSummaryPage  *page)
 {
-  g_warning ("PAM module error: %s\n", problem);
+  g_warning ("PAM module error: %s", problem);
 }
 
 static void
@@ -129,7 +129,7 @@ on_secret_info_query (GdmUserVerifier *user_verifier,
   GisSummaryPagePrivate *priv = gis_summary_page_get_instance_private (page);
   gboolean should_send_password = priv->user_password != NULL;
 
-  g_debug ("PAM module secret info query: %s\n", question);
+  g_debug ("PAM module secret info query: %s", question);
   if (should_send_password) {
     g_debug ("sending password\n");
     gdm_user_verifier_call_answer_query (user_verifier,
@@ -214,32 +214,9 @@ log_user_in (GisSummaryPage *page)
 }
 
 static void
-add_setup_done_file (void)
-{
-  gchar *gis_done_path;
-  GError *error = NULL;
-
-  gis_done_path = g_build_filename (g_get_user_config_dir (),
-                                    "gnome-initial-setup-done",
-                                    NULL);
-
-  if (!g_file_set_contents (gis_done_path, "yes", -1, &error)) {
-      g_warning ("Unable to create %s: %s", gis_done_path, error->message);
-      g_clear_error (&error);
-  }
-
-  g_free (gis_done_path);
-}
-
-static void
 done_cb (GtkButton *button, GisSummaryPage *page)
 {
-  gchar *file;
-
-  /* the tour is triggered by $XDG_CONFIG_HOME/run-welcome-tour */
-  file = g_build_filename (g_get_user_config_dir (), "run-welcome-tour", NULL);
-  g_file_set_contents (file, "yes", -1, NULL);
-  g_free (file);
+  gis_ensure_stamp_files ();
 
   switch (gis_driver_get_mode (GIS_PAGE (page)->driver))
     {
@@ -248,7 +225,6 @@ done_cb (GtkButton *button, GisSummaryPage *page)
       log_user_in (page);
       break;
     case GIS_DRIVER_MODE_EXISTING_USER:
-      add_setup_done_file ();
       g_application_quit (G_APPLICATION (GIS_PAGE (page)->driver));
     default:
       break;
@@ -325,7 +301,7 @@ update_distro_name (GisSummaryPage *page)
   /* Translators: the parameter here is the name of a distribution,
    * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
    * detect any distribution. */
-  text = g_strdup_printf (_("_Start using %s"), name);
+  text = g_strdup_printf (_("_Start Using %s"), name);
   gtk_label_set_label (GTK_LABEL (priv->start_button_label), text);
   g_free (text);
 

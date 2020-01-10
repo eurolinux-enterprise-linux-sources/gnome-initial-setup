@@ -116,7 +116,6 @@ validate (GisPasswordPage *page)
   const gchar *verify;
   gint strength_level;
   const gchar *hint;
-  const gchar *long_hint;
 
   if (priv->timeout_id != 0) {
     g_source_remove (priv->timeout_id);
@@ -126,19 +125,14 @@ validate (GisPasswordPage *page)
   password = gtk_entry_get_text (GTK_ENTRY (priv->password_entry));
   verify = gtk_entry_get_text (GTK_ENTRY (priv->confirm_entry));
 
-  pw_strength (password, NULL, priv->username, &hint, &long_hint, &strength_level);
+  pw_strength (password, NULL, priv->username, &hint, &strength_level);
   gtk_level_bar_set_value (GTK_LEVEL_BAR (priv->password_strength), strength_level);
-  gtk_label_set_label (GTK_LABEL (priv->password_explanation), long_hint);
-
-  if (strlen (password) > 0 && strength_level <= 0)
-    set_entry_validation_error (GTK_ENTRY (priv->password_entry), _("This is a weak password."));
-  else
-    clear_entry_validation_error (GTK_ENTRY (priv->password_entry));
+  gtk_label_set_label (GTK_LABEL (priv->password_explanation), hint);
 
   gtk_label_set_label (GTK_LABEL (priv->confirm_explanation), "");
   priv->valid_confirm = FALSE;
 
-  priv->valid_password = (strength_level > 0);
+  priv->valid_password = (strength_level > 1);
   if (priv->valid_password)
     set_entry_validation_checkmark (GTK_ENTRY (priv->password_entry));
 
@@ -296,7 +290,16 @@ gis_password_page_class_init (GisPasswordPageClass *klass)
 static void
 gis_password_page_init (GisPasswordPage *page)
 {
+  GtkCssProvider *provider;
+
   g_resources_register (password_get_resource ());
+
+  provider = gtk_css_provider_new ();
+  gtk_css_provider_load_from_resource (provider, "/org/gnome/initial-setup/gis-password-page.css");
+  gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
+                                             GTK_STYLE_PROVIDER (provider),
+                                             GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  g_object_unref (provider);
 
   gtk_widget_init_template (GTK_WIDGET (page));
 }

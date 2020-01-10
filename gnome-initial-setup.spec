@@ -1,34 +1,27 @@
-%global nm_version 0.9.6.4
-%global glib_required_version 2.46.0
+%global nm_version 1.2
+%global nma_version 1.0
+%global glib_required_version 2.53.0
 %global gtk_required_version 3.11.3
 %global geoclue_version 2.3.1
 
 Name:           gnome-initial-setup
-Version:        3.22.1
-Release:        5%{?dist}
+Version:        3.28.0
+Release:        1%{?dist}
 Summary:        Bootstrapping your OS
 
 License:        GPLv2+
 URL:            https://wiki.gnome.org/Design/OS/InitialSetup
-Source0:        https://download.gnome.org/sources/%{name}/3.22/%{name}-%{version}.tar.xz
-Patch0:         honor-anaconda-firstboot-disabled.patch
+Source0:        https://download.gnome.org/sources/%{name}/3.28/%{name}-%{version}.tar.xz
+Patch0:         honor-firstboot-disabled.patch
 Patch1:         0001-Disable-software-page-as-it-doesn-t-make-sense-in-RH.patch
-Patch2:         0001-password-Make-our-password-validation-similar-to-ana.patch
-
-Patch3:         0001-data-Update-gnome-session-file-for-gnome-settings-da.patch
-Patch4:         0002-data-Start-gnome-shell-in-the-DisplayServer-autostar.patch
-Patch5:         0003-data-use-aggregateMenu-component-in-initial-setup-se.patch
-Patch6:         0004-data-Adjust-to-g-s-d-s-plugin-removals.patch
-
 
 BuildRequires:  krb5-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  intltool
 BuildRequires:  libpwquality-devel
 BuildRequires:  pkgconfig(NetworkManager) >= %{nm_version}
-BuildRequires:  pkgconfig(libnm-glib) >= %{nm_version}
-BuildRequires:  pkgconfig(libnm-util) >= %{nm_version}
-BuildRequires:  pkgconfig(libnm-gtk)
+BuildRequires:  pkgconfig(libnm) >= %{nm_version}
+BuildRequires:  pkgconfig(libnma) >= %{nma_version}
 BuildRequires:  pkgconfig(accountsservice)
 BuildRequires:  pkgconfig(gnome-desktop-3.0)
 BuildRequires:  pkgconfig(gstreamer-1.0)
@@ -53,10 +46,13 @@ BuildRequires:  ibus-devel
 BuildRequires:  rest-devel
 BuildRequires:  polkit-devel
 BuildRequires:  libsecret-devel
+BuildRequires:  automake autoconf
+BuildRequires:  gnome-common
 
 # gnome-initial-setup is being run by gdm
 Requires: gdm
 Requires: geoclue2-libs%{?_isa} >= %{geoclue_version}
+Requires: glib2%{?_isa} >= %{glib_required_version}
 # we install a rules file
 Requires: polkit-js-engine
 Requires: /usr/bin/gkbd-keyboard-display
@@ -71,16 +67,10 @@ a good setup experience to welcome you to your system, and walks
 you through configuring it. It is integrated with gdm.
 
 %prep
-%setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
+%autosetup -p1
 
 %build
+autoreconf -fi
 %configure --enable-software-sources
 make %{?_smp_mflags}
 
@@ -119,6 +109,10 @@ useradd -rM -d /run/gnome-initial-setup/ -s /sbin/nologin %{name} &>/dev/null ||
 %{_datadir}/polkit-1/rules.d/20-gnome-initial-setup.rules
 
 %changelog
+* Wed Jun 06 2018 Richard Hughes <rhughes@redhat.com> - 3.28.0-1
+- Update to 3.28.0
+- Resolves: #1568175
+
 * Thu Oct 26 2017 Rui Matos <rmatos@redhat.com> - 3.22.1-5
 - Update session definition files to work with GNOME 3.26
   Resolves: rhbz#1506607

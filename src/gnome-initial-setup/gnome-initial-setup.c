@@ -49,6 +49,9 @@
 #include "pages/password/gis-password-page.h"
 #include "pages/summary/gis-summary-page.h"
 
+#define VENDOR_PAGES_GROUP "pages"
+#define VENDOR_PAGES_SKIP_KEY "skip"
+
 static gboolean force_existing_user_mode;
 
 typedef void (*PreparePage) (GisDriver *driver);
@@ -101,21 +104,36 @@ static gchar **
 pages_to_skip_from_file (void)
 {
   GKeyFile *skip_pages_file;
-  gchar **skip_pages;
+  gchar **skip_pages = NULL;
+  GError *error = NULL;
 
+  /* VENDOR_CONF_FILE points to a keyfile containing vendor customization
+   * options. This code will look for options under the "pages" group, and
+   * supports the following keys:
+   *   - skip (optional): list of pages to be skipped.
+   *
+   * This is how this file would look on a vendor image:
+   *
+   *   [pages]
+   *   skip=language
+   */
   skip_pages_file = g_key_file_new ();
-  /* TODO: put the skipfile somewhere sensible */
-  if (g_key_file_load_from_file (skip_pages_file, "/tmp/skip_pages_file",
-                                 G_KEY_FILE_NONE,
-                                 NULL)) {
-    skip_pages = g_key_file_get_string_list (skip_pages_file, "pages", "skip",
-                                             NULL, NULL);
-    g_key_file_free (skip_pages_file);
+  if (!g_key_file_load_from_file (skip_pages_file, VENDOR_CONF_FILE,
+                                  G_KEY_FILE_NONE, &error)) {
+    if (!g_error_matches (error, G_FILE_ERROR, G_FILE_ERROR_NOENT))
+      g_warning ("Could not read file %s: %s", VENDOR_CONF_FILE, error->message);
 
-    return skip_pages;
+    g_error_free (error);
+    goto out;
   }
 
-  return NULL;
+  skip_pages = g_key_file_get_string_list (skip_pages_file, VENDOR_PAGES_GROUP,
+                                           VENDOR_PAGES_SKIP_KEY, NULL, NULL);
+
+ out:
+  g_key_file_free (skip_pages_file);
+
+  return skip_pages;
 }
 
 static void
@@ -202,7 +220,7 @@ main (int argc, char *argv[])
 
   g_unsetenv ("GIO_USE_VFS");
 
-  context = g_option_context_new (_("- GNOME initial setup"));
+  context = g_option_context_new (_("— GNOME initial setup"));
   g_option_context_add_main_entries (context, entries, NULL);
 
   g_option_context_parse (context, &argc, &argv, NULL);
@@ -241,4 +259,25 @@ main (int argc, char *argv[])
   g_object_unref (driver);
   g_option_context_free (context);
   return status;
+}
+
+void
+gis_ensure_stamp_files (void)
+{
+  gchar *file;
+  GError *error = NULL;
+
+  file = g_build_filename (g_get_user_config_dir (), "run-welcome-tour", NULL);
+  if (!g_file_set_contents (file, "yes", -1, &error)) {
+      g_warning ("Unable to create %s: %s", file, error->message);
+      g_clear_error (&error);
+  }
+  g_free (file);
+
+  file = g_build_filename (g_get_user_config_dir (), "gnome-initial-setup-done", NULL);
+  if (!g_file_set_contents (file, "yes", -1, &error)) {
+      g_warning ("Unable to create %s: %s", file, error->message);
+      g_clear_error (&error);
+  }
+  g_free (file);
 }

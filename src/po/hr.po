@@ -1,80 +1,82 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Khaled Hosny <khaledhosny@eglug.org>, 2012, 2013, 2014, 2017.
+# Croatian translation for gnome-initial-setup.
+# Copyright (C) 2017 gnome-initial-setup's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-initial-setup package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-19 01:03+0200\n"
-"PO-Revision-Date: 2017-06-19 01:28+0200\n"
-"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
-"Language-Team: Arabic <doc@arabeyes.org>\n"
-"Language: ar\n"
+"Project-Id-Version: gnome-initial-setup gnome-3-24\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"initial-setup&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-02-20 13:29+0000\n"
+"PO-Revision-Date: 2018-02-25 22:05+0100\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../data/gnome-initial-setup.desktop.in.in.h:1
 #: ../data/gnome-initial-setup-first-login.desktop.in.in.h:1
 msgid "Initial Setup"
-msgstr "الإعداد الأولي"
+msgstr "Početno postavljanje"
 
-#: ../gnome-initial-setup/gis-assistant.c:396
+#: ../gnome-initial-setup/gis-assistant.c:403
 msgid "_Next"
-msgstr "ال_تالي"
+msgstr "_Sljedeće"
 
-#: ../gnome-initial-setup/gis-assistant.c:397
+#: ../gnome-initial-setup/gis-assistant.c:404
 msgid "_Accept"
-msgstr "ا_قبل"
+msgstr "_Prihvati"
 
-#: ../gnome-initial-setup/gis-assistant.c:398
+#: ../gnome-initial-setup/gis-assistant.c:405
 msgid "_Skip"
-msgstr "_تجاوز"
+msgstr "_Preskoči"
 
-#: ../gnome-initial-setup/gis-assistant.c:399
+#: ../gnome-initial-setup/gis-assistant.c:406
 msgid "_Previous"
-msgstr "ال_سابق"
+msgstr "_Prijašnje"
 
-#: ../gnome-initial-setup/gis-assistant.c:400
+#: ../gnome-initial-setup/gis-assistant.c:407
 msgid "_Cancel"
-msgstr "أ_لغِ"
+msgstr "_Odustani"
 
 #: ../gnome-initial-setup/gnome-initial-setup.c:217
 msgid "Force existing user mode"
-msgstr "افرِض وضع المستخدم الموجود"
+msgstr "Prisili način postojećeg korinika"
 
 #: ../gnome-initial-setup/gnome-initial-setup.c:223
-msgid "- GNOME initial setup"
-msgstr "- إعداد جنوم الأولي"
+msgid "— GNOME initial setup"
+msgstr "— GNOME početno postavljanje"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page.c:242
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:2
 msgid "About You"
-msgstr "عنك"
+msgstr "O vama"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:182
 msgid "Failed to register account"
-msgstr "فشل تسجيل الحساب"
+msgstr "Neuspješna registracija računa"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:376
 msgid "No supported way to authenticate with this domain"
-msgstr "لا توجد طريقة مدعومة للاستيثاق مع هذا النطاق"
+msgstr "Nema podržanog načina za ovjeru s ovom domenom"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:416
 msgid "Failed to join domain"
-msgstr "فشل الانضمام إلى النطاق"
+msgstr "Neuspješno pridruživanje s domenom"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.c:484
 msgid "Failed to log into domain"
-msgstr "فشل الولوج إلى النطاق"
+msgstr "Neuspješna prijava u domenu"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:1
 msgid "Enterprise Login"
-msgstr "ولوج المؤسسات"
+msgstr "Prijava za tvrtke"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:2
 msgid ""
@@ -82,34 +84,35 @@ msgid ""
 "used on this device. You can also use this account to access company "
 "resources on the internet."
 msgstr ""
-"ولوج المؤسسات يسمح باستخدام حساب مستخدم مدار مركزيًا على هذا الجهاز. يمكنك "
-"استخدام هذا الحساب للوصول إلى موارد الشركة على الإنترنت."
+"Poslovna prijava dopušta centralizirano upravljanje postojećim korisničkim "
+"računom kako bi se mogao koristiti na ovom uređaju. Taj račun možete "
+"koristiti isto za pristup resursima tvrtke na internetu."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:3
 msgid "_Domain"
-msgstr "الن_طاق"
+msgstr "_Domena"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:4
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:5
 msgid "_Username"
-msgstr "اسم المست_خدم"
+msgstr "_Korisničko ime"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:5
 #: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:3
 msgid "_Password"
-msgstr "_كلمة السر"
+msgstr "_Lozinka"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:6
 msgid "Enterprise domain or realm name"
-msgstr "نطاق مؤسسة أو اسم حقيقي"
+msgstr "Domena tvrtke ili ime"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:7
 msgid "C_ontinue"
-msgstr "_تابِع"
+msgstr "N_astavi"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:8
 msgid "Domain Administrator Login"
-msgstr "ولوج مدير النطاق"
+msgstr "Prijava administratora domene"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:9
 msgid ""
@@ -117,169 +120,176 @@ msgid ""
 "domain. Please have your network administrator type the domain password "
 "here, and choose a unique computer name for your computer."
 msgstr ""
-"تحتاج أن تكون مسجّلا في نطاق لاستخدام ولوج المؤسسات على هذا الحاسوب. من فضلك "
-"اطلب من مدير الشبكة أن يكتب كلمة سر النطاق هنا، و اختر اسمًا فريدًا لحاسوبك."
+"Kako bi mogli koristiti poslovnu prijavu, ovo računalo treba biti upisano na "
+"domenu. Pobrinite se da je vaš mrežni administrator upisao lozinku domene "
+"ovdje, a zatim odaberite jedinstveni naziv vašeg računala."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:10
 msgid "_Computer"
-msgstr "ال_حاسوب"
+msgstr "_Računalo"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:11
 msgid "Administrator _Name"
-msgstr "ا_سم المدير"
+msgstr "Administratorsko _ime"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-enterprise.ui.h:12
 msgid "Administrator Password"
-msgstr "كلمة سر المدير"
+msgstr "Administratorska lozinka"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.c:203
 msgid "Please check the name and username. You can choose a picture too."
-msgstr "رجاء مراجعة الاسم و اسم المستخدم. يمكنك اختيار صورة أيضًا."
+msgstr "Provjerite ime i korisničko ime. Možete isto odabrati i sliku."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.c:413
 msgid "We need a few details to complete setup."
-msgstr "نحتاج لبعض البيانات لإتمام الإعداد."
+msgstr "Trebamo još nekoliko pojedinosti za završetak postavljanja."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:1
 msgid "Avatar image"
-msgstr "صورة الأيقونة"
+msgstr "Slika avatara"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:3
 msgid "Please provide a name and username. You can choose a picture too."
-msgstr "رجاء أدخِل اسمًا و اسم المستخدم. يمكنك اختيار صورة أيضًا."
+msgstr "Omogućite ime i korisničko ime. Možete isto odabrati i sliku."
 
 #: ../gnome-initial-setup/pages/account/gis-account-page-local.ui.h:4
 msgid "_Full Name"
-msgstr "الاسم بال_كامل"
+msgstr "_Puno ime"
 
 #: ../gnome-initial-setup/pages/account/gis-account-page.ui.h:1
 msgid "Set Up _Enterprise Login"
-msgstr "اضبط ولوج ال_مؤسسات"
+msgstr "Postavi prijavu za _tvrtke"
 
 #: ../gnome-initial-setup/pages/account/um-photo-dialog.c:246
 msgid "Disable image"
-msgstr "عطّل الصورة"
+msgstr "Onemogući sliku"
 
 #: ../gnome-initial-setup/pages/account/um-photo-dialog.c:264
 msgid "Take a photo…"
-msgstr "التقط صورة…"
+msgstr "Uslikaj…"
 
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:310
 msgid "Cannot automatically join this type of domain"
-msgstr "لا يمكن الانضمام التلقائي لهذا النوع من النطاقات"
+msgstr "Nemoguće se automatski pridružiti ovoj vrsti domene"
 
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:373
 #, c-format
 msgid "No such domain or realm found"
-msgstr "لم يعثر على هذا النطاق أو المجال"
+msgstr "Takva domena ili područje nije pornađeno"
 
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:782
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:796
 #, c-format
 msgid "Cannot log in as %s at the %s domain"
-msgstr "تعذّر الولوج باسم %s في النطاق %s"
+msgstr "Nemoguća prijava kao %s na %s domenu"
 
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:788
 msgid "Invalid password, please try again"
-msgstr "كلمة سر خطأ، من فضلك أعد المحاولة"
+msgstr "Neispravna lozinka, pokušajte ponovno"
 
 #: ../gnome-initial-setup/pages/account/um-realm-manager.c:801
 #, c-format
 msgid "Couldn’t connect to the %s domain: %s"
-msgstr "تعذّر الاتصال بالنطاق %s:‏ %s"
+msgstr "Nemoguće povezivanje s %s domenom: %s"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:245
 msgid "Sorry, that user name isn’t available. Please try another."
-msgstr "للأسف اسم المستخدم غير متاح. رجاء جرب اسمًا آخر."
+msgstr "Nažalost, to korisničko ime nije dostupno. Pokušajte s drugim."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:248
 #, c-format
 msgid "The username is too long."
-msgstr "اسم المستخدم طويل جدًا."
+msgstr "Korisnčko ime je predugačko."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:251
-msgid "The username cannot start with a ‘-’."
-msgstr "لا يمكن أن يبدأ اسم المستخدم بعلامة ’-‘."
+msgid "The username cannot start with a “-”."
+msgstr "Korisničko ime ne može početi s ”-”."
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:254
 msgid ""
 "The username should only consist of upper and lower case letters from a-z, "
 "digits and the following characters: . - _"
 msgstr ""
-"يجب أن لا يتعدى اسم المستخدم الحروف الإنجليزية و الأرقام و أي من الحروف: . -_"
+"Korisničko ime bi se trebalo samo sastojati od malih i velikih slova od a-ž, "
+"brojeva i bilo koji od znakova: . - _"
 
 #: ../gnome-initial-setup/pages/account/um-utils.c:258
 msgid "This will be used to name your home folder and can’t be changed."
-msgstr "سيُستخدم هذا لتسمية مجلد المنزل ولا يمكن تغييره."
+msgstr ""
+"To će se koristiti kao naziv vaše osobne mape i ne može se promijeniti."
 
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.c:301
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:1
 msgid "License Agreements"
-msgstr "اتفاقية الترخيص"
+msgstr "Licencni ugovori"
 
 #: ../gnome-initial-setup/pages/eulas/gis-eula-page.ui.h:2
 msgid ""
 "I have _agreed to the terms and conditions in this end user license "
 "agreement."
-msgstr "وا_فقت على بنود اتفاقية المستخدم النهائي."
+msgstr ""
+"Pristajem _na uvjete i odredbe navedene u ovom sporazumu licence za krajnjeg "
+"korisnika."
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.c:87
 msgid "Add Account"
-msgstr "أضف حسابًا"
+msgstr "Dodaj račun"
 
-#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:336
+#: ../gnome-initial-setup/pages/goa/gis-goa-page.c:339
 msgid "Online Accounts"
-msgstr "حسابات الإنترنت"
+msgstr "Mrežni računi"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:1
 msgid "Connect Your Online Accounts"
-msgstr "اتصل بحسابات الإنترنت"
+msgstr "Povežite se sa svojim mrežnim računima"
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:2
 msgid ""
 "Connect your accounts to easily access your email, online calendar, "
 "contacts, documents and photos."
 msgstr ""
-"اتصل بحسابك للوصول إلى بريدك و تقويمك على الشبكة و معارفك و مستنداتك و صورك."
+"Povežite se sa svojim mrežnim računima kako bi mogli jednostavno pristupiti "
+"svojoj e-pošti, mrežnom kalendaru, kontaktima, dokumentima i fotografijama."
 
 #: ../gnome-initial-setup/pages/goa/gis-goa-page.ui.h:3
 msgid ""
 "Accounts can be added and removed at any time from the Settings application."
-msgstr "يمكن إضافة الحسابات أو إزالتها في أي وقت من تطبيق الإعدادات."
+msgstr ""
+"Računi se mogu dodati i ukloniti u bilo koje vrijeme iz aplikacije postavki."
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:241
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:240
 msgid "Preview"
-msgstr "معاينة"
+msgstr "Pregled"
 
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:300
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:225
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:299
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:222
 #: ../gnome-initial-setup/pages/region/cc-region-chooser.c:210
 msgid "More…"
-msgstr "المزيد…"
+msgstr "Više…"
 
 #. Translators: a search for input methods or keyboard layouts
 #. * did not yield any results
 #.
-#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:322
+#: ../gnome-initial-setup/pages/keyboard/cc-input-chooser.c:321
 msgid "No inputs found"
-msgstr "لا يوجد أي مصادر إدخال"
+msgstr "Nema pronađenih izvora"
 
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.c:363
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:1
 msgid "Typing"
-msgstr "الكتابة"
+msgstr "Tipkanje"
 
 #: ../gnome-initial-setup/pages/keyboard/gis-keyboard-page.ui.h:2
 msgid "Select your keyboard layout or an input method."
-msgstr "اختر تخطيط لوحة المفاتيح و طريقة الإدخال."
+msgstr "Odaberite svoj raspored tipkovnice ili način unosa."
 
-#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:241
+#: ../gnome-initial-setup/pages/language/cc-language-chooser.c:238
 msgid "No languages found"
-msgstr "لا يوجد أي لغات"
+msgstr "Nema pronađenih jezika"
 
 #: ../gnome-initial-setup/pages/language/gis-language-page.c:292
 msgid "Welcome"
-msgstr "مرحبًا"
+msgstr "Dobrodošli"
 
 #. Translators: This is meant to be a warm, engaging welcome message,
 #. * like greeting somebody at the door. If the exclamation mark is not
@@ -287,28 +297,28 @@ msgstr "مرحبًا"
 #.
 #: ../gnome-initial-setup/pages/language/gis-welcome-widget.c:123
 msgid "Welcome!"
-msgstr "مرحبًا"
+msgstr "Dobrodošli!"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.c:304
 msgctxt "Wireless access point"
 msgid "Other…"
-msgstr "أخرى…"
+msgstr "Druga…"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.c:363
 msgid "Wireless networking is disabled"
-msgstr "الشبكات اللاسلكية غير مُفعّلة"
+msgstr "Bežično umrežavanje je onemogućeno"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.c:370
 msgid "Checking for available wireless networks"
-msgstr "يبحث عن شبكات اللاسلكي المتاحة"
+msgstr "Provjera dostupnih bežičnih mreža"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.c:662
 msgid "Network"
-msgstr "الشبكة"
+msgstr "Mreža"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:1
 msgid "Wi-Fi"
-msgstr "واي فاي"
+msgstr "Bežična mreža"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:2
 msgid ""
@@ -316,107 +326,108 @@ msgid ""
 "details, and enable you to access your email, calendar, and contacts. It is "
 "also necessary for enterprise login accounts."
 msgstr ""
-"الاتصال بالإنترنت سيتيح لك ضبط الوقت، و إضافة بياناتك، و تمكينك من الوصول "
-"إلى بريدك و تقويمك و معارفك. كما أنه مطلوب لحسابات ولوج المؤسسات."
+"Povezivanje s internetom će vam omogućiti postavljanje vremena, dodavanje "
+"svojih pojedinosti, omogućiti vam pristup vašoj e-pošti, kalendaru i "
+"kontaktima. Isto tako je potrebno i za poslovnu prijavu."
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:3
 msgid "No wireless available"
-msgstr "لا تتوفر شبكة لاسلكية"
+msgstr "Nema dostupnih bežičnih mreža"
 
 #: ../gnome-initial-setup/pages/network/gis-network-page.ui.h:4
 msgid "Turn On"
-msgstr "فعّل"
+msgstr "Uključi"
 
 #: ../gnome-initial-setup/pages/password/gis-password-page.c:142
 msgid "The passwords do not match."
-msgstr "لا تتطابق كلمتا السر."
+msgstr "Lozinka se ne podudara."
 
 #: ../gnome-initial-setup/pages/password/gis-password-page.c:264
 msgid "Password"
-msgstr "كلمة السر"
+msgstr "Lozinka"
 
 #: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:1
 msgid "Set a Password"
-msgstr "ضع كلمة سر"
+msgstr "Postavite svoju lozinku"
 
 #: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:2
 msgid "Be careful not to lose your password."
-msgstr "كن حريصًا على ألا تفقد كلمة السر."
+msgstr "Budite oprezni da ne izgubite svoju lozinku."
 
 #: ../gnome-initial-setup/pages/password/gis-password-page.ui.h:4
 msgid "_Confirm"
-msgstr "أكّ_د"
+msgstr "_Potvrdi"
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:81
 msgctxt "Password hint"
 msgid "The new password needs to be different from the old one."
-msgstr "لا تحتوي كلمة السر الجديدة على حروف مختلفة كفاية."
+msgstr "Nova lozinka mora se razlikovati od stare."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:83
 msgctxt "Password hint"
 msgid "Try changing some letters and numbers."
-msgstr "حاول تغيير بعض الحروف و الأرقام."
+msgstr "Pokušajte promijeniti neka slova i brojeve."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:85
 #: ../gnome-initial-setup/pages/password/pw-utils.c:93
 msgctxt "Password hint"
 msgid "Try changing the password a bit more."
-msgstr "حاول تغيير كلمة السر أكثر قليلًا."
+msgstr "Pokušajte promijeniti lozinku malo više."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:87
 msgctxt "Password hint"
 msgid "A password without your user name would be stronger."
-msgstr "كلمة السر أقوى بدون اسم المستخدم."
+msgstr "Lozinka bez vašeg korisničkog imena bila bi snažnija."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:89
 msgctxt "Password hint"
 msgid "Try to avoid using your name in the password."
-msgstr "حاول تفادي وضع اسم المستخدم في كلمة السر."
+msgstr "Pokušajte izbjeći korištenje svojeg imena u lozinici."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:91
 msgctxt "Password hint"
 msgid "Try to avoid some of the words included in the password."
-msgstr "حاول تفادي بعض الكلمات المستخدمة في كلمة السر."
+msgstr "Pokušajte izbjeći neke riječi sadržane u lozinici."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:95
 msgctxt "Password hint"
 msgid "Try to avoid common words."
-msgstr "حاول تفادي الكلمات الشائعة."
+msgstr "Pokušajte izbjeći učestale riječi."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:97
 msgctxt "Password hint"
 msgid "Try to avoid reordering existing words."
-msgstr "حاول تفادي تغيير ترتيب كلمات معروفة."
+msgstr "Pokušajte izbjeći preslagivanje postojećih riječi."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:99
 msgctxt "Password hint"
 msgid "Try to use more numbers."
-msgstr "حاول استخدام أرقام أكثر."
+msgstr "Pokušajte koristiti više brojeva."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:101
 msgctxt "Password hint"
 msgid "Try to use more uppercase letters."
-msgstr "حاول استخدام حروف كبيرة أكثر."
+msgstr "Pokušajte koristiti više velikih slova."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:103
 msgctxt "Password hint"
 msgid "Try to use more lowercase letters."
-msgstr "حاول استخدام حروف صغيرة أكثر."
+msgstr "Pokušajte koristiti više malih slova."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:105
 msgctxt "Password hint"
 msgid "Try to use more special characters, like punctuation."
-msgstr "حاول استخدام علامات خاصة أكثر، مثل علامات الترقيم."
+msgstr "Pokušajte koristiti više posebnih znakova, poput interpukcija."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:107
 msgctxt "Password hint"
 msgid "Try to use a mixture of letters, numbers and punctuation."
-msgstr "حاول استخدام خليط من الحروف و الأرقام و علامات الترقيم."
+msgstr "Pokušajte koristiti mješavinu slova, brojeva i interpukcija."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:109
 msgctxt "Password hint"
 msgid "Try to avoid repeating the same character."
-msgstr "حاول تفادي تكرار نفس الحرف."
+msgstr "Pokušajte izbjeći ponavljanje istih znakova."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:111
 msgctxt "Password hint"
@@ -424,13 +435,13 @@ msgid ""
 "Try to avoid repeating the same type of character: you need to mix up "
 "letters, numbers and punctuation."
 msgstr ""
-"حاول تفادي تكرار نفس النوع من الحروف: عليك الخلط بين الحروف و الأرقام و "
-"علامات الترقيم."
+"Pokušajte izbjeći ponavljanje istih znakova, trebate koristiti mješavinu "
+"slova, brojeva i interpukcija."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:113
 msgctxt "Password hint"
 msgid "Try to avoid sequences like 1234 or abcd."
-msgstr "حاول تفادي تتابعات مثل 1234 أو abcd."
+msgstr "Pokušajte izbjeći slijedove poput 1234 ili abcd."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:115
 msgctxt "Password hint"
@@ -438,18 +449,19 @@ msgid ""
 "Password needs to be longer. Try to add more letters, numbers and "
 "punctuation."
 msgstr ""
-"على كلمة السر أن تكون أطول. حاول إضافة حروف و أرقام و علامات ترقيم أكثر."
+"Lozinka mora biti dulja. Pokušajte dodati više slova, brojeva i interpukcija."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:117
 msgctxt "Password hint"
 msgid "Mix uppercase and lowercase and try to use a number or two."
-msgstr "اخلط الحروف الكبيرة مع الصغيرة و جرب استخدام بضعة أرقام."
+msgstr "Promješajte velika i mala slova i dodajte slovo ili dva."
 
 #: ../gnome-initial-setup/pages/password/pw-utils.c:119
 msgctxt "Password hint"
 msgid ""
 "Adding more letters, numbers and punctuation will make the password stronger."
-msgstr "إضافة حروف و أرقام و علامات ترقيم أكثر ستجعل كلمة السر أقوى."
+msgstr ""
+"Dodavanje više slova, brojeva i interpunkcija učinit će lozinku snažnijom."
 
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
@@ -461,8 +473,8 @@ msgid ""
 "Sending reports of technical problems helps us to improve %s. Reports are "
 "sent anonymously and are scrubbed of personal data."
 msgstr ""
-"الإبلاغ عن المشاكل التقنية يساعدنا على تحسين %s. ترسل البلاغات مُجهّلة بدون "
-"أي معلومات شخصية."
+"Slanje izvještaja tehničkih problema pomaže nam poboljšati %s. Izvještaji su "
+"poslani anonimno i ne sadrže osobne podatke."
 
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
@@ -471,55 +483,58 @@ msgstr ""
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:120
 #, c-format
 msgid "Problem data will be collected by %s:"
-msgstr "بيانات المشاكل ستجمعها %s:"
+msgstr "Podatke problema će prikupiti %s:"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:121
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:181
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:256
 msgid "Privacy Policy"
-msgstr "سياسة الخصوصية"
+msgstr "Pravila privatnosti"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:181
 msgid "Uses Mozilla Location Service:"
-msgstr "تستخدم خدمة التموضع من موزيلا:"
+msgstr "Koristi se Mozilla usluga lociranja:"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.c:292
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:1
 msgid "Privacy"
-msgstr "الخصوصيّة"
+msgstr "Privatnost"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:2
 msgid "Location Services"
-msgstr "خدمات التموضع"
+msgstr "Usluge lociranja"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:3
 msgid ""
 "Allows applications to determine your geographical location. An indication "
 "is shown when location services are in use."
 msgstr ""
-"اسمح للتطبيقات بمعرفة موضعك الجغرافي. سيظهر مؤشر عند استخدام خدمات التموضع."
+"Dopušta aplikacijama otkrivanje vaše geografske lokacije. Indikator je "
+"prikazan kada se usluga lociranja koristi."
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:4
 msgid "Automatic Problem Reporting"
-msgstr "الإبلاغ التلقائي عن المشاكل"
+msgstr "Automatsko prijavljivanje problema"
 
 #: ../gnome-initial-setup/pages/privacy/gis-privacy-page.ui.h:5
 msgid ""
 "Privacy controls can be changed at any time from the Settings application."
-msgstr "يمكن تغيير إعدادات الخصوصية في أي وقت من تطبيق الإعدادات."
+msgstr ""
+"Pravila privatnosti mogu se promijeniti u svako vrijeme iz aplikacije "
+"postavki."
 
 #: ../gnome-initial-setup/pages/region/cc-region-chooser.c:228
 msgid "No regions found"
-msgstr "لا يوجد أي مناطق"
+msgstr "Nema pronađenih regija"
 
 #: ../gnome-initial-setup/pages/region/gis-region-page.c:226
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:1
 msgid "Region"
-msgstr "المنطقة"
+msgstr "Regija"
 
 #: ../gnome-initial-setup/pages/region/gis-region-page.ui.h:2
 msgid "Choose your country or region."
-msgstr "اختر بلدك أو منطقتك."
+msgstr "Odaberite svoju državu ili regiju."
 
 #. Translators: the parameter here is the name of a distribution,
 #. * like "Fedora" or "Ubuntu". It falls back to "GNOME 3" if we can't
@@ -527,34 +542,34 @@ msgstr "اختر بلدك أو منطقتك."
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.c:304
 #, c-format
 msgid "_Start Using %s"
-msgstr "اب_دأ استخدام %s"
+msgstr "_Počnite koristiti %s"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.c:334
 msgid "Ready to Go"
-msgstr "انتهينا"
+msgstr "Spremni za korištenje"
 
 #: ../gnome-initial-setup/pages/summary/gis-summary-page.ui.h:1
 msgid "You’re ready to go!"
-msgstr "نحن مستعدون"
+msgstr "Spremni ste za korištenje!"
 
 #. Translators: "city, country"
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:236
 #, c-format
 msgctxt "timezone loc"
 msgid "%s, %s"
-msgstr "%s، %s"
+msgstr "%s, %s"
 
 #. Translators: UTC here means the Coordinated Universal Time.
 #. * %:::z will be replaced by the offset from UTC e.g. UTC+02
 #.
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:273
 msgid "UTC%:::z"
-msgstr "جرينتش%:::z"
+msgstr "UTC%:::z"
 
 #. Translators: This is the time format used in 12-hour mode.
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:277
 msgid "%l:%M %p"
-msgstr "%l:%M %p"
+msgstr "%H:%M"
 
 #. Translators: This is the time format used in 24-hour mode.
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:280
@@ -571,50 +586,49 @@ msgstr "%s (%s)"
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.c:423
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:1
 msgid "Time Zone"
-msgstr "المنطقة الزمنية"
+msgstr "Vremenska zona"
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:2
 msgid ""
 "The time zone will be set automatically if your location can be found. You "
 "can also search for a city to set it yourself."
 msgstr ""
-"ستحدد المنطقة الزمنية تلقائيًا إذا كان موضعك معروفًا. يمكنك أيضًا البحث عن "
-"المدينة بنفسك."
+"Vremenska zona će se postaviti automatski ako se vaša lokacija može pronaći. "
+"Isto tako možete sami potražiti svoj grad."
 
 #: ../gnome-initial-setup/pages/timezone/gis-timezone-page.ui.h:3
 msgid "Please search for a nearby city"
-msgstr "من فضلك ابحث عن مدينة قريبة"
+msgstr "Potražite najbliži grad"
 
-#. Translators: the parameter here is the name of a distribution,
-#. * like "Fedora" or "Ubuntu". It falls back to "GNOME" if we can't
-#. * detect any distribution.
-#.
-#: ../gnome-initial-setup/pages/software/gis-software-page.c:112
-#, c-format
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:184
+msgid "Software Repositories"
+msgstr "Repozitoriji softvera"
+
+#. TRANSLATORS: this is the third party repositories info bar.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:188
+msgid "Access additional software from selected third party sources."
+msgstr "Pristup dodatnom softveru iz odabranih repozitorija treće strane."
+
+#. TRANSLATORS: this is the third party repositories info bar.
+#: ../gnome-initial-setup/pages/software/gis-software-page.c:192
 msgid ""
-"Proprietary software sources provide access to additional software, "
-"including web browsers and games. This software typically has restrictions "
-"on use and access to source code, and is not provided by %s."
+"Some of this software is proprietary and therefore has restrictions on use, "
+"sharing, and access to source code."
 msgstr ""
-"توفر مصادر البرمجيات الاحتكارية الوصول إلى برمجيات إضافية، بما فيها متصفحات "
-"الوب و الألعاب. عادة ما يكون لهذه البرمجيات قيود على الاستخدام و الوصول إلى "
-"الكود المصدري، و لا تأتي من %s."
-
-#: ../gnome-initial-setup/pages/software/gis-software-page.c:245
-msgid "Software Sources"
-msgstr "مصادر البرمجيات"
+"Pojedini softver je vlasnički softver i stoga ima ograničenje korištenja, "
+"dijeljenja i pristup izvornom kôdu."
 
 #: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:1
-msgid "Additional Software Sources"
-msgstr "مصادر البرمجيات الإضافية"
+msgid "Additional Software Repositories"
+msgstr "Dodatni repozitoriji softvera"
 
 #: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:2
 msgid "<a href=\"more\">Find out more…</a>"
-msgstr "<a href=\"more\">اطّلع على المزيد…</a>"
+msgstr "<a href=\"more\">Saznajte više…</a>"
 
 #: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:3
-msgid "Proprietary Software Sources"
-msgstr "مصادر البرمجيات الاحتكارية"
+msgid "Third Party Repositories"
+msgstr "Repozitoriji treće strane"
 
 #: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:4
 msgid ""
@@ -622,217 +636,62 @@ msgid ""
 "access to source code. This prevents anyone but the software owner from "
 "inspecting, improving or learning from its code."
 msgstr ""
-"عادة ما يكون للبرمجيات الاحتكارية قيود على الاستخدام و الوصول إلى الكود "
-"المصدري. يمنع هذا أي شخص عدا مالك البرمجية من فحصها أو تحسينها أو التعلم من "
-"كودها المصدري."
+"Vlasnički softver uobičajeno ima ograničenja u načinu korištenja i pristupa "
+"izvornom kôdu. To sprječava svakoga osim vlasnika softvera u provjeri, "
+"poboljšanju ili proučavanju kôda."
 
 #: ../gnome-initial-setup/pages/software/gis-software-page.ui.h:5
 msgid ""
 "In contrast, Free Software can be freely run, copied, distributed, studied "
 "and modified."
 msgstr ""
-"على النقيض منها، يمكن استخدام البرمجيات الحرة و نسخها و توزيعها و دراستها و "
-"تعديلها بحرية."
-
-#~ msgid "Are these the right details? You can change them if you want."
-#~ msgstr "هل هذه البيانات صحيحة؟ يمكنك تغييرها إن أردت."
-
-#~ msgid "Your username cannot be changed after setup."
-#~ msgstr "لن يمكن تغيير اسم المستخدم بعد الإعداد."
-
-#~ msgid "A user with the username '%s' already exists"
-#~ msgstr "اسم المستخدم '%s' موجود بالفعل"
-
-#~ msgid "Cancel"
-#~ msgstr "ألغِ"
-
-#~ msgid "You can review your online accounts (and add others) after setup."
-#~ msgstr "يمكنك مراجعة حسابات الإنترنت (و إضافة غيرها) بعد الإعداد."
-
-#~ msgid "No password"
-#~ msgstr "بلا كلمة السر"
-
-#~ msgid "Strength: %s"
-#~ msgstr "القوّة: %s"
-
-#~ msgid "Choose a _password"
-#~ msgstr "ا_ختر كلمة سر"
-
-#~ msgctxt "Password strength"
-#~ msgid "Too short"
-#~ msgstr "قصيرة جدا"
-
-#~ msgctxt "Password strength"
-#~ msgid "Not good enough"
-#~ msgstr "ليست جيدة كفاية"
-
-#~ msgctxt "Password strength"
-#~ msgid "Weak"
-#~ msgstr "ضعيفة"
-
-#~ msgctxt "Password strength"
-#~ msgid "Fair"
-#~ msgstr "معقولة"
-
-#~ msgctxt "Password strength"
-#~ msgid "Good"
-#~ msgstr "جيّدة"
-
-#~ msgctxt "Password strength"
-#~ msgid "Strong"
-#~ msgstr "قوية"
+"Nasuprot tome , slobodan softver se može slobodno koristiti, kopirati, "
+"distribuirati, proučavati i mijenjati."
 
 #~ msgid ""
-#~ "Thank you for choosing %s.\n"
-#~ "We hope that you love it."
+#~ "Proprietary software sources provide access to additional software, "
+#~ "including web browsers and games. This software typically has "
+#~ "restrictions on use and access to source code, and is not provided by %s."
 #~ msgstr ""
-#~ "شكرًا لك على اختيارك %s.\n"
-#~ "نتمنى أن تحبها."
+#~ "Vlasnički repozitoriji softvera omogućuju pristup dodatnome softveru. "
+#~ "uključujući web preglednike i igre. Taj softver uobičajeno ima "
+#~ "ograničenje u pristupu i korištenju izvornog kôda, i nije omogćen od "
+#~ "strane %s."
 
-#~ msgid "You're all set!"
-#~ msgstr "كل شيء جاهز"
+#~ msgid "Proprietary Software Sources"
+#~ msgstr "Repozitoriji vlasničkog softvera"
 
-#~ msgid "Login"
-#~ msgstr "الولوج"
+#~ msgid "A user with the username ‘%s’ already exists."
+#~ msgstr "Korisnik s korisničkim imenom ‘%s’ već postoji."
 
-#~ msgid "Create a Local Account"
-#~ msgstr "أنشئ حسابًا محليًا"
+#~ msgid "This is a weak password."
+#~ msgstr "Ovo je slaba lozinka."
 
-#~ msgid "page 1"
-#~ msgstr "صفحة 1"
+#~ msgid "_Verify"
+#~ msgstr "_Provjeri"
 
-#~ msgid "Create an Enterprise Account"
-#~ msgstr "أنشئ حساب مؤسسة"
+#~ msgctxt "Password hint"
+#~ msgid ""
+#~ "This is a weak password. Try to add more letters, numbers and symbols."
+#~ msgstr ""
+#~ "Ovo je slaba lozinka. Pokušajte dodati više slova, brojeva i simbola."
 
-#~ msgctxt "Online Account"
-#~ msgid "Other"
-#~ msgstr "أخرى"
+#~ msgctxt "Password strength"
+#~ msgid "Strength: Weak"
+#~ msgstr "Snaga: slaba"
 
-#~ msgid "Mail"
-#~ msgstr "البريد"
+#~ msgctxt "Password strength"
+#~ msgid "Strength: Low"
+#~ msgstr "Snaga: mala"
 
-#~ msgid "Contacts"
-#~ msgstr "المتراسلين"
+#~ msgctxt "Password strength"
+#~ msgid "Strength: Medium"
+#~ msgstr "Snaga: srednja"
 
-#~ msgid "Chat"
-#~ msgstr "الدردشة"
+#~ msgctxt "Password strength"
+#~ msgid "Strength: Good"
+#~ msgstr "Snaga: dobra"
 
-#~ msgid "Resources"
-#~ msgstr "الموارد"
-
-#~ msgid "Error creating account"
-#~ msgstr "حدث عُطل أثناء إنشاء الحساب"
-
-#~ msgid "Error removing account"
-#~ msgstr "حدث عُطل أثناء حذف الحساب"
-
-#~ msgid "Are you sure you want to remove the account?"
-#~ msgstr "أمتأكد أنك تريد حذف الحساب؟"
-
-#~ msgid "This will not remove the account on the server."
-#~ msgstr "هذا لن يحذف الحساب من على الخادوم."
-
-#~ msgid "_Remove"
-#~ msgstr "ا_حذف"
-
-#~ msgid "Connect to your existing data in the cloud"
-#~ msgstr "اتّصل ببياناتك الموجودة على السحاب"
-
-#~ msgid "_Add Account"
-#~ msgstr "أ_ضف حسابًا"
-
-#~ msgid "Other"
-#~ msgstr "أخرى"
-
-#~ msgid "Add an Input Source"
-#~ msgstr "أضف مصْدَر إدخال"
-
-#~ msgid "Search for a location"
-#~ msgstr "ابحث عن مكان"
-
-#~ msgid "_Determine your location automatically"
-#~ msgstr "_حدد مكانك تلقائيا"
-
-#~ msgid "No network devices found."
-#~ msgstr "لم يُعثر أجهزة اتصال شبكي."
-
-#~ msgid "Thank You"
-#~ msgstr "شكرًا"
-
-#~ msgid "Your computer is ready to use."
-#~ msgstr "حاسوبك جاهز للاستخدام."
-
-#~ msgid "You may change these options at any time in Settings."
-#~ msgstr "يمكنك تغيير أي من هذه الخيارات من ”الإعدادات“."
-
-#~ msgid "_Start using GNOME 3"
-#~ msgstr "اب_دأ باستخدام جنوم 3"
-
-#~ msgid "_Back"
-#~ msgstr "ال_سابق"
-
-#~ msgid "Select input sources"
-#~ msgstr "اختر مصادر الإدخال"
-
-#~ msgid "Login settings are used by all users when logging into the system"
-#~ msgstr "يستخدم إعدادات الولوج كل المستخدمين أثناء الولوج إلى النظام"
-
-#~ msgid "Choose How to Login"
-#~ msgstr "اختر كيفية الولوج"
-
-#~ msgid "_Local Account"
-#~ msgstr "حساب _محلي"
-
-#~ msgid "_Login Name"
-#~ msgstr "اسم ال_ولوج"
-
-#~ msgid "Remove"
-#~ msgstr "احذف"
-
-#~ msgid "Link other accounts"
-#~ msgstr "اربط حسابات أخرى"
-
-#~ msgid "English"
-#~ msgstr "الإنجليزية"
-
-#~ msgid "British English"
-#~ msgstr "الإنجليزية البريطانية"
-
-#~ msgid "German"
-#~ msgstr "الألمانية"
-
-#~ msgid "French"
-#~ msgstr "الفرنسية"
-
-#~ msgid "Spanish"
-#~ msgstr "الإسبانية"
-
-#~ msgid "Chinese (simplified)"
-#~ msgstr "الصينية (المبسطة)"
-
-#~ msgid "Unspecified"
-#~ msgstr "غير محددة"
-
-#~ msgid "Use %s"
-#~ msgstr "استخدم %s"
-
-#~ msgid "Show _all"
-#~ msgstr "أظهر ال_كل"
-
-#~ msgid "Enjoy GNOME!"
-#~ msgstr "استمتع بجنوم"
-
-#~ msgid "New to GNOME 3 and need help finding your way around?"
-#~ msgstr "هل تستخدم جنوم 3 لأول مرة وتحتاج للمساعدة في التعرف عليها؟"
-
-#~ msgid "_Take a Tour"
-#~ msgstr "_خذ جولة"
-
-#~ msgid "_Done"
-#~ msgstr "_تم"
-
-#~ msgid "_Require a password to use this account"
-#~ msgstr "ا_طلب كلمة سر لاستخدام هذا الحساب"
-
-#~ msgid "_Act as administrator of this computer"
-#~ msgstr "ت_صرّف كمدير لهذا الحاسوب"
+#~ msgctxt "Password strength"
+#~ msgid "Strength: High"
+#~ msgstr "Snaga: velika"
