@@ -6,7 +6,7 @@
 
 Name:           gnome-initial-setup
 Version:        3.28.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Bootstrapping your OS
 
 License:        GPLv2+
@@ -14,6 +14,8 @@ URL:            https://wiki.gnome.org/Design/OS/InitialSetup
 Source0:        https://download.gnome.org/sources/%{name}/3.28/%{name}-%{version}.tar.xz
 Patch0:         honor-firstboot-disabled.patch
 Patch1:         0001-Disable-software-page-as-it-doesn-t-make-sense-in-RH.patch
+# https://bugzilla.redhat.com/show_bug.cgi?id=1711308
+Patch2:         quacks-like-fedora.patch
 
 BuildRequires:  krb5-devel
 BuildRequires:  desktop-file-utils
@@ -109,6 +111,10 @@ useradd -rM -d /run/gnome-initial-setup/ -s /sbin/nologin %{name} &>/dev/null ||
 %{_datadir}/polkit-1/rules.d/20-gnome-initial-setup.rules
 
 %changelog
+* Mon Jun 10 2019 Ray Strode <rstrode@redhat.com> - 3.28.0-2
+- Ensure vendora logo gets used instead of foot
+  Resolves: #1711308
+
 * Wed Jun 06 2018 Richard Hughes <rhughes@redhat.com> - 3.28.0-1
 - Update to 3.28.0
 - Resolves: #1568175
